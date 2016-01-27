@@ -1,0 +1,254 @@
+body {
+    margin: 0 auto;
+    color: #1f3473;
+}
+
+.container-fluid {
+    width: 100%;
+    padding: 0 !important;
+}
+
+header {
+    width: 100%;
+    margin-top: 1.5em;
+    position: relative;
+}
+#main-container {
+    width: 75em;
+    margin: auto;
+}
+
+#header-holder img {
+    width: 25em;
+    border-radius: 5px;
+    position: relative;
+    float: left;
+}
+
+#mottoNum {
+    width: 80%;
+    float: right;
+    position: relative;
+    top: 15px;
+}
+
+#motto, #phoneNumber {
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+}
+
+#motto {
+    position: relative;
+    left: 9.5em;
+    bottom: 7.5em;
+}
+
+#phoneNumber {
+    float: right;
+    bottom: 7.5em;
+}
+
+#navnav {
+    position: relative;
+    float: right;
+    clear: both;
+    bottom: 7.5em;
+}
+
+#navnav ul li a {
+    
+    background-color: #1f3473;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #dedede;
+    font-size: 15.5px;
+}
+
+#navnav ul li a:hover {
+    background-color: #494a49;
+    transition-duration: .25s, .25s;
+}
+
+#navnav ul {
+    padding: 0;
+    margin: 0;
+}
+
+#navnav ul ul {
+    position: absolute;
+    display: none;
+    width: auto;
+}
+
+#navnav ul li ul li {
+    width: 11em;
+    margin-left: 0;
+    margin-top: 16px;
+    z-index: 20;
+    padding: 0;
+}
+
+a#staffButton {
+   padding-right: 57px !important;
+}
+
+#navnav ul li {
+    display: inline-block;
+    position: relative;
+    margin-left: -4px;
+}
+
+#navnav li:hover ul {
+    display: block;
+}
+
+#navnav ul li a:hover {
+    text-decoration: none;
+}
+
+#navnav ul li:last-child {
+    border-right: 0px;
+}
+
+#navnav .active a {
+    background-color: #494a49;
+}
+
+.owl-carousel {
+    position: relative;
+    bottom: 10em;
+}
+
+.owl-carousel .slideInfo {
+    position: relative;
+    text-align: center;
+    bottom: 40em;
+    color: #dedede;
+    width: 35em;
+    margin: auto;
+}
+
+.owl-carousel .darkerSlideText {
+    color: #212121;
+    font-size: 3em;
+    text-shadow: 0px 2px 2px #212121;
+    margin-bottom: 1em;
+}
+
+.owl-carousel .slideInfo p {
+    color: #212121;
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.owl-carousel .slideInfo .slideJump {
+    text-decoration: none;
+    background-color: #494a49;
+    padding: 12.5px;
+    width: 10em;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 3px 3px #212121;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+.owl-carousel .slideInfo a:hover {
+    text-decoration: none;
+}
+
+div .owl-pagination {
+    display: none;
+}
+
+#owl-example img {
+    height: 47em;
+    max-height: 50em;
+    width: 100%;
+    position: relative;
+}
+
+#owl-example .link-arrow, .link-arrow {
+    width: 25px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.opaqueBox {
+    height: 11em;
+    position: relative;
+    background-color: rgba(186, 185, 185, 0.42);
+    bottom: 31.5em;
+}
+
+#infoBlocks {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    bottom: 45em;
+    color: white;
+}
+
+#infoBlocks .infoIcon {
+    width: 80px;
+    position: relative;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: -20px;
+}
+
+#infoBlocks #firstPair, #infoBlocks #secondPair, #infoBlocks #firstPair div, #infoBlocks #secondPair div {
+    display: inline-block;
+}
+
+#infoBlocks #firstPair div, #infoBlocks #secondPair div {
+    z-index: 5;
+    width: 20em;
+    border-right: 1.5px solid #212121;
+    margin-right: -4px;
+     background-image: url('blueprint.jpg');
+}
+
+#infoBlocks #secondPair #emergencyBlock {
+    background-color: #FC030F;
+    background-image: none;
+    border-right: 0px;
+}
+
+#infoBlocks h4 {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+#infoBlocks .infoText {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 2em;
+}
+
+#infoBlocks a .infoJump, #infoBlocks #emergencyBlock #emergencyLink {
+    background-color: #494a49;
+    margin: auto;
+    margin-bottom: 2em;
+    padding: 10px;
+    color: white;
+    width: 10em;
+    font-weight: bold;
+    box-shadow: 0px 3px 3px #212121;
+    border-radius: 2px;
+    font-size: 16px;
+}
+
+#infoBlocks #emergencyBlock #emergencyLink {
+    background-color: white;
+    color: #1f3473;
+}
+
+#infoBlocks a:hover {
+    text-decoration: none;
+}
