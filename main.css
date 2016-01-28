@@ -1,13 +1,14 @@
 body {
     margin: 0 auto;
     color: #1f3473;
+    font-family: 'Lato', sans-serif;
 }
 
 .container-fluid {
     width: 100%;
     padding: 0 !important;
 }
-
+/*Header elements*/
 header {
     width: 100%;
     margin-top: 1.5em;
@@ -41,19 +42,19 @@ header {
 #motto {
     position: relative;
     left: 9.5em;
-    bottom: 7.5em;
+    top: -7.5em;
 }
 
 #phoneNumber {
     float: right;
-    bottom: 7.5em;
+    top: -7.5em;
 }
 
 #navnav {
     position: relative;
     float: right;
     clear: both;
-    bottom: 7.5em;
+    top: -7.5em;
 }
 
 #navnav ul li a {
@@ -100,6 +101,11 @@ a#staffButton {
     display: inline-block;
     position: relative;
     margin-left: -4px;
+    border-right: 1px solid white;
+}
+
+#navnav ul li:second-child {
+    border-right: 1px solid white;
 }
 
 #navnav li:hover ul {
@@ -117,19 +123,20 @@ a#staffButton {
 #navnav .active a {
     background-color: #494a49;
 }
-
+/*Image Carousel*/
 .owl-carousel {
     position: relative;
-    bottom: 10em;
+    top: -10em;
 }
 
 .owl-carousel .slideInfo {
     position: relative;
     text-align: center;
-    bottom: 40em;
+    top: -40em;
     color: #dedede;
     width: 35em;
     margin: auto;
+    margin-bottom: -15em;
 }
 
 .owl-carousel .darkerSlideText {
@@ -166,6 +173,10 @@ div .owl-pagination {
     display: none;
 }
 
+.owl-item div {
+    height: 60em !important;
+}
+
 #owl-example img {
     height: 47em;
     max-height: 50em;
@@ -173,29 +184,36 @@ div .owl-pagination {
     position: relative;
 }
 
-#owl-example .link-arrow, .link-arrow {
+#owl-example .link-arrow, .link-arrow, #home-testimonials .link-arrow {
     width: 25px;
     height: 30px;
     padding-left: 10px;
 }
-
+/*Center Squares Area*/
 .opaqueBox {
     height: 11em;
     position: relative;
     background-color: rgba(186, 185, 185, 0.42);
-    bottom: 31.5em;
+    width: 100%;
+    top: -34.7em;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
 }
 
 #infoBlocks {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    bottom: 45em;
+    top: -50.3em;
     color: white;
+    right: 2px;
+    width: 75em;
+    box-shadow: 0px 2px 2px #212121;
 }
 
 #infoBlocks .infoIcon {
-    width: 80px;
+    width: 70px;
     position: relative;
     padding: 10px;
     margin: auto;
@@ -208,10 +226,11 @@ div .owl-pagination {
 
 #infoBlocks #firstPair div, #infoBlocks #secondPair div {
     z-index: 5;
-    width: 20em;
+    width: 18.75em;
     border-right: 1.5px solid #212121;
     margin-right: -4px;
-     background-image: url('blueprint.jpg');
+    background-image: url('blueprint.jpg');
+    height: 20em;
 }
 
 #infoBlocks #secondPair #emergencyBlock {
@@ -231,13 +250,12 @@ div .owl-pagination {
     margin-bottom: 2em;
 }
 
-#infoBlocks a .infoJump, #infoBlocks #emergencyBlock #emergencyLink {
+#infoBlocks .infoJump, #infoBlocks #emergencyBlock #emergencyLink {
     background-color: #494a49;
     margin: auto;
-    margin-bottom: 2em;
+    margin-top: 1.5em !important;
     padding: 10px;
     color: white;
-    width: 10em;
     font-weight: bold;
     box-shadow: 0px 3px 3px #212121;
     border-radius: 2px;
@@ -251,4 +269,152 @@ div .owl-pagination {
 
 #infoBlocks a:hover {
     text-decoration: none;
+}
+
+#center-header {
+    width: 75em;
+    margin: auto;
+    margin-top: -48em;
+}
+
+#center-header h3 {
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#center-container {
+    width: 75em;
+    margin: auto;
+}
+
+#paragraph-holder {
+    text-align: left;
+    font-size: 1.15em;
+    width: 45em;
+    float: left;
+}
+
+#left-column {
+    float: left;
+    margin-top: 1em;
+    width: 20em;
+    position: relative;
+}
+
+#right-column {
+    float: right;
+    width: 20em;
+    margin-top: 1em;
+    right: 3em;
+    position: relative;
+}
+
+#home-testimonials {
+    width: 26em;
+    float: right;
+    clear: both;
+    position: relative;
+    margin-top: -31em;
+    left: 1em;
+}
+
+#home-testimonials #body-thumbnail {
+    width: 25em;
+    max-height: 13em;
+    margin-bottom: 2.75em;
+    border: 5px groove #dedede;
+}
+
+#home-testimonials p {
+    width: 21.5em;
+    font-size: 1.15em;
+}
+
+#home-testimonials p, #home-testimonials span {
+    font-weight: bold;
+}
+
+#home-testimonials span {
+    position: relative;
+    top: 1.5em;
+    padding: 13px;
+    background-color: #1f3473;
+    color: white;
+    font-size: 1.2em;
+}
+
+footer {
+    margin: auto;
+    position: absolute;
+    margin-top: 35em;
+    text-align: left;
+    width: 100%;
+    background-color: #1f3473;
+    color: white;
+}
+
+#footer-wrapper {
+    width: 75em;
+    margin: auto;
+}
+
+#footer-number {
+    margin-top: 1em;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+#left-footer-info {
+    position: relative;
+    float: left;
+    width: 45em;
+}
+
+footer #footer-nav {
+    margin-bottom: 1.5em;
+    margin-top: 1.25em;
+}
+
+footer span {
+    font-size: .9em;
+    border-right: 1px solid white;
+}
+
+footer #footer-nav .non-home {
+    padding-left: 1em;
+}
+
+footer span a {
+    color: white;
+    text-decoration: underline;
+    padding-right: 1em;
+}
+
+footer span a:hover {
+    color: white;
+}
+
+footer #footer-nav span:last-child {
+    border-right: 0 !important;
+}
+
+footer #specialties-footer p {
+    line-height: 1.5em;
+    margin-bottom: 2.5em;
+}
+
+footer #copyright {
+    margin-bottom: 1.5em;
+}
+
+footer #footer-logo {
+    float: right;
+    position: relative;
+    top: 3em;
+}
+
+footer #footer-logo img {
+    width: 27em;
+    border-radius: 5px;
+    position: relative;
 }
