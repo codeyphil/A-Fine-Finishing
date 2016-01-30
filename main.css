@@ -2,21 +2,52 @@ body {
     margin: 0 auto;
     color: #1f3473;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
+
+/*----- Universal CSS For Nav & Access Button ---------*/
 
 .container-fluid {
     width: 100%;
     padding: 0 !important;
 }
+
+#access-jump {
+    position: fixed;
+    right: .5%;
+    top: 1%;
+    z-index: 5;
+}
+
+#access-jump #initial-image {
+    width: 6em;
+    border-radius: 10%;
+    box-shadow: 0px 1px 1px #212121;
+}
+
+#access-text {
+    position: relative;
+    margin-right: 10px;
+    top: 3.5px;
+    visibility: hidden;
+    font-family: 'Bangers', cursive;
+    text-shadow: 0px .25px .25px #212121;
+}
+
+#access-jump:hover #access-text {
+   visibility: visible;
+}
 /*Header elements*/
+
+#main-container {
+    width: 75em;
+    margin: auto;
+}
+
 header {
     width: 100%;
     margin-top: 1.5em;
     position: relative;
-}
-#main-container {
-    width: 75em;
-    margin: auto;
 }
 
 #header-holder img {
@@ -89,23 +120,32 @@ header {
     width: 11em;
     margin-left: 0;
     margin-top: 16px;
-    z-index: 20;
+    z-index: 5;
     padding: 0;
 }
 
-a#staffButton {
-   padding-right: 57px !important;
+#companyButton {
+    border-top: 1px solid white;
+}
+
+#staffButton {
+   padding-right: 53px !important;
+    border-top: 1px solid white;
 }
 
 #navnav ul li {
     display: inline-block;
     position: relative;
-    margin-left: -4px;
+    margin-left: -3px;
     border-right: 1px solid white;
 }
 
-#navnav ul li:second-child {
+#aboutButton {
     border-right: 1px solid white;
+}
+
+.nav-shift {
+    margin-right: -1px;
 }
 
 #navnav li:hover ul {
@@ -123,13 +163,52 @@ a#staffButton {
 #navnav .active a {
     background-color: #494a49;
 }
+
+#navnav .active ul li a {
+    background-color: #1f3473;
+}
+
+#navnav .active ul li a:hover {
+    background-color: #494a49;
+}
+
+#services-holder {
+    width: 15em;
+}
+
+.service-drops {
+    width: 20em !important;
+}
+
+.service-drops a {
+    border-top: 1px solid white;
+}
+
+#insurance-drop {
+    width: 16em !important;
+}
+
+#historical-drop {
+    width: 15.2em !important;
+}
+
+#insurance-drop a {
+    padding-right: 2.64em !important;
+}
+
+#historical-drop a {
+    padding-right: 2.65em !important;
+}
+
+/*----------End of Nav CSS ---------*/
+
 /*Image Carousel*/
 .owl-carousel {
     position: relative;
     top: -10em;
 }
 
-.owl-carousel .slideInfo {
+/*.owl-carousel .slideInfo {
     position: relative;
     text-align: center;
     top: -42em;
@@ -170,7 +249,7 @@ a#staffButton {
 
 .owl-carousel .slideInfo a:hover {
     text-decoration: none;
-}
+}*/
 
 div .owl-pagination {
     display: none;
@@ -192,7 +271,11 @@ div .owl-pagination {
     height: 30px;
     padding-left: 10px;
 }
-/*Center Squares Area*/
+
+/*------End of Carousel CSS ----------*/
+
+/*------Center Info Boxes On Home Page ---------*/
+
 .opaqueBox {
     height: 11em;
     position: relative;
@@ -236,9 +319,15 @@ div .owl-pagination {
     height: 21em;
 }
 
-#infoBlocks #secondPair #emergencyBlock {
-    background-color: #FC030F;
-    background-image: none;
+#infoBlocks #secondPair #insuranceBlock {
+    background: rgba(96,98,96,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(96,98,96,1)), color-stop(10%, rgba(96,98,96,1)), color-stop(87%, rgba(25,84,156,1)), color-stop(100%, rgba(25,84,156,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
+background: radial-gradient(ellipse at center, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', endColorstr='#19549c', GradientType=1 );
     border-right: 0px;
 }
 
@@ -254,7 +343,7 @@ div .owl-pagination {
     margin-bottom: 2em;
 }
 
-#infoBlocks .infoJump, #infoBlocks #emergencyBlock #emergencyLink {
+#infoBlocks .infoJump, #infoBlocks #insuranceBlock #insuranceLink {
     background-color: #494a49;
     margin: auto;
     margin-top: 1.5em !important;
@@ -266,7 +355,7 @@ div .owl-pagination {
     font-size: 16px;
 }
 
-#infoBlocks #emergencyBlock #emergencyLink {
+#infoBlocks #insuranceBlock #insuranceLink {
     background-color: white;
     color: #1f3473;
 }
@@ -274,6 +363,8 @@ div .owl-pagination {
 #infoBlocks a:hover {
     text-decoration: none;
 }
+
+/*---------End of Info Blocks CSS For Home Page ---------*/
 
 #center-header {
     width: 75em;
@@ -347,6 +438,92 @@ div .owl-pagination {
     font-size: 1.2em;
 }
 
+/*------- Banner Image CSS For All Pages But The Home Page ----------*/
+
+#banner-image {
+    height: 20em;
+    position: relative;
+    top: 13em;
+}
+
+#banner-image img {
+    height: 20em;
+    position: relative;
+    bottom: 17em;
+    width: 150em;
+}
+
+/*----Universal CSS For Contact Form ----------*/
+
+#name-boxes:second-child {
+    float: right;
+}
+
+#contact-form {
+    background-color: #1f3473;
+    color: white;
+    position: relative;
+}
+
+#contact-form table {
+    width: 15em !important;
+    margin: auto;
+    text-align: center;
+}
+
+#contact-form h2 {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: .5em;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+#contact-form img {
+    width: 50px;
+    margin-left: 11em;
+    position: relative;
+    top: 10px;
+}
+
+#contact-form th {
+    font-size: 15px; 
+    padding-bottom: 3px;
+}
+
+#contact-form .input-spacer {
+    padding-top: .75em;
+}
+
+#contact-form #name-row {
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+
+#contact-form p {
+    font-size: 11px;
+    width: 2.5em;
+}
+
+#contact-form #first-name {
+    position: relative;
+    float: left;
+}
+
+#contact-form #last-name {
+    position: relative;
+    float: left;
+    margin-left: 5px;
+}
+
+input {
+    color: black;
+}
+
+/*-----Universal CSS For Footer ----------*/
+
 footer {
     margin: auto;
     position: absolute;
@@ -363,9 +540,11 @@ footer {
 }
 
 #footer-number {
-    margin-top: 1em;
     font-size: 1.75em;
     font-weight: bold;
+    border-right: 0px;
+    position: relative;
+    top: .25em;
 }
 
 #left-footer-info {
@@ -382,6 +561,17 @@ footer #footer-nav {
 footer span {
     font-size: .9em;
     border-right: 1px solid white;
+}
+
+#social-media {
+    border-right: 0px;
+    margin-left: 2.5em;
+    position: relative;
+    top: 3px;
+}
+
+#social-media img{
+    width: 8em;
 }
 
 footer #footer-nav .non-home {
@@ -422,3 +612,44 @@ footer #footer-logo img {
     border-radius: 5px;
     position: relative;
 }
+
+/*-----About Us CSS ---------*/
+
+#body-content {
+   width: 75em;
+   margin: auto;
+   margin-top: 9.6em;
+   position: relative;
+  height: auto;
+}
+
+#right-body-content {
+    float: right;
+    width: 27em;
+    margin-top: -33em;
+}
+
+#content-title {
+   background-color: #494a49;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   padding-right: 20px;
+   padding-left: 20px;
+   font-size: 2.5em;
+   font-weight: bold;
+   color: white;
+   text-shadow: 0px .5px .5px #dedede;
+}
+
+#body-text {
+    width: 40em;
+    margin-top: 2.5em;
+    font-size: 16.5px;
+}
+
+#about-footer {
+    margin-top: 10em;
+}
+
+/*------Service CSS ----------*/
+

@@ -7,6 +7,7 @@
 <title>A Fine Finishing Home Page</title>
 
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="owl.carousel.css">
 <link rel="stylesheet" href="owl.theme.css">
@@ -18,36 +19,41 @@
 <body>
     
 <div class="container-fluid">
+ <div id="access-jump">
+     <span id="access-text">Check out our sister company!</span><a href="http://www.accessconstruction.org" target="_blank"><img src="access-logo.jpg" id="initial-image"></a>
+ </div>
   <div id="main-container">
     <header>
       <div id="header-holder">
-        <a href="/#"><img src="fine-finishing-logo.jpg"></a>
+        <a href="index.html"><img src="fine-finishing-logo.jpg"></a>
           <div id="mottoNum">
-           <p id="motto">"Desired motto goes here!"</p>
+           <p id="motto">"Reconstructing Since 1993!"</p>
            <p id="phoneNumber">(734) 934 - 3795</p>
           </div>
           <div id="navnav">
             <ul>
-             <li class="active"><a href="/#">Home</a></li>
+             <li class="active nav-shift"><a href="index.html">Home</a></li>
              <li>
-                 <a href="#">About Us</a>
+                 <a href="aboutus.html" id="aboutButton">About Us</a>
                  <ul>
-                    <li><a href="#asdfasdfasdf">Our Company</a></li>
-                    <li ><a href="#as"id="staffButton">Our Staff</a></li>
+                    <li><a href="our-company.html" id="companyButton">Our Company</a></li>
+                    <li ><a href="our-staff.html" id="staffButton">Our Staff</a></li>
                  </ul>
                 
              </li>
-             <li>
-                 <a href="#">Services</a>
+             <li class="nav-shift">
+                 <a href="services.html">Services</a>
                  <ul>
-                    <li><a href="#asdfasdfasdf">Service 1</a></li>
-                    <li id="midService"><a href="#as">Service 2</a></li>
-                    <li id="midService"><a href="#as">Service 3</a></li>
+                  <div id="services-holder">
+                    <li class="service-drops" id="insurance-drop"><a href="insurance.html">Insurance Restoration</a></li>
+                    <li class="service-drops" id="historical-drop"><a href="historical.html">Historical Restoration</a></li>
+                    <li class="service-drops" id="full-service"><a href="full-service.html">Full Service Construction</a></li>
+                  </div>
                  </ul>
              </li>
-             <li><a href="#">Testimonials</a></li>
-             <li><a href="#">Photo Gallery</a></li>
-             <li><a href="#">Contact</a></li>
+             <li class="nav-shift"><a href="testimonials.html">Testimonials</a></li>
+             <li class="nav-shift"><a href="gallery.html">Photo Gallery</a></li>
+             <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
       </div>
@@ -57,27 +63,27 @@
   <div id="owl-example" class="owl-carousel">
     <div>
       <img src="remodel-slide1.jpg">
-      <div class="slideInfo">
+      <!--<div class="slideInfo">
         <h2 class="darkerSlideText">Test Text Slide # 1</h2>
         <p>Brief description to compliment the theme in the title of the slide.</p>
         <a href="#"><span class="slideJump">Learn More<img src="link-pointer.png" class="link-arrow"></span></a>
-      </div>
+      </div>-->
     </div>
     <div>
      <img src="remodel-slide2.jpg">
-     <div class="slideInfo">
+     <!--<div class="slideInfo">
         <h2 class="darkerSlideText">Test Text Slide # 2</h2>
         <p>Brief description to compliment the theme in the title of the slide.</p>
         <a href="#"><span class="slideJump">Learn More<img src="link-pointer.png" class="link-arrow"></span></a>
-      </div>
+      </div>-->
     </div>
     <div>
       <img src="remodel-slide3.jpg">
-      <div class="slideInfo">
+      <!--<div class="slideInfo">
         <h2 class="darkerSlideText">Test Text Slide # 3</h2>
         <p>Brief description to compliment the theme in the title of the slide.</p>
         <a href="#"><span class="slideJump">Learn More<img src="link-pointer.png" class="link-arrow"></span></a>
-      </div>
+      </div>-->
     </div>
   </div>
  <div class="opaqueBox"></div>
@@ -88,13 +94,13 @@
             <img src="tool-box.png" class="infoIcon">
             <h4>Our Services</h4>
             <p class="infoText">Lorem ipsum dolor sit amet, quidam dignissim deseruisse duo ei. Eros legere erroribus est ad, in eum suas eros justo.</p>
-            <a href="#"><span class="infoJump">View Services<img src="link-pointer.png" class="link-arrow"></span></a>
+            <a href="services.html"><span class="infoJump">View Services<img src="link-pointer.png" class="link-arrow"></span></a>
         </div>
         <div>
             <img src="gallery-icon.png" class="infoIcon">
             <h4>View Our Work</h4>
             <p class="infoText">Lorem ipsum dolor sit amet, quidam dignissim deseruisse duo ei. Eros legere erroribus est ad, in eum suas eros justo.</p>
-            <a href="#"><span class="infoJump">View Gallery<img src="link-pointer.png" class="link-arrow"></span></a>
+            <a href="gallery.html"><span class="infoJump">View Gallery<img src="link-pointer.png" class="link-arrow"></span></a>
         </div>
     </div>  
     <div id="secondPair">
@@ -102,13 +108,13 @@
             <img src="estimate-icon.png" class="infoIcon">
             <h4>Get An Estimate</h4>
             <p class="infoText">Lorem ipsum dolor sit amet, quidam dignissim deseruisse duo ei. Eros legere erroribus est ad, in eum suas eros justo.</p>
-            <a href="#"><span class="infoJump">Contact Us<img src="link-pointer.png" class="link-arrow"></span></a>
+            <a href="contact.html"><span class="infoJump">Contact Us<img src="link-pointer.png" class="link-arrow"></span></a>
         </div>
-        <div id="emergencyBlock">
+        <div id="insuranceBlock">
             <img src="emergency-icon.png" class="infoIcon">
-            <h4>Emergency Services</h4>
+            <h4>Insurance Restoration</h4>
             <p class="infoText">Lorem ipsum dolor sit amet, quidam dignissim deseruisse duo ei. Eros legere erroribus est ad, in eum suas eros justo.</p>
-            <a href="#"><span id="emergencyLink" infoJump>View Services<img src="link-pointer.png" class="link-arrow"></span></a>
+            <a href="insurance.html"><span id="insuranceLink" infoJump>View Service<img src="link-pointer.png" class="link-arrow"></span></a>
         </div>
     </div>
   </div>
@@ -130,19 +136,22 @@
   <div id="home-testimonials">
     <img src="body-thumbnail.jpg" id="body-thumbnail">
       <p><i>"Fine Finishing did a fantastic job updating my home! They did a wonderful job remodeling my home, and refreshing my life. I would highly recommend Fine Finishing for your next project!" - Theresa K.</i></p>
-      <a href="#"><span id="test-button">View Testimonials<img src="link-pointer.png" class="link-arrow"></span></a>
+      <a href="testimonials.html"><span id="test-button">View Testimonials<img src="link-pointer.png" class="link-arrow"></span></a>
   </div>
  </div>
 
  <footer>
   <div id="footer-wrapper">
    <div id="left-footer-info">
-    <p id="footer-number">(734) 934 - 3795</p> 
+    <span id="footer-number">(734) 934 - 3795</span><a href="https://www.facebook.com/finefinishing/?fref=ts" target="_blank"><span id="social-media"><img src="fb-logo.jpg"></span></a>
     <div id="footer-nav">
-      <span id="footer-home"><a href="#">Home</a></span>
-      <span class="non-home"><a href="#">About Us</a></span>
-      <span class="non-home"><a href="#">Privacy</a></span>
-      <span class="non-home"><a href="#">Contact</a></span>
+      <span id="footer-home"><a href="index.html">Home</a></span>
+      <span class="non-home"><a href="aboutus.html">About Us</a></span>
+      <span class="non-home"><a href="services.html">Services</a></span>
+      <span class="non-home"><a href="testimonials.html">Testimonials</a></span>
+      <span class="non-home"><a href="gallery.html">Gallery</a></span>    
+      <span class="non-home"><a href="contact.html">Contact</a></span>
+      <span class="non-home"><a href="privacy.html">Privacy</a></span>
     </div>
     <p id="copyright">The contents of this webpage are Copyright &#169; 2016 Fine Finishing. All Rights Reserved.</p>
     <div id="specialties-footer">
@@ -151,15 +160,15 @@
     </div>
    </div> 
    <div id="footer-logo">
-      <a href="/#"><img src="fine-finishing-logo.jpg"></a>   
+      <a href="index.html"><img src="fine-finishing-logo.jpg"></a>   
     </div>
   </div>
  </footer>
 </div>
        
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="initiateSlides.js"></script>
 <script src="owl.carousel.js"></script>
+<script type="text/javascript" src="fine-finishing.js"></script>
 
     
 </body>
