@@ -11,6 +11,8 @@
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
 <link type = "text/css" rel = "stylesheet" href = "main.css">
     
+<script type="text/javascript" src="jgallery.min.js?v=1.5.5"></script>
+    
 </head>
 
 
@@ -62,63 +64,25 @@
   </div> 
   <div id="body-content">
     <span id="content-title">Photo Gallery</span>
-      <div id="body-text">
-        <p>Fine Finishing has been in business since 1993. Over the years, the company has grown and changed. From simple beginnings, Mike Rickman and Jeff Mitchell began doing small construction projects, and over the years have developed Fine Finishing into a company with a reputation for having impeccable workmanship and customer service that is second to none.</p>
-        <p>Our portfolio now includes extensive insurance repair - from small water losses, to major floods, from minor smoke damage to major house fires that require a total demolition and rebuild. Fine Finishing also provides <a href="full-service.html">Full-Service Construction</a> services, as well as <a href="historical.html">Historical Restoration</a> services. On top of all of this, Fine Finishing also provides remodeling and <a href="http://www.accessconsctruction.org">accessiblity alterations</a> for victims of car accidents. </p>
-        <p>Both Mike and Jeff are licensed builders and are very knowledgeable in both construction and building codes. Fine Finishing also staffs a building inspector who is licensed in the State of Michigan.</p>
-      </div>
-      <div id="right-body-content">
-       <div id="contact-form">
-        <img src="contact-icon.jpg">
-        <h2>Ask A Question!</h2>
-        <form action="send_mail.php" method="post">
-        <table>
-        <tr>
-         <th>Name *</th>
-        </tr>
-        <tr id="name-row">
-        <td id="first-name">
-            <input type="text" name="first_name" value="" maxlength="25" size="21.3" />
-            <p>First</p>
-        </td>
-        <td id="last-name">
-            <input type="text" name="last_name" value="" maxlength="25" size="21.3" /> 
-            <p>Last</p>
-        </td>
-        </tr>
-        <tr>
-         <th>Email *</th>
-        </tr>
-        <tr>
-        <td>
-            <input type="text" name="first_name" value="" maxlength="25" size="45" />
-        </td>
-        </tr>
-        <tr>
-         <th class="input-spacer">Phone #</th>
-        </tr>
-        <tr>
-         <td>
-             <input type="text" name="first_name" value="" maxlength="25" size="45" />   
-         </td>    
-        </tr>
-        <tr>
-         <th class="input-spacer">How can we help you? *</th>
-        </tr>
-        <tr>
-         <td>
-            <textarea rows="8" cols="44" name="comments" style="color: black;"></textarea>   
-         </td>
-        </tr>
-        <tr>
-         <td>
-           <input type="submit" value="Send Message" style="background-color: #494a49; border: 0; padding: 12px; color: white; font-size: 1.75em; margin-top: 1em; margin-bottom: 4em" />    
-         </td>    
-        </tr>
-        </table>
-        </form>
-      </div>
+      <div id="body-gallery">
+          <script type="text/javascript">
+$( function() {
+    $( '#gallery' ).jGallery()
+} );
+</script>
+        <div id="gallery">
+    <div class="album" data-jgallery-album-title="Trenton Remodel - Full">
+        <a href="gallery-test1.jpg"><img src="gallery-test1.jpg" alt="Photo 1" /></a>
+        <a href="images/large/2.jpg"><img src="images/thumbs/2.jpg" alt="Photo 2" /></a>
+        <a href="images/large/3.jpg"><img src="images/thumbs/3.jpg" alt="Photo 3" /></a>
     </div>
+    <div class="album" data-jgallery-album-title="Trenton Remodel - Before & After">
+        <a href="images/large/4.jpg"><img src="images/thumbs/4.jpg" alt="Photo 4" /></a>
+        <a href="images/large/5.jpg"><img src="images/thumbs/5.jpg" alt="Photo 5" /></a>
+        <a href="images/large/6.jpg"><img src="images/thumbs/6.jpg" alt="Photo 6" /></a>
+    </div>
+</div>
+      </div>
   </div>
 
  <footer id="about-footer">
@@ -130,7 +94,7 @@
       <span class="non-home"><a href="aboutus.html">About Us</a></span>
       <span class="non-home"><a href="services.html">Services</a></span>
       <span class="non-home"><a href="testimonials.html">Testimonials</a></span>
-      <span class="non-home"><a href="gallery.html">Gallery</a></span>    
+      <span class="non-home"><a href="gallery.html" class="footer-active">Gallery</a></span>    
       <span class="non-home"><a href="contact.html">Contact</a></span>
       <span class="non-home"><a href="privacy.html">Privacy</a></span>
     </div>

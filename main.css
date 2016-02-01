@@ -89,7 +89,6 @@ header {
 }
 
 #navnav ul li a {
-    
     background-color: #1f3473;
     color: white;
     padding-top: 10px;
@@ -613,6 +612,14 @@ footer #footer-logo img {
     position: relative;
 }
 
+.footer-active {
+    color: #A9ABA9;
+}
+
+.footer-active:hover {
+    color: #A9ABA9;
+}
+
 /*-----About Us CSS ---------*/
 
 #body-content {
@@ -649,6 +656,38 @@ footer #footer-logo img {
 
 #about-footer {
     margin-top: 10em;
+}
+
+/*---------Our Staff CSS --------*/
+
+.row {
+    width: auto;
+    margin: auto;
+    text-align: center;
+    background-color: #1f3473;
+    color: white;
+}
+
+#top-row {
+    margin-top: 4em;
+}
+
+.col-md-4 {
+    position: relative;
+    margin: auto;
+}
+
+.col-md-4 img {
+    margin-top: 1em;
+    border-radius: 100%;
+}
+
+.employee-info {
+    margin-bottom: 2.5em;
+}
+
+#our-staff-footer {
+    margin-top: 1em;
 }
 
 /*------Service CSS ----------*/
