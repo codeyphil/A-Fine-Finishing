@@ -37,6 +37,19 @@ body {
 #access-jump:hover #access-text {
    visibility: visible;
 }
+
+.jump-arrow {
+	float: right;
+	right: .5%;
+	bottom: 1.5%;
+	position: fixed;
+	z-index: 10;
+}
+
+.jump-arrow img {
+	width: 3.5em;
+}
+
 /*Header elements*/
 
 #main-container {
@@ -81,123 +94,371 @@ header {
     top: -7.5em;
 }
 
-#navnav {
-    position: relative;
-    float: right;
-    clear: both;
-    top: -7.5em;
+/*--------Start of Nav CSS ----------*/
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-#navnav ul li a {
-    background-color: #1f3473;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-right: 1px solid #dedede;
-    font-size: 15.5px;
+#cssmenu {
+	width: 49em;
+	margin: auto;
+	float: right;
+	z-index: 10;
+	position: relative;
+	bottom: 8em;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  font-family: 'Droid Serif', serif;
+  background: #1f3473;
+}
+#cssmenu > ul > li {
+  float: left;
+  border-right: 1px solid white;
 }
 
-#navnav ul li a:hover {
-    background-color: #494a49;
-    transition-duration: .25s, .25s;
+#cssmenu #last-nav {
+	border-right: none;
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu > ul > li > a {
+  padding: 15px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #dddddd;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#cssmenu > ul > li:hover > a {
+  color: white;
+  background: #494a49;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 30px;
+}
+#cssmenu > ul > li.has-sub > a:after {
+  position: absolute;
+  top: 22px;
+  right: 11px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  background: #dddddd;
+  content: '';
+}
+#cssmenu > ul > li.has-sub > a:before {
+  position: absolute;
+  top: 19px;
+  right: 14px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  background: #dddddd;
+  content: '';
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+#cssmenu > ul > li.has-sub:hover > a:before {
+  top: 23px;
+  height: 0;
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+}
+#cssmenu.align-right ul ul {
+  text-align: right;
+}
+#cssmenu ul ul li {
+  height: 0;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+#cssmenu li:hover > ul {
+  left: auto;
+}
+#cssmenu.align-right li:hover > ul {
+  left: auto;
+  right: 0;
+}
+#cssmenu li:hover > ul > li {
+  height: 35px;
+}
+#cssmenu ul ul ul {
+  margin-left: 100%;
+  top: 0;
+}
+#cssmenu.align-right ul ul ul {
+  margin-left: 0;
+  margin-right: 100%;
+}
+#cssmenu ul ul li a {
+  border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+  padding: 11px 15px;
+  width: 170px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #dddddd;
+  font-weight: 400;
+  background: #1f3473;
 }
 
-#navnav ul {
-    padding: 0;
-    margin: 0;
+#cssmenu ul ul li .long-navs {
+	width: 200px;
 }
-
-#navnav ul ul {
-    position: absolute;
+#cssmenu ul ul li:last-child > a,
+#cssmenu ul ul li.last-item > a {
+  border-bottom: 0;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li a:hover {
+  color: white;
+  background: #494a49;
+}
+#cssmenu ul ul li.has-sub > a:after {
+  position: absolute;
+  top: 16px;
+  right: 11px;
+  width: 8px;
+  height: 2px;
+  display: block;
+  background: #dddddd;
+  content: '';
+}
+#cssmenu.align-right ul ul li.has-sub > a:after {
+  right: auto;
+  left: 11px;
+}
+#cssmenu ul ul li.has-sub > a:before {
+  position: absolute;
+  top: 13px;
+  right: 14px;
+  display: block;
+  width: 2px;
+  height: 8px;
+  background: #dddddd;
+  content: '';
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+#cssmenu.align-right ul ul li.has-sub > a:before {
+  right: auto;
+  left: 14px;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+  top: 17px;
+  height: 0;
+}
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu {
+    width: 100%;
+  }
+  #cssmenu ul {
+    width: 100%;
     display: none;
-    width: auto;
-}
-
-#navnav ul li ul li {
-    width: 11em;
-    margin-left: 0;
-    margin-top: 16px;
-    z-index: 5;
-    padding: 0;
-}
-
-#companyButton {
-    border-top: 1px solid white;
-}
-
-#staffButton {
-   padding-right: 53px !important;
-    border-top: 1px solid white;
-}
-
-#navnav ul li {
-    display: inline-block;
+  }
+  #cssmenu.align-center > ul {
+    text-align: left;
+  }
+  #cssmenu ul li {
+    width: 100%;
+    border-top: 1px solid rgba(120, 120, 120, 0.2);
+  }
+  #cssmenu ul ul li,
+  #cssmenu li:hover > ul > li {
+    height: auto;
+  }
+  #cssmenu ul li a,
+  #cssmenu ul ul li a {
+    width: 100%;
+    border-bottom: 0;
+  }
+  #cssmenu > ul > li {
+    float: none;
+  }
+  #cssmenu ul ul li a {
+    padding-left: 25px;
+  }
+  #cssmenu ul ul ul li a {
+    padding-left: 35px;
+  }
+  #cssmenu ul ul li a {
+    color: #dddddd;
+    background: none;
+  }
+  #cssmenu ul ul li:hover > a,
+  #cssmenu ul ul li.active > a {
+    color: #ffffff;
+  }
+  #cssmenu ul ul,
+  #cssmenu ul ul ul,
+  #cssmenu.align-right ul ul {
     position: relative;
-    margin-left: -3px;
-    border-right: 1px solid white;
-}
-
-#aboutButton {
-    border-right: 1px solid white;
-}
-
-.nav-shift {
-    margin-right: -1px;
-}
-
-#navnav li:hover ul {
+    left: 0;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  #cssmenu > ul > li.has-sub > a:after,
+  #cssmenu > ul > li.has-sub > a:before,
+  #cssmenu ul ul > li.has-sub > a:after,
+  #cssmenu ul ul > li.has-sub > a:before {
+    display: none;
+  }
+  #cssmenu #menu-button {
     display: block;
+    padding: 17px;
+    color: #dddddd;
+    cursor: pointer;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  #cssmenu #menu-button:after {
+    position: absolute;
+    top: 22px;
+    right: 17px;
+    display: block;
+    height: 4px;
+    width: 20px;
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    content: '';
+  }
+  #cssmenu #menu-button:before {
+    position: absolute;
+    top: 16px;
+    right: 17px;
+    display: block;
+    height: 2px;
+    width: 20px;
+    background: #dddddd;
+    content: '';
+  }
+  #cssmenu #menu-button.menu-opened:after {
+    top: 23px;
+    border: 0;
+    height: 2px;
+    width: 15px;
+    background: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  #cssmenu #menu-button.menu-opened:before {
+    top: 23px;
+    background: #ffffff;
+    width: 15px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  #cssmenu .submenu-button {
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    display: block;
+    border-left: 1px solid rgba(120, 120, 120, 0.2);
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+  }
+  #cssmenu .submenu-button.submenu-opened {
+    background: #262626;
+  }
+  #cssmenu ul ul .submenu-button {
+    height: 34px;
+    width: 34px;
+  }
+  #cssmenu .submenu-button:after {
+    position: absolute;
+    top: 22px;
+    right: 19px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #dddddd;
+    content: '';
+  }
+  #cssmenu ul ul .submenu-button:after {
+    top: 15px;
+    right: 13px;
+  }
+  #cssmenu .submenu-button.submenu-opened:after {
+    background: #ffffff;
+  }
+  #cssmenu .submenu-button:before {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #dddddd;
+    content: '';
+  }
+  #cssmenu ul ul .submenu-button:before {
+    top: 12px;
+    right: 16px;
+  }
+  #cssmenu .submenu-button.submenu-opened:before {
+    display: none;
+  }
 }
 
-#navnav ul li a:hover {
-    text-decoration: none;
-}
-
-#navnav ul li:last-child {
-    border-right: 0px;
-}
-
-#navnav .active a {
-    background-color: #494a49;
-}
-
-#navnav .active ul li a {
-    background-color: #1f3473;
-}
-
-#navnav .active ul li a:hover {
-    background-color: #494a49;
-}
-
-#services-holder {
-    width: 15em;
-}
-
-.service-drops {
-    width: 20em !important;
-}
-
-.service-drops a {
-    border-top: 1px solid white;
-}
-
-#insurance-drop {
-    width: 16em !important;
-}
-
-#historical-drop {
-    width: 15.2em !important;
-}
-
-#insurance-drop a {
-    padding-right: 2.64em !important;
-}
-
-#historical-drop a {
-    padding-right: 2.65em !important;
-}
 
 /*----------End of Nav CSS ---------*/
 
@@ -442,7 +703,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', end
 #banner-image {
     height: 20em;
     position: relative;
-    top: 13em;
+    top: 12em;
 }
 
 #banner-image img {
@@ -625,7 +886,7 @@ footer #footer-logo img {
 #body-content {
    width: 75em;
    margin: auto;
-   margin-top: 9.6em;
+   margin-top: 10em;
    position: relative;
   height: auto;
 }
@@ -669,7 +930,7 @@ footer #footer-logo img {
 }
 
 #top-row {
-    margin-top: 4em;
+    margin-top: 2em;
 }
 
 .col-md-4 {
@@ -691,4 +952,22 @@ footer #footer-logo img {
 }
 
 /*------Service CSS ----------*/
+
+
+
+
+
+/*-------Privacy CSS ----------*/
+
+#right-privacy-content {
+	float: right;
+	clear: both;
+    width: 27em;
+	margin-top: -2.5em;
+}
+
+.section-title {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
 
