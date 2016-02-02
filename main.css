@@ -10,6 +10,7 @@ body {
 .container-fluid {
     width: 100%;
     padding: 0 !important;
+    letter-spacing: .5px;
 }
 
 #access-jump {
@@ -75,12 +76,14 @@ header {
     float: right;
     position: relative;
     top: 15px;
+    background: #494a49;
 }
 
 #motto, #phoneNumber {
     display: inline-block;
     position: relative;
     font-size: 20px;
+    font-weight: bold;
 }
 
 #motto {
@@ -114,12 +117,13 @@ header {
 }
 
 #cssmenu {
-	width: 49em;
+	width: 41.75em;
 	margin: auto;
 	float: right;
 	z-index: 10;
 	position: relative;
 	bottom: 8em;
+    right: 4em;
 }
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -134,7 +138,7 @@ header {
   display: none;
 }
 #cssmenu {
-  font-family: 'Droid Serif', serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   background: #1f3473;
 }
 #cssmenu > ul > li {
@@ -161,7 +165,7 @@ header {
 }
 #cssmenu > ul > li > a {
   padding: 15px;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
   text-decoration: none;
   color: #dddddd;
@@ -171,6 +175,7 @@ header {
 #cssmenu > ul > li:hover > a {
   color: white;
   background: #494a49;
+    text-shadow: 0px .25px .25px #dedede;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
@@ -241,11 +246,12 @@ header {
   border-bottom: 1px solid rgba(150, 150, 150, 0.15);
   padding: 11px 15px;
   width: 170px;
-  font-size: 14px;
+  font-size: 16px;
   text-decoration: none;
   color: #dddddd;
   font-weight: 400;
   background: #1f3473;
+  letter-spacing: 1px;
 }
 
 #cssmenu ul ul li .long-navs {
@@ -259,6 +265,7 @@ header {
 #cssmenu ul ul li a:hover {
   color: white;
   background: #494a49;
+  font-weight: bold;
 }
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;
@@ -296,6 +303,10 @@ header {
 #cssmenu ul ul > li.has-sub:hover > a:before {
   top: 17px;
   height: 0;
+}
+
+#cssmenu .active {
+    background: #494a49 !important;
 }
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
@@ -629,7 +640,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', end
 #center-header {
     width: 75em;
     margin: auto;
-    margin-top: -48em;
+    margin-top: -50em;
 }
 
 #center-header h3 {
@@ -669,7 +680,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', end
     float: right;
     clear: both;
     position: relative;
-    margin-top: -31em;
+    margin-top: -35.5em;
     left: 1em;
 }
 
@@ -698,19 +709,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', end
     font-size: 1.2em;
 }
 
+#index-footer {
+    margin-top: 38em;
+}
+
 /*------- Banner Image CSS For All Pages But The Home Page ----------*/
 
 #banner-image {
     height: 20em;
     position: relative;
-    top: 12em;
+    top: 13.5em;
+    width: 150em;
+    background: #1f3473; 
 }
 
-#banner-image img {
+#banner-image #left-image{
     height: 20em;
     position: relative;
-    bottom: 17em;
-    width: 150em;
+    bottom: 18.9em;
+    width: 67.5em;
+    float: left;
+}
+
+#banner-image #right-image {
+    height: 20em;
+    position: relative;
+    bottom: 18.9em;
+    width: 82.5em;
+    float: right;
 }
 
 /*----Universal CSS For Contact Form ----------*/
@@ -723,6 +749,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', end
     background-color: #1f3473;
     color: white;
     position: relative;
+    box-shadow: 0px 7.5px 7.5px #212121;
+     border-radius: 5px;
 }
 
 #contact-form table {
@@ -886,7 +914,7 @@ footer #footer-logo img {
 #body-content {
    width: 75em;
    margin: auto;
-   margin-top: 10em;
+   margin-top: 9em;
    position: relative;
   height: auto;
 }
@@ -894,7 +922,7 @@ footer #footer-logo img {
 #right-body-content {
     float: right;
     width: 27em;
-    margin-top: -33em;
+    margin-top: -34em;
 }
 
 #content-title {
@@ -904,15 +932,20 @@ footer #footer-logo img {
    padding-right: 20px;
    padding-left: 20px;
    font-size: 2.5em;
+   position: relative;
+   bottom: 3.67em;
    font-weight: bold;
    color: white;
    text-shadow: 0px .5px .5px #dedede;
+    box-shadow: 0px 2px 2px #212121;
 }
 
 #body-text {
     width: 40em;
-    margin-top: 2.5em;
     font-size: 16.5px;
+    margin-top: -6em;
+    position: relative;
+    bottom: 2.5em;
 }
 
 #about-footer {
@@ -920,6 +953,15 @@ footer #footer-logo img {
 }
 
 /*---------Our Staff CSS --------*/
+
+.staff-body {
+    box-shadow: 0px 10px 10px #212121;
+}
+
+#title-div {
+    width: 75em;
+    margin: auto;
+}
 
 .row {
     width: auto;
@@ -930,7 +972,9 @@ footer #footer-logo img {
 }
 
 #top-row {
-    margin-top: 2em;
+    margin-top: -16em;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .col-md-4 {
@@ -956,14 +1000,13 @@ footer #footer-logo img {
 
 
 
-
 /*-------Privacy CSS ----------*/
 
 #right-privacy-content {
 	float: right;
 	clear: both;
     width: 27em;
-	margin-top: -2.5em;
+	margin-top: -10em;
 }
 
 .section-title {

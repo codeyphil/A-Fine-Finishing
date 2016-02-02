@@ -8,11 +8,16 @@
 
 <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" media="all" href="font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" media="all" href="jgallery.min.css?v=1.5.5" />
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
 <link type = "text/css" rel = "stylesheet" href = "main.css">
     
-<script type="text/javascript" src="jgallery.min.js?v=1.5.5"></script>
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="jgallery.min.js"></script>
+<script type="text/javascript" src="touchswipe.min.js"></script>
+
     
 </head>
 
@@ -34,7 +39,7 @@
           <div id='cssmenu'>
 			<ul>
 			  <li><a href='index.html'>Home</a></li>
-			  <li class='active'><a href='aboutus.html'>About Us</a>
+			  <li><a href='aboutus.html'>About Us</a>
 				<ul>
 				  <li><a href='our-company.html'>Our Company</a></li>
 				  <li><a href='our-staff.html'>Our Staff</a></li>
@@ -42,13 +47,13 @@
 			  </li>
 			  <li><a href='services.html'>Services</a>
 				  <ul>
-				  <li><a href='insurance.html'>Insurance Restoration</a></li>
-				  <li><a href='historical.html'>Historical Restoration</a></li>
-				  <li><a href='full-service.html'>Full-Service Construction</a></li>
+				  <li><a href='insurance.html' class="long-navs">Insurance Restoration</a></li>
+				  <li><a href='historical.html' class="long-navs">Historical Restoration</a></li>
+				  <li><a href='full-service.html' class="long-navs">Full-Service Construction</a></li>
 				</ul>
 			  </li>
 			  <li><a href='testimonials.html'>Testimonials</a></li>
-			  <li><a href='gallery.html'>Photo Gallery</a></li>
+			  <li><a href='gallery.html' class="active">Photo Gallery</a></li>
 			  <li id="last-nav"><a href='contact.html'>Contact Us</a></li>
 			</ul>
 		</div>
@@ -56,30 +61,42 @@
     </header>
   </div>
   <div id="banner-image">
-    <img src="banner-image.jpg">  
+    <img src="banner-image.jpg" id="left-image">  
+    <img src="banner-image2.jpg" id="right-image"> 
   </div> 
   <div id="body-content">
-    <span id="content-title">Photo Gallery</span>
-      <div id="body-gallery">
-          <script type="text/javascript">
-$( function() {
-    $( '#gallery' ).jGallery()
-} );
-</script>
-        <div id="gallery">
-    <div class="album" data-jgallery-album-title="Trenton Remodel - Full">
-        <a href="gallery-test1.jpg"><img src="gallery-test1.jpg" alt="Photo 1" /></a>
-        <a href="images/large/2.jpg"><img src="images/thumbs/2.jpg" alt="Photo 2" /></a>
-        <a href="images/large/3.jpg"><img src="images/thumbs/3.jpg" alt="Photo 3" /></a>
+    <span id="content-title">Photo Gallery</span><br><br><br><br>
+    <div id="gallery">
+    <div class="album" data-jgallery-album-title="Historical In Brownstown - Full">
+        <a href="large/Historical-brownstown/IMG_0693.jpg"><img src="thumbs/Historical-brownstown/IMG_0693.jpg" alt="Photo 1" /></a>
+        <a href="large/Historical-brownstown/IMG_0694.jpg"><img src="thumbs/Historical-brownstown/IMG_0694.jpg" alt="Photo 1" /></a>
+        <a href="large/Historical-brownstown/IMG_0699.jpg"><img src="thumbs/Historical-brownstown/IMG_0699.jpg" alt="Photo 1" /></a>
+        <a href="large/Historical-brownstown/IMG_0700.jpg"><img src="thumbs/Historical-brownstown/IMG_0700.jpg" alt="Photo 1" /></a>
+        <a href="large/Historical-brownstown/IMG_0707.jpg"><img src="thumbs/Historical-brownstown/IMG_0707.jpg" alt="Photo 1" /></a>
+        
     </div>
-    <div class="album" data-jgallery-album-title="Trenton Remodel - Before & After">
-        <a href="images/large/4.jpg"><img src="images/thumbs/4.jpg" alt="Photo 4" /></a>
-        <a href="images/large/5.jpg"><img src="images/thumbs/5.jpg" alt="Photo 5" /></a>
-        <a href="images/large/6.jpg"><img src="images/thumbs/6.jpg" alt="Photo 6" /></a>
+    <div class="album" data-jgallery-album-title="Album 2">
+        <a href="4.jpg"><img src="thumbs-4.jpg" alt="Photo 4" /></a>
+        <a href="5.jpg"><img src="thumbs-5.jpg" alt="Photo 5" /></a>
+        <a href="6.jpg"><img src="thumbs-6.jpg" alt="Photo 6" /></a>
     </div>
 </div>
-      </div>
-  </div>
+<script type="text/javascript">
+$( function(){
+    $( "#gallery" ).jGallery( {
+        "transition":"rotateCubeLeftOut_rotateCubeLeftIn",
+        "transitionBackward":"rotateCarouselRightOut_rotateCarouselRightIn",
+        "transitionCols":"1",
+        "transitionRows":"2",
+        "thumbnailsPosition":"bottom",
+        "thumbType":"image",
+        "backgroundColor":"FFFFFF",
+        "textColor":"000000",
+        "mode":"standard"
+    } );
+} );
+</script>
+    </div>
   
   <div class="jump-arrow">
 	<a href="#top"><img src="jump-arrow.png"></a>
@@ -111,9 +128,7 @@ $( function() {
  </footer>
 </div>
        
-<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="fine-finishing.js"></script>
-
     
 </body>
 </html>
