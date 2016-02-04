@@ -308,9 +308,9 @@ header {
 #cssmenu .active {
     background: #494a49 !important;
 }
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+@media all and (max-width: 1095px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
-    width: 100%;
+    width: 35em;
   }
   #cssmenu ul {
     width: 100%;
@@ -590,18 +590,6 @@ div .owl-pagination {
     height: 21em;
 }
 
-#infoBlocks #secondPair #insuranceBlock {
-    background: rgba(96,98,96,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(96,98,96,1)), color-stop(10%, rgba(96,98,96,1)), color-stop(87%, rgba(25,84,156,1)), color-stop(100%, rgba(25,84,156,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
-background: radial-gradient(ellipse at center, rgba(96,98,96,1) 0%, rgba(96,98,96,1) 10%, rgba(25,84,156,1) 87%, rgba(25,84,156,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', endColorstr='#19549c', GradientType=1 );
-    border-right: 0px;
-}
-
 #infoBlocks h4 {
     margin-bottom: 1.5em;
     margin-top: 2em;
@@ -614,7 +602,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', end
     margin-bottom: 2em;
 }
 
-#infoBlocks .infoJump, #infoBlocks #insuranceBlock #insuranceLink {
+#infoBlocks .infoJump, #infoBlocks #insuranceLink {
     background-color: #494a49;
     margin: auto;
     margin-top: 1.5em !important;
@@ -626,7 +614,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606260', end
     font-size: 16px;
 }
 
-#infoBlocks #insuranceBlock #insuranceLink {
+#infoBlocks #insuranceLink {
     background-color: white;
     color: #1f3473;
 }
@@ -956,6 +944,11 @@ footer #footer-logo img {
 
 .staff-body {
     box-shadow: 0px 10px 10px #212121;
+	width: 75em;
+   margin: auto;
+   margin-top: 9em;
+   position: relative;
+  height: auto;
 }
 
 #title-div {
@@ -977,14 +970,15 @@ footer #footer-logo img {
     border-top-left-radius: 5px;
 }
 
-.col-md-4 {
+.col-xs-6 {
     position: relative;
     margin: auto;
 }
 
-.col-md-4 img {
+.col-xs-6 img {
     margin-top: 1em;
     border-radius: 100%;
+	box-shadow: 0px 5px 5px #212121;
 }
 
 .employee-info {
@@ -1012,5 +1006,23 @@ footer #footer-logo img {
 .section-title {
 	margin-top: 1em;
 	margin-bottom: 1em;
+}
+
+
+
+/*--------- Media CSS -----------*/
+
+@media (min-width: 200px) and (max-width: 1095px) {
+	.staff-body {
+		width: 100% !important;
+	}
+	
+	.row {
+		width: 100%;
+	}
+	
+	#main-container {
+		width: 100%;
+	}
 }
 
