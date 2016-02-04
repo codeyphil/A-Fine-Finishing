@@ -53,48 +53,30 @@ body {
 
 /*Header elements*/
 
-#main-container {
-    width: 75em;
-    margin: auto;
-}
-
 header {
     width: 100%;
     margin-top: 1.5em;
-    position: relative;
+}
+
+#header-holder {
+	float: left;
 }
 
 #header-holder img {
     width: 24em;
     border-radius: 5px;
-    position: relative;
-    float: left;
 }
 
 #mottoNum {
-    width: 80%;
-    float: right;
-    position: relative;
+	width: 25em;
     top: 15px;
     background: #494a49;
 }
 
 #motto, #phoneNumber {
     display: inline-block;
-    position: relative;
     font-size: 20px;
     font-weight: bold;
-}
-
-#motto {
-    position: relative;
-    left: 9.5em;
-    top: -7.5em;
-}
-
-#phoneNumber {
-    float: right;
-    top: -7.5em;
 }
 
 /*--------Start of Nav CSS ----------*/
@@ -117,13 +99,11 @@ header {
 }
 
 #cssmenu {
-	width: 41.75em;
 	margin: auto;
-	float: right;
 	z-index: 10;
-	position: relative;
-	bottom: 8em;
-    right: 4em;
+	font-family: 'Open Sans Condensed', sans-serif;
+  background: #1f3473;
+  width: 42em;
 }
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -137,10 +117,7 @@ header {
 #cssmenu #menu-button {
   display: none;
 }
-#cssmenu {
-  font-family: 'Open Sans Condensed', sans-serif;
-  background: #1f3473;
-}
+
 #cssmenu > ul > li {
   float: left;
   border-right: 1px solid white;
@@ -476,7 +453,6 @@ header {
 /*Image Carousel*/
 .owl-carousel {
     position: relative;
-    top: -10em;
 }
 
 /*.owl-carousel .slideInfo {
@@ -526,9 +502,7 @@ div .owl-pagination {
     display: none;
 }
 
-.owl-item div {
-    height: 60em !important;
-}
+
 
 #owl-example img {
     height: 47em;
@@ -544,15 +518,16 @@ div .owl-pagination {
 }
 
 /*------End of Carousel CSS ----------*/
-
+.center-container {
+	overflow: visible;
+}
 /*------Center Info Boxes On Home Page ---------*/
 
 .opaqueBox {
     height: 11em;
-    position: relative;
+    position: absolute;
     background-color: rgba(186, 185, 185, 0.42);
     width: 100%;
-    top: -34.7em;
     border-top: 1px solid white;
     border-left: 1px solid white;
     border-right: 1px solid white;
@@ -562,7 +537,6 @@ div .owl-pagination {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    top: -50.3em;
     color: white;
     right: 2px;
     width: 75em;
@@ -628,7 +602,6 @@ div .owl-pagination {
 #center-header {
     width: 75em;
     margin: auto;
-    margin-top: -50em;
 }
 
 #center-header h3 {
@@ -664,12 +637,9 @@ div .owl-pagination {
 }
 
 #home-testimonials {
-    width: 26em;
+    width: 22em;
     float: right;
     clear: both;
-    position: relative;
-    margin-top: -35.5em;
-    left: 1em;
 }
 
 #home-testimonials #body-thumbnail {
@@ -695,10 +665,6 @@ div .owl-pagination {
     background-color: #1f3473;
     color: white;
     font-size: 1.2em;
-}
-
-#index-footer {
-    margin-top: 38em;
 }
 
 /*------- Banner Image CSS For All Pages But The Home Page ----------*/
@@ -802,17 +768,20 @@ input {
 
 footer {
     margin: auto;
-    position: absolute;
-    margin-top: 35em;
     text-align: left;
     width: 100%;
     background-color: #1f3473;
     color: white;
+	position: relative;
 }
 
 #footer-wrapper {
     width: 75em;
     margin: auto;
+}
+
+#left-footer-info {
+	width: 35em;
 }
 
 #footer-number {
@@ -821,12 +790,6 @@ footer {
     border-right: 0px;
     position: relative;
     top: .25em;
-}
-
-#left-footer-info {
-    position: relative;
-    float: left;
-    width: 45em;
 }
 
 footer #footer-nav {
@@ -881,6 +844,7 @@ footer #footer-logo {
     float: right;
     position: relative;
     top: 3em;
+	z-index: 3;
 }
 
 footer #footer-logo img {
