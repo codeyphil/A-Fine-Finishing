@@ -6,9 +6,8 @@
     
 <title>A Fine Finishing Home Page</title>
 
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
 <link type = "text/css" rel = "stylesheet" href = "main.css">
     
@@ -17,51 +16,82 @@
 
 <body>
     
-<div class="container-fluid">
+<div class="container-fluid" id="head-container">
  <div id="access-jump">
-     <span id="access-text">Check out our sister company!</span><a href="http://www.accessconstruction.org" target="_blank"><img src="access-logo.jpg" id="initial-image"></a>
+     <a href="http://www.accessconstruction.org" target="_blank"><img src="access-logo.jpg" id="initial-image"></a>
  </div>
-  <div id="main-container">
+<div class="jump-arrow">
+	<a href="#top"><img src="jump-arrow.png"></a>
+ </div>
     <header>
+     <div class="head-wrap">
       <div id="header-holder">
         <a href="index.html"><img src="fine-finishing-logo.jpg"></a>
-          <div id="mottoNum">
-           <p id="motto">"Reconstructing Since 1993!"</p>
-           <p id="phoneNumber">(734) 934 - 3795</p>
-          </div>
-          <div id='cssmenu'>
-			<ul>
-			  <li><a href='index.html'>Home</a></li>
-			  <li class='active'><a href='aboutus.html'>About Us</a>
-				<ul>
-				  <li><a href='our-company.html'>Our Company</a></li>
-				  <li><a href='our-staff.html'>Our Staff</a></li>
-				</ul>
-			  </li>
-			  <li><a href='services.html'>Services</a>
-				  <ul>
-				  <li><a href='insurance.html' class="long-navs">Insurance Restoration</a></li>
-				  <li><a href='historical.html' class="long-navs">Historical Restoration</a></li>
-				  <li><a href='full-service.html' class="long-navs">Full-Service Construction</a></li>
-				</ul>
-			  </li>
-			  <li><a href='testimonials.html'>Testimonials</a></li>
-			  <li><a href='gallery.html'>Photo Gallery</a></li>
-			  <li id="last-nav"><a href='contact.html'>Contact Us</a></li>
-			</ul>
-		</div>
+	  </div>
+      <div id="mottoNum">
+        <div id="number">
+          <p id="phoneNumber">(855) RECON93</p>
+          <p id="extra-num-info">(73266)</p>
+        </div>
+        <div id="main-motto">
+           <p id="motto">"Reconstructing Since 1993!"</p><br>
+              <a href="https://www.facebook.com/finefinishing/?fref=ts" target="_blank"><img src="header-fb-logo.png"><span>Check Us Out On Facebook!</span></a>
+        </div>
       </div>
+     </div>
     </header>
-  </div>
+</div>
+
+<div class="container-fluid" id="nav-holder">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="our-company.html">Our Company</a></li>
+            <li><a href="our-staff.html">Our Staff</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="insurance.html">Insurance Restoration</a></li>
+            <li><a href="historical.html">Historical Restoration</a></li>
+            <li><a href="full-service.html">Full-Service Construction</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
   <div id="banner-image">
     <img src="banner-image.jpg" id="left-image">  
     <img src="banner-image2.jpg" id="right-image"> 
   </div> 
-    <div id="title-div">
-    <span id="content-title">Our Staff</span>
-    </div>
-   <div class="staff-body">
-    
+<div class="container-fluid home-body">
+
+   <div class="center-container">
+       <span id="content-title">Our Staff</span>
         <div class="row" id="top-row">
             <div class="col-xs-6">
                 <img src="male-placeholder.jpg">  
@@ -170,27 +200,34 @@
 	<a href="#top"><img src="jump-arrow.png"></a>
  </div>
 
- <footer id="our-staff-footer">
-  <div id="footer-wrapper">
-   <div id="left-footer-info">
-    <span id="footer-number">(734) 934 - 3795</span><a href="https://www.facebook.com/finefinishing/?fref=ts" target="_blank"><span id="social-media"><img src="fb-logo.jpg"></span></a>
-    <div id="footer-nav">
-      <span id="footer-home"><a href="index.html">Home</a></span><span class="non-home"><a href="aboutus.html">About Us</a></span><span class="non-home"><a href="services.html">Services</a></span><span class="non-home"><a href="testimonials.html">Testimonials</a></span><span class="non-home"><a href="gallery.html">Gallery</a></span>    <span class="non-home"><a href="contact.html">Contact</a></span><span class="non-home"><a href="privacy.html">Privacy</a></span>
-    </div>
-    <p id="copyright">The contents of this webpage are Copyright &#169; 2016 Fine Finishing. All Rights Reserved.</p>
-    <div id="specialties-footer">
-      <p>Specialties: No dicat dolorem scriptorem pro, solet aliquid voluptatibus an nec, his id mazim albucius mediocrem. Sed quidam discere ei, solum animal eam id. Nam brute augue laudem eu, te solum epicurei mea. Vim in illum sensibus. Qui ea iusto alterum reprehendunt, graeci alienum in his<br>
-      Areas: Southgate MI, Wyandotte MI, Lincoln Park MI, Taylor MI, Riverview MI, Trenton MI, Woodhaven MI</p>
-    </div>
-   </div> 
-   <div id="footer-logo">
-      <a href="index.html"><img src="fine-finishing-logo.jpg"></a>   
-    </div>
-  </div>
- </footer>
-</div>
+ <footer>
+	
+		<div id="footer-wrapper">
+		  <div id="footer-logo">
+			<a href="index.html"><img src="fine-finishing-logo.jpg"></a>   
+		  </div>
+		  <div id="left-footer-info">
+				<span id="footer-number">(734) 934 - 3795</span><a href="https://www.facebook.com/finefinishing/?fref=ts" target="_blank"><span id="social-media"><img src="fb-logo.jpg"></span></a>
+		  <div id="footer-nav">
+			  <span id="footer-home"><a href="index.html" class="footer-active">Home</a></span>
+			  <span class="non-home"><a href="aboutus.html">About Us</a></span>
+			  <span class="non-home"><a href="services.html">Services</a></span>
+			  <span class="non-home"><a href="testimonials.html">Testimonials</a></span>
+			  <span class="non-home"><a href="gallery.html">Gallery</a></span>    
+			  <span class="non-home"><a href="contact.html">Contact</a></span>
+			  <span class="non-home"><a href="privacy.html">Privacy</a></span>
+		  </div>
+			<p id="copyright">The contents of this webpage are Copyright &#169; 2016 Fine Finishing. All Rights Reserved.</p>
+			<div id="specialties-footer">
+			  <p>Specialties: No dicat dolorem scriptorem pro, solet aliquid voluptatibus an nec, his id mazim albucius mediocrem. Sed quidam discere ei, solum animal eam id. Nam brute augue laudem eu, te solum epicurei mea. Vim in illum sensibus. Qui ea iusto alterum reprehendunt, graeci alienum in his<br>
+			  Areas: Southgate MI, Wyandotte MI, Lincoln Park MI, Taylor MI, Riverview MI, Trenton MI, Woodhaven MI</p>
+			</div>
+		  </div> 
+		</div>
+</footer>
        
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script type="text/javascript" src="fine-finishing.js"></script>
 
     

@@ -4,11 +4,11 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>A Fine Finishing Home Page</title>
 
-<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
-<link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css' />
-<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
 <link rel="stylesheet" href="owl.carousel.css">
 <link rel="stylesheet" href="owl.theme.css">
@@ -18,42 +18,77 @@
 
 
 <body>
-    
-<div class="container-fluid" id="top">
+
+<div class="container-fluid" id="head-container">
  <div id="access-jump">
-     <span id="access-text">Check out our sister company!</span><a href="http://www.accessconstruction.org" target="_blank"><img src="access-logo.jpg" id="initial-image"></a>
+     <a href="http://www.accessconstruction.org" target="_blank"><img src="access-logo.jpg" id="initial-image"></a>
+ </div>
+<div class="jump-arrow">
+	<a href="#top"><img src="jump-arrow.png"></a>
  </div>
     <header>
-	  <div id='cssmenu'>
-			<ul>
-			  <li><a href='index.html' class="active">Home</a></li>
-			  <li><a href='aboutus.html'>About Us</a>
-				<ul>
-				  <li><a href='our-company.html'>Our Company</a></li>
-				  <li><a href='our-staff.html'>Our Staff</a></li>
-				</ul>
-			  </li>
-			  <li><a href='services.html'>Services</a>
-				  <ul>
-				  <li><a href='insurance.html' class="long-navs">Insurance Restoration</a></li>
-				  <li><a href='historical.html' class="long-navs">Historical Restoration</a></li>
-				  <li><a href='full-service.html' class="long-navs">Full-Service Construction</a></li>
-				</ul>
-			  </li>
-			  <li><a href='testimonials.html'>Testimonials</a></li>
-			  <li><a href='gallery.html'>Photo Gallery</a></li>
-			  <li id="last-nav"><a href='contact.html'>Contact Us</a></li>
-			</ul>
-		</div>
+     <div class="head-wrap">
       <div id="header-holder">
         <a href="index.html"><img src="fine-finishing-logo.jpg"></a>
 	  </div>
       <div id="mottoNum">
-           <p id="motto">"Reconstructing Since 1993!"</p>
-           <p id="phoneNumber">(734) 934 - 3795</p>
+        <div id="number">
+          <p id="phoneNumber">(855) RECON93</p>
+          <p id="extra-num-info">(73266)</p>
+        </div>
+        <div id="main-motto">
+           <p id="motto">"Reconstructing Since 1993!"</p><br>
+              <a href="https://www.facebook.com/finefinishing/?fref=ts" target="_blank"><img src="header-fb-logo.png"><span>Check Us Out On Facebook!</span></a>
+        </div>
       </div>
+     </div>
     </header>
-    
+</div>
+
+<div class="container-fluid" id="nav-holder">
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="our-company.html">Our Company</a></li>
+            <li><a href="our-staff.html">Our Staff</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="insurance.html">Insurance Restoration</a></li>
+            <li><a href="historical.html">Historical Restoration</a></li>
+            <li><a href="full-service.html">Full-Service Construction</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</div>
+
+<div class="container-fluid">
   <div id="owl-example" class="owl-carousel">
     <div>
       <img src="remodel-slide1.jpg">
@@ -80,6 +115,9 @@
       </div>-->
     </div>
   </div>
+</div>
+    <div class="opaqueBox"></div>
+<div class="container-fluid home-body">
  
   <div id="infoBlocks">
     <div id="firstPair">
@@ -110,12 +148,16 @@
             <a href="insurance.html"><span id="insuranceLink" infoJump>View Service<img src="link-pointer.png" class="link-arrow"></span></a>
         </div>
     </div>
-	<div class="opaqueBox"></div>
   </div>
  <div id="center-header">
   <h3>Home Remodeling Metro Detroit</h3>
  </div>
- <div id="center-container">
+ <div class="center-container">
+   <div id="home-testimonials">
+    <img src="body-thumbnail.jpg" id="body-thumbnail">
+      <p><i>"Fine Finishing did a fantastic job updating my home! They did a wonderful job remodeling my home, and refreshing my life. I would highly recommend Fine Finishing for your next project!" - Theresa K.</i></p>
+      <a href="testimonials.html"><span id="test-button">View Testimonials<img src="link-pointer.png" class="link-arrow"></span></a>
+  </div>
   <div id="paragraph-holder">
    <div id="left-column">
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, </p>
@@ -127,18 +169,10 @@
     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
    </div>
   </div>
-  <div id="home-testimonials">
-    <img src="body-thumbnail.jpg" id="body-thumbnail">
-      <p><i>"Fine Finishing did a fantastic job updating my home! They did a wonderful job remodeling my home, and refreshing my life. I would highly recommend Fine Finishing for your next project!" - Theresa K.</i></p>
-      <a href="testimonials.html"><span id="test-button">View Testimonials<img src="link-pointer.png" class="link-arrow"></span></a>
-  </div>
- </div>
- 
- <div class="jump-arrow">
-	<a href="#top"><img src="jump-arrow.png"></a>
  </div>
 </div>
-	<footer>
+    
+<footer>
 	
 		<div id="footer-wrapper">
 		  <div id="footer-logo">
@@ -162,10 +196,12 @@
 			</div>
 		  </div> 
 		</div>
-	</footer>
+</footer>
        
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
-<script src="owl.carousel.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="owl.carousel.js"></script>
+<script src="home-slideshow.js"></script>
 <script type="text/javascript" src="fine-finishing.js"></script>
 
     

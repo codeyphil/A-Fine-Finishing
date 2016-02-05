@@ -1,8 +1,9 @@
 body {
     margin: 0 auto;
-    color: #1f3473;
-    font-family: 'Lato', sans-serif;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
+    background: #dedede;
 }
 
 /*----- Universal CSS For Nav & Access Button ---------*/
@@ -26,23 +27,10 @@ body {
     box-shadow: 0px 1px 1px #212121;
 }
 
-#access-text {
-    position: relative;
-    margin-right: 10px;
-    top: 3.5px;
-    visibility: hidden;
-    font-family: 'Bangers', cursive;
-    text-shadow: 0px .25px .25px #212121;
-}
-
-#access-jump:hover #access-text {
-   visibility: visible;
-}
-
 .jump-arrow {
 	float: right;
 	right: .5%;
-	bottom: 1.5%;
+	bottom: 2.5%;
 	position: fixed;
 	z-index: 10;
 }
@@ -53,399 +41,143 @@ body {
 
 /*Header elements*/
 
+#nav-holder {
+   background: #1f3473;
+    background: url('nav-background.png');
+}
+
+.navbar {
+    width: 75em;
+    margin: auto;
+    background: inherit;
+    border: none;
+}
+
+.navbar-nav {
+  margin-left: -1.2em;
+}
+
+.navbar li a {
+    color: white !important;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+}
+
+.navbar li a:hover {
+    background: #494a49 !important;
+    text-shadow: 0px .25px .25px #dedede;
+}
+
+.navbar .dropdown-menu {
+    background: url('nav-background.png');
+    height: auto;
+}
+
+.navbar .dropdown-menu li a {
+    border: none;
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.nav > li.dropdown.open > a:focus .nav > li.dropdown.active.open > a:focus {
+    background: #494a49;
+    border: none;
+}
+
+.navbar .nav .active a {
+    background: #494a49;
+}
+
+.nav > li.active-open > ul.dropdown-menu {
+    background-color: #1f3473 !important;
+}
+
+#head-container {
+    background: url('main-background.png');
+}
+
 header {
     width: 100%;
-    margin-top: 1.5em;
+    margin: auto;
+}
+
+.head-wrap {
+    width: 75em;
+    margin: auto;
 }
 
 #header-holder {
 	float: left;
+    clear: both;
 }
 
 #header-holder img {
-    width: 24em;
+    width: 25em;
+    max-height: 12em;
     border-radius: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
 }
 
 #mottoNum {
-	width: 25em;
-    top: 15px;
-    background: #494a49;
+	width: 47.5em;
+    float: right;
+    margin-top: 1em;
+    font-family: 'Playfair Display', serif;
+}
+
+#mottoNum a {
+    color: white;
+    position: relative;
+    margin-left: 29em;
+    bottom: 2em;
+}
+
+#mottoNum a:hover {
+    text-decoration: none;
+}
+
+#mottoNum img {
+    width: 5em;
 }
 
 #motto, #phoneNumber {
     display: inline-block;
-    font-size: 20px;
     font-weight: bold;
 }
 
+#motto {
+    margin-right: 2.5em;
+    background: url('nav-background.png');
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 2em;
+    border: 2px solid white;
+}
+
+#number {
+    float: right;
+    margin-bottom: -2.5em;
+}
+
+#number #extra-num-info {
+    position: relative;
+    left: 3.9em;
+    bottom: .75em;
+    font-size: 1.5em;
+}
+
+#phoneNumber {
+    position: relative;
+    font-size: 2em;
+}
+
+
+
 /*--------Start of Nav CSS ----------*/
 
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #menu-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  line-height: 1;
-  display: block;
-  position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
 
-#cssmenu {
-	margin: auto;
-	z-index: 10;
-	font-family: 'Open Sans Condensed', sans-serif;
-  background: #1f3473;
-  width: 42em;
-}
-#cssmenu:after,
-#cssmenu > ul:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-#cssmenu #menu-button {
-  display: none;
-}
-
-#cssmenu > ul > li {
-  float: left;
-  border-right: 1px solid white;
-}
-
-#cssmenu #last-nav {
-	border-right: none;
-}
-#cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-center ul ul {
-  text-align: left;
-}
-#cssmenu.align-right > ul > li {
-  float: right;
-}
-#cssmenu > ul > li > a {
-  padding: 15px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #dddddd;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-#cssmenu > ul > li:hover > a {
-  color: white;
-  background: #494a49;
-    text-shadow: 0px .25px .25px #dedede;
-}
-#cssmenu > ul > li.has-sub > a {
-  padding-right: 30px;
-}
-#cssmenu > ul > li.has-sub > a:after {
-  position: absolute;
-  top: 22px;
-  right: 11px;
-  width: 8px;
-  height: 2px;
-  display: block;
-  background: #dddddd;
-  content: '';
-}
-#cssmenu > ul > li.has-sub > a:before {
-  position: absolute;
-  top: 19px;
-  right: 14px;
-  display: block;
-  width: 2px;
-  height: 8px;
-  background: #dddddd;
-  content: '';
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-#cssmenu > ul > li.has-sub:hover > a:before {
-  top: 23px;
-  height: 0;
-}
-#cssmenu ul ul {
-  position: absolute;
-  left: -9999px;
-}
-#cssmenu.align-right ul ul {
-  text-align: right;
-}
-#cssmenu ul ul li {
-  height: 0;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-#cssmenu li:hover > ul {
-  left: auto;
-}
-#cssmenu.align-right li:hover > ul {
-  left: auto;
-  right: 0;
-}
-#cssmenu li:hover > ul > li {
-  height: 35px;
-}
-#cssmenu ul ul ul {
-  margin-left: 100%;
-  top: 0;
-}
-#cssmenu.align-right ul ul ul {
-  margin-left: 0;
-  margin-right: 100%;
-}
-#cssmenu ul ul li a {
-  border-bottom: 1px solid rgba(150, 150, 150, 0.15);
-  padding: 11px 15px;
-  width: 170px;
-  font-size: 16px;
-  text-decoration: none;
-  color: #dddddd;
-  font-weight: 400;
-  background: #1f3473;
-  letter-spacing: 1px;
-}
-
-#cssmenu ul ul li .long-navs {
-	width: 200px;
-}
-#cssmenu ul ul li:last-child > a,
-#cssmenu ul ul li.last-item > a {
-  border-bottom: 0;
-}
-#cssmenu ul ul li:hover > a,
-#cssmenu ul ul li a:hover {
-  color: white;
-  background: #494a49;
-  font-weight: bold;
-}
-#cssmenu ul ul li.has-sub > a:after {
-  position: absolute;
-  top: 16px;
-  right: 11px;
-  width: 8px;
-  height: 2px;
-  display: block;
-  background: #dddddd;
-  content: '';
-}
-#cssmenu.align-right ul ul li.has-sub > a:after {
-  right: auto;
-  left: 11px;
-}
-#cssmenu ul ul li.has-sub > a:before {
-  position: absolute;
-  top: 13px;
-  right: 14px;
-  display: block;
-  width: 2px;
-  height: 8px;
-  background: #dddddd;
-  content: '';
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-#cssmenu.align-right ul ul li.has-sub > a:before {
-  right: auto;
-  left: 14px;
-}
-#cssmenu ul ul > li.has-sub:hover > a:before {
-  top: 17px;
-  height: 0;
-}
-
-#cssmenu .active {
-    background: #494a49 !important;
-}
-@media all and (max-width: 1095px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-  #cssmenu {
-    width: 35em;
-  }
-  #cssmenu ul {
-    width: 100%;
-    display: none;
-  }
-  #cssmenu.align-center > ul {
-    text-align: left;
-  }
-  #cssmenu ul li {
-    width: 100%;
-    border-top: 1px solid rgba(120, 120, 120, 0.2);
-  }
-  #cssmenu ul ul li,
-  #cssmenu li:hover > ul > li {
-    height: auto;
-  }
-  #cssmenu ul li a,
-  #cssmenu ul ul li a {
-    width: 100%;
-    border-bottom: 0;
-  }
-  #cssmenu > ul > li {
-    float: none;
-  }
-  #cssmenu ul ul li a {
-    padding-left: 25px;
-  }
-  #cssmenu ul ul ul li a {
-    padding-left: 35px;
-  }
-  #cssmenu ul ul li a {
-    color: #dddddd;
-    background: none;
-  }
-  #cssmenu ul ul li:hover > a,
-  #cssmenu ul ul li.active > a {
-    color: #ffffff;
-  }
-  #cssmenu ul ul,
-  #cssmenu ul ul ul,
-  #cssmenu.align-right ul ul {
-    position: relative;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    text-align: left;
-  }
-  #cssmenu > ul > li.has-sub > a:after,
-  #cssmenu > ul > li.has-sub > a:before,
-  #cssmenu ul ul > li.has-sub > a:after,
-  #cssmenu ul ul > li.has-sub > a:before {
-    display: none;
-  }
-  #cssmenu #menu-button {
-    display: block;
-    padding: 17px;
-    color: #dddddd;
-    cursor: pointer;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  #cssmenu #menu-button:after {
-    position: absolute;
-    top: 22px;
-    right: 17px;
-    display: block;
-    height: 4px;
-    width: 20px;
-    border-top: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
-    content: '';
-  }
-  #cssmenu #menu-button:before {
-    position: absolute;
-    top: 16px;
-    right: 17px;
-    display: block;
-    height: 2px;
-    width: 20px;
-    background: #dddddd;
-    content: '';
-  }
-  #cssmenu #menu-button.menu-opened:after {
-    top: 23px;
-    border: 0;
-    height: 2px;
-    width: 15px;
-    background: #ffffff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  #cssmenu #menu-button.menu-opened:before {
-    top: 23px;
-    background: #ffffff;
-    width: 15px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  #cssmenu .submenu-button {
-    position: absolute;
-    z-index: 99;
-    right: 0;
-    top: 0;
-    display: block;
-    border-left: 1px solid rgba(120, 120, 120, 0.2);
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-  }
-  #cssmenu .submenu-button.submenu-opened {
-    background: #262626;
-  }
-  #cssmenu ul ul .submenu-button {
-    height: 34px;
-    width: 34px;
-  }
-  #cssmenu .submenu-button:after {
-    position: absolute;
-    top: 22px;
-    right: 19px;
-    width: 8px;
-    height: 2px;
-    display: block;
-    background: #dddddd;
-    content: '';
-  }
-  #cssmenu ul ul .submenu-button:after {
-    top: 15px;
-    right: 13px;
-  }
-  #cssmenu .submenu-button.submenu-opened:after {
-    background: #ffffff;
-  }
-  #cssmenu .submenu-button:before {
-    position: absolute;
-    top: 19px;
-    right: 22px;
-    display: block;
-    width: 2px;
-    height: 8px;
-    background: #dddddd;
-    content: '';
-  }
-  #cssmenu ul ul .submenu-button:before {
-    top: 12px;
-    right: 16px;
-  }
-  #cssmenu .submenu-button.submenu-opened:before {
-    display: none;
-  }
-}
 
 
 /*----------End of Nav CSS ---------*/
@@ -453,6 +185,8 @@ header {
 /*Image Carousel*/
 .owl-carousel {
     position: relative;
+    z-index: -1;
+    margin-top: 0em;
 }
 
 /*.owl-carousel .slideInfo {
@@ -518,9 +252,7 @@ div .owl-pagination {
 }
 
 /*------End of Carousel CSS ----------*/
-.center-container {
-	overflow: visible;
-}
+
 /*------Center Info Boxes On Home Page ---------*/
 
 .opaqueBox {
@@ -528,19 +260,19 @@ div .owl-pagination {
     position: absolute;
     background-color: rgba(186, 185, 185, 0.42);
     width: 100%;
+    margin-top: -11.75em;
     border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
 }
 
 #infoBlocks {
     margin: 0 auto;
+    margin-top: -18em;
     text-align: center;
     position: relative;
     color: white;
-    right: 2px;
     width: 75em;
-    box-shadow: 0px 2px 2px #212121;
+    z-index: 5;
+    right: .15em;
 }
 
 #infoBlocks .infoIcon {
@@ -559,21 +291,26 @@ div .owl-pagination {
     z-index: 5;
     width: 18.75em;
     border-right: 1.5px solid #212121;
-    margin-right: -4px;
-    background-image: url('blueprint.jpg');
+    position: relative;
+    margin-right: -5.5px;
+    background-image: url('blueprint.png');
     height: 21em;
+    right: 0.01em;
 }
 
 #infoBlocks h4 {
     margin-bottom: 1.5em;
     margin-top: 2em;
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4em;
 }
 
 #infoBlocks .infoText {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 2em;
+    font-size: .85em;
 }
 
 #infoBlocks .infoJump, #infoBlocks #insuranceLink {
@@ -599,47 +336,62 @@ div .owl-pagination {
 
 /*---------End of Info Blocks CSS For Home Page ---------*/
 
+.home-body {
+    width: 75em;
+    color: white;
+    background: url('main-background.png');
+    box-shadow: 0px 0px 15px #212121;
+}
+
 #center-header {
     width: 75em;
     margin: auto;
+    padding-left: 2.5em;
 }
 
 #center-header h3 {
     font-weight: bold;
     font-size: 2.5em;
+    font-family: 'Playfair Display', serif;
 }
 
-#center-container {
+.center-container {
     width: 75em;
     margin: auto;
 }
 
 #paragraph-holder {
     text-align: left;
-    font-size: 1.15em;
-    width: 45em;
+    font-size: 1em;
+    width: 44em;
     float: left;
+    position: relative;
+    padding-left: 2.5em;
+    margin-bottom: 1em;
 }
 
 #left-column {
     float: left;
     margin-top: 1em;
-    width: 20em;
+    width: 20.5em;
     position: relative;
 }
 
 #right-column {
     float: right;
-    width: 20em;
+    width: 20.5em;
     margin-top: 1em;
-    right: 3em;
+    padding-right: .5em;
     position: relative;
+    left: 1.5em;
 }
 
 #home-testimonials {
-    width: 22em;
+    width: 21em;
     float: right;
-    clear: both;
+    position: relative;
+    margin-top: 1.7em;
+    margin-right: 6em;
 }
 
 #home-testimonials #body-thumbnail {
@@ -651,7 +403,7 @@ div .owl-pagination {
 
 #home-testimonials p {
     width: 21.5em;
-    font-size: 1.15em;
+    font-size: 1em;
 }
 
 #home-testimonials p, #home-testimonials span {
@@ -665,6 +417,20 @@ div .owl-pagination {
     background-color: #1f3473;
     color: white;
     font-size: 1.2em;
+    margin: auto;
+}
+
+/*-------Universal Body Text Positioning -------------*/
+
+#body-text {
+    width: 42em;
+    font-size: 1.1em;
+    position: relative;
+}
+
+#body-text p {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
 }
 
 /*------- Banner Image CSS For All Pages But The Home Page ----------*/
@@ -672,7 +438,6 @@ div .owl-pagination {
 #banner-image {
     height: 20em;
     position: relative;
-    top: 13.5em;
     width: 150em;
     background: #1f3473; 
 }
@@ -680,7 +445,6 @@ div .owl-pagination {
 #banner-image #left-image{
     height: 20em;
     position: relative;
-    bottom: 18.9em;
     width: 67.5em;
     float: left;
 }
@@ -688,7 +452,6 @@ div .owl-pagination {
 #banner-image #right-image {
     height: 20em;
     position: relative;
-    bottom: 18.9em;
     width: 82.5em;
     float: right;
 }
@@ -703,8 +466,6 @@ div .owl-pagination {
     background-color: #1f3473;
     color: white;
     position: relative;
-    box-shadow: 0px 7.5px 7.5px #212121;
-     border-radius: 5px;
 }
 
 #contact-form table {
@@ -719,7 +480,9 @@ div .owl-pagination {
     position: relative;
     top: .5em;
     margin-bottom: 1em;
+    margin-top: .35em;
     font-weight: bold;
+    font-family: 'Playfair Display', serif;
 }
 
 #contact-form img {
@@ -749,6 +512,12 @@ div .owl-pagination {
     width: 2.5em;
 }
 
+#contact-form #required {
+    width: 20em;
+    margin: auto;
+    margin-bottom: 1.5em;
+}
+
 #contact-form #first-name {
     position: relative;
     float: left;
@@ -770,18 +539,20 @@ footer {
     margin: auto;
     text-align: left;
     width: 100%;
-    background-color: #1f3473;
     color: white;
-	position: relative;
+    background: url('main-background.png');
+    border-top: 3px ridge #1f3473;
+    height: 23em;
 }
 
 #footer-wrapper {
     width: 75em;
     margin: auto;
+    color: white;
 }
 
 #left-footer-info {
-	width: 35em;
+	width: 42em;
 }
 
 #footer-number {
@@ -789,12 +560,13 @@ footer {
     font-weight: bold;
     border-right: 0px;
     position: relative;
-    top: .25em;
+    top: .5em;
 }
 
 footer #footer-nav {
     margin-bottom: 1.5em;
-    margin-top: 1.25em;
+    margin-top: 1.75em;
+    
 }
 
 footer span {
@@ -806,7 +578,7 @@ footer span {
     border-right: 0px;
     margin-left: 2.5em;
     position: relative;
-    top: 3px;
+    top: 7px;
 }
 
 #social-media img{
@@ -824,7 +596,8 @@ footer span a {
 }
 
 footer span a:hover {
-    color: white;
+    color: #1f3473;
+    font-weight: bold;
 }
 
 footer #footer-nav span:last-child {
@@ -833,7 +606,7 @@ footer #footer-nav span:last-child {
 
 footer #specialties-footer p {
     line-height: 1.5em;
-    margin-bottom: 2.5em;
+    padding-bottom: 1.5em;
 }
 
 footer #copyright {
@@ -843,61 +616,48 @@ footer #copyright {
 footer #footer-logo {
     float: right;
     position: relative;
-    top: 3em;
+    top: 2em;
 	z-index: 3;
 }
 
 footer #footer-logo img {
-    width: 27em;
+    width: 30em;
     border-radius: 5px;
     position: relative;
 }
 
 .footer-active {
-    color: #A9ABA9;
+    color: #1f3473;
+    font-weight: bold;
 }
 
 .footer-active:hover {
-    color: #A9ABA9;
+    color: #1f3473;
 }
 
 /*-----About Us CSS ---------*/
 
-#body-content {
-   width: 75em;
-   margin: auto;
-   margin-top: 9em;
-   position: relative;
-  height: auto;
-}
 
 #right-body-content {
     float: right;
     width: 27em;
-    margin-top: -34em;
 }
 
 #content-title {
-   background-color: #494a49;
+   background: url('main-background.png');
+   font-family: 'Playfair Display', serif;
    padding-top: 5px;
    padding-bottom: 5px;
    padding-right: 20px;
    padding-left: 20px;
    font-size: 2.5em;
    position: relative;
-   bottom: 3.67em;
    font-weight: bold;
    color: white;
    text-shadow: 0px .5px .5px #dedede;
-    box-shadow: 0px 2px 2px #212121;
-}
-
-#body-text {
-    width: 40em;
-    font-size: 16.5px;
-    margin-top: -6em;
-    position: relative;
-    bottom: 2.5em;
+    bottom: 1.5em;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 #about-footer {
@@ -924,12 +684,10 @@ footer #footer-logo img {
     width: auto;
     margin: auto;
     text-align: center;
-    background-color: #1f3473;
     color: white;
 }
 
 #top-row {
-    margin-top: -16em;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -953,23 +711,12 @@ footer #footer-logo img {
     margin-top: 1em;
 }
 
-/*------Service CSS ----------*/
-
-
-
-
-/*-------Privacy CSS ----------*/
-
-#right-privacy-content {
-	float: right;
-	clear: both;
-    width: 27em;
-	margin-top: -10em;
-}
+/*--------------Privacy CSS ------------*/
 
 .section-title {
-	margin-top: 1em;
-	margin-bottom: 1em;
+   font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
