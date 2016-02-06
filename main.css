@@ -3,7 +3,8 @@ body {
     color: white;
     font-family: 'Work Sans', sans-serif;
     overflow-x: hidden;
-    background: #dedede;
+    background: url('container-background.png');
+    text-shadow: 0px 0px 2px #212121;
 }
 
 /*----- Universal CSS For Nav & Access Button ---------*/
@@ -44,6 +45,7 @@ body {
 #nav-holder {
    background: #1f3473;
     background: url('nav-background.png');
+    border-top: 2px solid #212121;
 }
 
 .navbar {
@@ -64,7 +66,7 @@ body {
 }
 
 .navbar li a:hover {
-    background: #494a49 !important;
+    background: url('main-background.png') !important;
     text-shadow: 0px .25px .25px #dedede;
 }
 
@@ -81,17 +83,15 @@ body {
 }
 
 .nav > li.dropdown.open > a:focus .nav > li.dropdown.active.open > a:focus {
-    background: #494a49;
+    background: url('nav-background.png');
     border: none;
 }
 
-.navbar .nav .active a {
-    background: #494a49;
-}
+.navbar .nav .active {
+    background: url('main-background.png');
+}  
 
-.nav > li.active-open > ul.dropdown-menu {
-    background-color: #1f3473 !important;
-}
+
 
 #head-container {
     background: url('main-background.png');
@@ -114,10 +114,8 @@ header {
 
 #header-holder img {
     width: 25em;
-    max-height: 12em;
-    border-radius: 5px;
-    margin-bottom: 1em;
-    margin-top: 1em;
+    max-height: 14.3em;
+    box-shadow: 0px 0px 10px #212121;
 }
 
 #mottoNum {
@@ -131,7 +129,7 @@ header {
     color: white;
     position: relative;
     margin-left: 29em;
-    bottom: 2em;
+    bottom: 1em;
 }
 
 #mottoNum a:hover {
@@ -148,17 +146,20 @@ header {
 }
 
 #motto {
-    margin-right: 2.5em;
+    margin-right: 2.75em;
     background: url('nav-background.png');
-    padding: 20px;
+    padding: 25px;
+    margin-top: -.5em;
     border-radius: 50%;
     font-size: 2em;
     border: 2px solid white;
+    box-shadow: 0px 0px 15px #212121;
 }
 
 #number {
     float: right;
     margin-bottom: -2.5em;
+    text-shadow: 0px 0px 5px #212121;
 }
 
 #number #extra-num-info {
@@ -266,7 +267,7 @@ div .owl-pagination {
 
 #infoBlocks {
     margin: 0 auto;
-    margin-top: -18em;
+    margin-top: -15em;
     text-align: center;
     position: relative;
     color: white;
@@ -280,7 +281,10 @@ div .owl-pagination {
     position: relative;
     padding: 10px;
     margin: auto;
-    margin-bottom: -20px;
+    margin-top: .75em;
+    margin-bottom: -1.5em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 40px #212121;
 }
 
 #infoBlocks #firstPair, #infoBlocks #secondPair, #infoBlocks #firstPair div, #infoBlocks #secondPair div {
@@ -294,12 +298,12 @@ div .owl-pagination {
     position: relative;
     margin-right: -5.5px;
     background-image: url('blueprint.png');
-    height: 21em;
+    height: 19.9em;
     right: 0.01em;
 }
 
 #infoBlocks h4 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     margin-top: 2em;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
@@ -314,15 +318,29 @@ div .owl-pagination {
 }
 
 #infoBlocks .infoJump, #infoBlocks #insuranceLink {
-    background-color: #494a49;
+    text-shadow: 0px 0px .25px #212121;
     margin: auto;
     margin-top: 1.5em !important;
     padding: 10px;
     color: white;
     font-weight: bold;
-    box-shadow: 0px 3px 3px #212121;
     border-radius: 2px;
     font-size: 16px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px #212121;
+}
+
+#infoBlocks .infoJump:hover {
+    box-shadow: 0px 0px 15px #212121;
+    -webkit-transition-timing-function: ease;
+}
+
+#infoBlocks #insurancelink:hover {
+    box-shadow: 0px 0px 15px #dedede;
+}
+
+#infoBlocks .infoJump {
+    background: url('main-background.png');
 }
 
 #infoBlocks #insuranceLink {
@@ -353,6 +371,7 @@ div .owl-pagination {
     font-weight: bold;
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;
+    text-shadow: 0px 0px 20px #212121;
 }
 
 .center-container {
@@ -402,12 +421,10 @@ div .owl-pagination {
 }
 
 #home-testimonials p {
-    width: 21.5em;
+    width: 23.65em;
     font-size: 1em;
-}
-
-#home-testimonials p, #home-testimonials span {
-    font-weight: bold;
+    font-style: italic;
+    margin-left: .5em;
 }
 
 #home-testimonials span {
@@ -417,7 +434,13 @@ div .owl-pagination {
     background-color: #1f3473;
     color: white;
     font-size: 1.2em;
-    margin: auto;
+    margin-left: 4.25em;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px #212121;
+}
+
+#home-testimonials a:hover {
+    text-decoration: none;
 }
 
 /*-------Universal Body Text Positioning -------------*/
@@ -463,7 +486,7 @@ div .owl-pagination {
 }
 
 #contact-form {
-    background-color: #1f3473;
+    background: url('nav-background.png');
     color: white;
     position: relative;
 }
@@ -483,6 +506,7 @@ div .owl-pagination {
     margin-top: .35em;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
+    text-shadow: 0px 0px 15px #212121;
 }
 
 #contact-form img {
@@ -490,6 +514,19 @@ div .owl-pagination {
     margin-left: 11em;
     position: relative;
     top: 10px;
+    border-radius: 5%;
+}
+
+.send-button { 
+    background-color: #494a49;
+    border: 0; 
+    padding: 12px; 
+    color: white; 
+    font-size: 1.75em; 
+    margin-top: 1em; 
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 10px #212121;
+    border-radius: 3.5px;
 }
 
 #contact-form th {
@@ -561,6 +598,7 @@ footer {
     border-right: 0px;
     position: relative;
     top: .5em;
+    text-shadow: 0px 0px 15px #212121;
 }
 
 footer #footer-nav {
@@ -624,6 +662,7 @@ footer #footer-logo img {
     width: 30em;
     border-radius: 5px;
     position: relative;
+    box-shadow: 0px 0px 15px #212121;
 }
 
 .footer-active {
