@@ -19,7 +19,7 @@ body {
     position: fixed;
     right: .5%;
     top: 1%;
-    z-index: 5;
+    z-index: 25;
 }
 
 #access-jump #initial-image {
@@ -46,6 +46,7 @@ body {
    background: #1f3473;
     background: url('nav-background.png');
     border-top: 2px solid #212121;
+    z-index: 2;
 }
 
 .navbar {
@@ -53,6 +54,11 @@ body {
     margin: auto;
     background: inherit;
     border: none;
+    z-index: 10;
+}
+
+.nav-shadow {
+    box-shadow: 0px 5px 0px #212121;
 }
 
 .navbar-nav {
@@ -114,18 +120,17 @@ header {
 
 #header-holder img {
     width: 25em;
-    max-height: 14.3em;
+    max-height: 12.5em;
     box-shadow: 0px 0px 10px #212121;
 }
 
 #mottoNum {
 	width: 47.5em;
     float: right;
-    margin-top: 1em;
     font-family: 'Playfair Display', serif;
 }
 
-#mottoNum a {
+#mottoNum a img {
     color: white;
     position: relative;
     margin-left: 29em;
@@ -134,6 +139,12 @@ header {
 
 #mottoNum a:hover {
     text-decoration: none;
+}
+
+#mottoNum a span {
+    color: white;
+    position: relative;
+    bottom: .5em;
 }
 
 #mottoNum img {
@@ -149,7 +160,7 @@ header {
     margin-right: 2.75em;
     background: url('nav-background.png');
     padding: 25px;
-    margin-top: -.5em;
+    margin-top: -1em;
     border-radius: 50%;
     font-size: 2em;
     border: 2px solid white;
@@ -287,6 +298,10 @@ div .owl-pagination {
     box-shadow: 0px 0px 40px #212121;
 }
 
+#infoBlocks #firstPair {
+    border-top-left-radius: 10px;
+}
+
 #infoBlocks #firstPair, #infoBlocks #secondPair, #infoBlocks #firstPair div, #infoBlocks #secondPair div {
     display: inline-block;
 }
@@ -360,6 +375,8 @@ div .owl-pagination {
     background: url('main-background.png');
     box-shadow: 0px 0px 15px #212121;
 }
+
+
 
 #center-header {
     width: 75em;
@@ -452,8 +469,8 @@ div .owl-pagination {
 }
 
 #body-text p {
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /*------- Banner Image CSS For All Pages But The Home Page ----------*/
@@ -489,6 +506,7 @@ div .owl-pagination {
     background: url('nav-background.png');
     color: white;
     position: relative;
+    border-left: 2px ridge #1f3473;
 }
 
 #contact-form table {
@@ -510,7 +528,7 @@ div .owl-pagination {
 }
 
 #contact-form img {
-    width: 50px;
+    width: 60px;
     margin-left: 11em;
     position: relative;
     top: 10px;
@@ -529,6 +547,11 @@ div .owl-pagination {
     border-radius: 3.5px;
 }
 
+.send-button:hover {
+    box-shadow: 0px 0px 20px #212121;
+    -webkit-transition-timing-function: ease;
+}
+
 #contact-form th {
     font-size: 15px; 
     padding-bottom: 3px;
@@ -541,7 +564,7 @@ div .owl-pagination {
 #contact-form #name-row {
     position: relative;
     margin: auto;
-    text-align: center;
+    width: 10em;
 }
 
 #contact-form p {
@@ -742,6 +765,11 @@ footer #footer-logo img {
 	box-shadow: 0px 5px 5px #212121;
 }
 
+.col-xs-6:hover img {
+    box-shadow: 0px 10px 10px #212121;
+     -webkit-transition-timing-function: ease;
+}
+
 .employee-info {
     margin-bottom: 2.5em;
 }
@@ -750,29 +778,367 @@ footer #footer-logo img {
     margin-top: 1em;
 }
 
+/*---------Gallery CSS ------------*/
+
+#gallery-header {
+    text-align: center;
+    position: relative;
+    bottom: 2em;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2em;
+    text-shadow: 0px 0px 5px #212121;
+}
+
+.gallery-body {
+    margin: auto;
+    margin-top: 2.5em;
+    width: 75em;
+}
+
+.gallery-body h2 {
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.gallery-body .fb-video {
+    margin: auto !important;
+    width: 100%;
+    text-align: center;
+    padding-right: 2.5em;
+    padding-left: 2.5em;
+}
+
+.gallery-body #bottom-video {
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
 /*--------------Privacy CSS ------------*/
 
 .section-title {
    font-family: 'Playfair Display', serif;
     font-weight: bold;
     text-decoration: underline;
+    font-size: 1.1em;
+}
+
+#privacy-send {
+    margin-bottom: 130em;
 }
 
 
 
 /*--------- Media CSS -----------*/
 
-@media (min-width: 200px) and (max-width: 1095px) {
-	.staff-body {
-		width: 100% !important;
-	}
-	
-	.row {
-		width: 100%;
-	}
-	
-	#main-container {
-		width: 100%;
-	}
+
+@media (min-width: 200px) and (max-width: 1275px) {
+    
+    .jump-arrow img {
+        opacity: .7;
+    }
+    
+    #owl-example img {
+        max-height: 40em;
+    }
+    
+    #infoBlocks {
+        margin-top: -10em;
+    }
+    
+    .opaqueBox {
+        height: 8em;
+        margin-top: -8em;
+    }
 }
 
+@media (min-width: 1085px) and (max-width: 1275px) {
+    #access-jump {
+        top: 30%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 1085px) {
+    
+    button {
+        background: #dedede !important;
+        margin-left: 2.5em !important;
+        height: 3em;
+        width: 3.5em;
+        bottom: -.25em !important;
+    }
+    
+    button span {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .navbar {
+        width: 100%;
+    }
+    
+    #navbar-holder {
+        width: 100%;
+    }
+    
+    .head-wrap {
+        width: 100%;
+    }
+}
+
+@media (min-width: 990px) and (max-width: 1085px) {
+    #access-jump {
+        top: 20.75%;
+    } 
+}
+
+@media (min-width: 200px) and (max-width: 1055px) {
+    
+    .opaqueBox {
+        margin-top: -8.25em;
+    }
+    
+    #infoBlocks {
+        width: 100%;
+    }
+    #infoBlocks #firstPair, #infoBlocks #secondPair {
+       width: 100%;
+    }
+    
+    #infoBlocks #firstPair div #infoBlocks #secondPair div {
+       width: 50%;
+    }
+    
+    #header-holder img {
+        width: 22em;
+    }
+    
+    #owl-example img {
+        max-height: 27.5em;
+    }
+    
+    .home-body {
+        width: 100%;
+        margin: auto;
+    }
+    
+    #paragraph-holder {
+        width: auto;
+    }
+    
+    .center-container {
+        width: 100%;
+        margin: auto;
+    }
+    
+    #center-header {
+        margin: auto;
+        text-align: center;
+        padding-left: 0;
+        margin-left: none;
+        width: 100%;
+    }
+    
+    #home-testimonials {
+        float: none;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    #home-testimonials img {
+        margin: auto;
+    }
+    
+    #home-testimonials p {
+    width: inherit;
+    font-size: 1.25em;
+    font-style: italic;
+    width: 26em;
+    margin: auto;
+        text-align: center;
+}
+}
+
+@media (min-width: 200px) and (max-width: 1040px) {
+    #motto {
+        font-size: 1.5em;
+        margin-top: 2em;
+        position: relative;
+        left: 3em;
+    }
+}
+
+@media (max-width: 990px) {
+    #access-jump {
+        top: 26%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 990px) {
+    
+   #access-jump {
+        top: 20.5%;
+    } 
+    
+    #mottoNum {
+        width: 36em;
+    }
+    
+    #motto {
+        left: 0em;
+        margin-top: -1em;
+    }
+    
+    #main-motto p {
+        margin-bottom: 1.25em;
+    }
+    
+    #mottoNum a img {
+        margin-left: 6em;
+    }
+    
+    #number {
+        margin-right: .5em;
+        position: relative;
+    }
+    
+    #phoneNumber {
+        font-size: 1.25em;
+    }
+    
+    #number #extra-num-info {
+        left: 2em;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 830px) {
+    
+     #access-jump {
+        top: 19%;
+    } 
+    
+    #header-holder img {
+        width: 18em;
+    }
+    
+    #motto {
+        margin-top: 1.5em;
+        font-size: 1.15em;
+    }
+    
+    #mottoNum {
+        width: 32em;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 720px) {
+    
+    #motto {
+        margin-top: 0;
+    }
+    #mottoNum {
+        width: 25em;
+    }
+    
+    #main-motto {
+        height: 11.5em;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 630px) {
+    
+    .owl-example img {
+        height: 19em;
+         max-height: 22.5em;
+    }
+    
+    .opaqueBox {
+        margin-top: -7.5em;
+        height: 6.5em;
+    }
+    
+    #infoBlocks {
+        margin-top: -8em;
+    }
+    
+    #main-motto span {
+        display: none;
+    }
+    
+    #main-motto a img{
+        position: fixed;
+        top: 18.5%;
+        right: 18%;
+        z-index: 20;
+    }
+    
+    #motto {
+       margin-top: 2em; 
+       font-size: 1em;
+        position: relative;
+        right: 2em;
+    } 
+    
+    #main-motto {
+       float: right;
+        height: 8em;
+    }
+    
+    #mottoNum {
+        width: 15em;
+    }
+    
+    #main-motto p {
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    
+    #access-jump {
+        top: 32.5%;
+    } 
+    
+    #header-holder img {
+        float: none;
+        margin: auto;
+        width: 100%;
+        max-height: 14em;
+    }
+    
+    #mottoNum {
+        width: 100%;
+        height: 6em;
+    }
+    
+    #mottoNum p {
+        bottom: .5em;
+    }
+    
+    #number {
+        top: 1.5em;
+    }
+    
+    #main-motto {
+        float: left;
+        width: 10em;
+        margin-left: 1em;
+    }
+    
+    #main-motto p {
+        bottom: 1.25em;
+    }
+    
+    #main-motto a img {
+        top: 32%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+    #main-motto a {
+        right: 27%;
+    }
+}
