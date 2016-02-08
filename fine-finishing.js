@@ -33,16 +33,16 @@ $(document).ready(function() {
         var scroll = $(window).scrollTop();
         if(scroll >= navStart) {
             $('nav').addClass('navbar-fixed-top');
-            $('[data-fb]').animate({opacity: '1'}, 25);
-            $('#access-jump').animate({opacity: '1'}, 25);
-             $('.navbar').animate({width: '100%'}, 50);
+            $('[data-fb]').animate({opacity: '1'}, 0);
+            $('#access-jump').animate({opacity: '1'}, 0);
+             $('.navbar').animate({width: '100%'}, 0);
             if(window.matchMedia("screen and (max-width: 630px)").matches) {
-            $('[data-fb=data-image]').animate({opacity: '0'}, 25);
-            $('#access-jump').animate({opacity: '0'}, 25);
+            $('[data-fb=data-image]').animate({opacity: '0'}, 0);
+            $('#access-jump').animate({opacity: '0'}, 0);
             }   
             
             if(window.matchMedia("(min-width: 1715px)").matches) {
-                $('#access-jump').animate({top: '1%'}, 25);
+                $('#access-jump').animate({top: '1%'}, 0);
                 $('.navbar-nav').animate({marginLeft: '25em'}, 0);
                 $('.navbar-right').animate({marginRight: '25em'}, 0);
             }
@@ -52,15 +52,15 @@ $(document).ready(function() {
                 $('.navbar-right').animate({marginRight: '2em'}, 0);
             }
             else if(window.matchMedia("screen and (min-width: 1085px) and (max-width: 1715px)").matches) {
-                $('#access-jump').animate({top: '1%'}, 25);
+                $('#access-jump').animate({top: '1%'}, 0);
                  $('.navbar-nav').animate({marginLeft: '10em'}, 0);
                 $('.navbar-right').animate({marginRight: '10em'}, 0);
             }
             else if(window.matchMedia("screen and (min-width: 200px) and (max-width: 1715px)").matches) {
-                $('#access-jump').animate({top: '1%'}, 25);
-                $('[data-fb=data-image]').animate({top: '.75%'}, 25);
-                $('[data-fb=data-image]').animate({opacity: '1'}, 25);
-            $('#access-jump').animate({opacity: '1'}, 25);
+                $('#access-jump').animate({top: '1%'}, 0);
+                $('[data-fb=data-image]').animate({top: '.75%'}, 0);
+                $('[data-fb=data-image]').animate({opacity: '1'}, 0);
+            $('#access-jump').animate({opacity: '1'}, 0);
             }
         }
         else {
@@ -68,8 +68,8 @@ $(document).ready(function() {
             if(window.matchMedia("screen and (min-width: 1275px)").matches) {
             $('.navbar-nav').animate({marginLeft: '-1.2em'}, 0);
             $('.navbar-right').animate({marginRight: '-1.2em'}, 0);
-            $('.navbar').animate({width: '75em'}, 50);
-            $('#access-jump').animate({top: '1%'}, 25);
+            $('.navbar').animate({width: '75em'}, 0);
+            $('#access-jump').animate({top: '1%'}, 0);
             }
             else if(window.matchMedia("screen (min-width: 1085px) and (max-width: 1275px)").matches) {
                 $('#access-jump').animate({top: '35%'}, 0);
@@ -78,10 +78,10 @@ $(document).ready(function() {
             }
             
             else if(window.matchMedia("screen (min-width: 200px) and (max-width: 630)").matches) {
-                $('#access-jump').animate({top: '32%'}, 10);
-                $('[data-fb=data-image]').animate({top: '32%'}, 10);
-                $('#access-jump').animate({opacity: '1'}, 25);
-                $('[data-fb=data-image]').animate({opacity: '1'}, 25);
+                $('#access-jump').animate({top: '32%'}, 0);
+                $('[data-fb=data-image]').animate({top: '32%'}, 0);
+                $('#access-jump').animate({opacity: '1'}, 0);
+                $('[data-fb=data-image]').animate({opacity: '1'}, 0);
             }
             else {
                 $('#access-jump').animate({top: '26%'}, 0);
