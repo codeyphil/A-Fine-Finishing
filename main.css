@@ -45,9 +45,10 @@ body {
 #nav-holder {
    background: #1f3473;
     background: url('nav-background.png');
-    border-top: 2px solid #212121;
     z-index: 2;
 }
+
+@media (min-width: 1085px) {
 
 .navbar {
     width: 75em;
@@ -55,6 +56,16 @@ body {
     background: inherit;
     border: none;
     z-index: 10;
+}
+
+#main-nav-holder {
+	width: 100%;
+	background: url('nav-background.png');
+}
+
+#nav-holder {
+	width: 75em;
+	margin: auto;
 }
 
 .nav-shadow {
@@ -95,7 +106,9 @@ body {
 
 .navbar .nav .active {
     background: url('main-background.png');
-}  
+} 
+
+} 
 
 
 
@@ -121,7 +134,7 @@ header {
 #header-holder img {
     width: 25em;
     max-height: 12.5em;
-    box-shadow: 0px 0px 10px #212121;
+    box-shadow: 0px 0px 5px #212121;
 }
 
 #mottoNum {
@@ -854,7 +867,7 @@ footer #footer-logo img {
 
 @media (min-width: 1085px) and (max-width: 1275px) {
     #access-jump {
-        top: 30%;
+        top: 32%;
     }
 }
 
@@ -888,7 +901,7 @@ footer #footer-logo img {
 
 @media (min-width: 990px) and (max-width: 1085px) {
     #access-jump {
-        top: 20.75%;
+        top: 24%;
     } 
 }
 
@@ -972,15 +985,11 @@ footer #footer-logo img {
 
 @media (max-width: 990px) {
     #access-jump {
-        top: 26%;
+        top: 24%;
     }
 }
 
-@media (min-width: 200px) and (max-width: 990px) {
-    
-   #access-jump {
-        top: 20.5%;
-    } 
+@media (min-width: 200px) and (max-width: 992px) {
     
     #mottoNum {
         width: 36em;
@@ -1013,10 +1022,10 @@ footer #footer-logo img {
     }
 }
 
-@media (min-width: 200px) and (max-width: 830px) {
+@media (min-width: 200px) and (max-width: 832px) {
     
      #access-jump {
-        top: 19%;
+        top: 22%;
     } 
     
     #header-holder img {
@@ -1049,7 +1058,7 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 630px) {
     
-    .owl-example img {
+    #owl-example img {
         height: 19em;
          max-height: 22.5em;
     }
@@ -1069,7 +1078,7 @@ footer #footer-logo img {
     
     #main-motto a img{
         position: fixed;
-        top: 18.5%;
+        top: 21.75%;
         right: 18%;
         z-index: 20;
     }
@@ -1096,10 +1105,10 @@ footer #footer-logo img {
     }
 }
 
-@media (min-width: 200px) and (max-width: 480px) {
+@media (min-width: 200px) and (max-width: 482px) {
     
     #access-jump {
-        top: 32.5%;
+        top: 38%;
     } 
     
     #header-holder img {
@@ -1133,7 +1142,13 @@ footer #footer-logo img {
     }
     
     #main-motto a img {
-        top: 32%;
+        top: 37.5%;
+		right: 28%;
+    }
+	
+	#owl-example img {
+        height: 16em;
+         max-height: 20em;
     }
 }
 
