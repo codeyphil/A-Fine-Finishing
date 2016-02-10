@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>A Fine Finishing Home Page</title>
 
-<link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="jquery-ui.min.css">
+<link href="flexnav.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="owl.carousel.css">
 <link rel="stylesheet" href="owl.theme.css">
 <link type = "text/css" rel = "stylesheet" href = "main.css">
@@ -46,47 +46,31 @@
     </header>
 </div>
 
-<div class="container-fluid" id="nav-holder">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="index.html"  class="active">Home<span class="sr-only">(current)</span></a></li>
-        <li class="dropdown">
-          <a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="our-company.html" data-sub="sub">Our Company</a></li>
-            <li><a href="our-staff.html" data-sub="sub">Our Staff</a></li>
+<div class="container-fluid" id="main-nav-holder">
+<div id="nav-holder">
+<div class="menu-button">Menu</div>
+		<nav>
+          <ul data-breakpoint="800" class="flexnav">
+            <li id="home-width"><a href="index.html">Home</a>
+            </li>
+            <li><a href="aboutus.html">About Us</a>
+              <ul>
+                <li><a href="our-company.html">Our Company</a></li>
+                <li><a href="our-staff.html">Our Staff</a></li>
+			  </ul>
+            <li><a href="services.html">Services</a>
+              <ul>
+                <li><a href="insurance.html">Insurance Restoration</a></li>
+                <li><a href="historical.html">Historical Restoration</a></li>
+                <li><a href="full-service.html">Full-Service Construction</a></li>
+              </ul>
+            </li>
+            <li class="diff-width"><a href="testimonials.html">Testimonials</a></li>
+            <li class="diff-width"><a href="gallery.html">Photo Gallery</a></li>
+			<li class="diff-width"><a href="contact.html">Contact Us</a></li>
           </ul>
-        </li>
-        <li class="dropdown">
-          <a href="services.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="insurance.html" data-sub="sub">Insurance Restoration</a></li>
-            <li><a href="historical.html" data-sub="sub">Historical Restoration</a></li>
-            <li><a href="full-service.html" data-sub="sub">Full-Service Construction</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="gallery.html">Photo Gallery</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+        </nav>
+	</div>
 </div>
 
 <div class="container-fluid">
@@ -203,9 +187,12 @@
 <script type="text/javascript" src="jquery-ui.min.js"></script>
 <script type="text/javascript" src="fine-finishing.js"></script>
 <script type="text/javascript" src="owl.carousel.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.flexnav.min.js"></script>
 <script src="home-slideshow.js"></script>
 
+    <script>
+  $(".flexnav").flexNav({ 'animationSpeed' : 'fast' });  
+</script>
     
 </body>
 </html>

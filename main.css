@@ -1,7 +1,55 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body {
     margin: 0 auto;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     background: url('container-background.png');
     text-shadow: 0px 0px 2px #212121;
@@ -17,13 +65,13 @@ body {
 
 #access-jump {
     position: fixed;
-    right: .5%;
+    right: .25%;
     top: 1%;
     z-index: 25;
 }
 
 #access-jump #initial-image {
-    width: 6em;
+    width: 4em;
     border-radius: 10%;
     box-shadow: 0px 1px 1px #212121;
 }
@@ -37,7 +85,7 @@ body {
 }
 
 .jump-arrow img {
-	width: 3.5em;
+	width: 3em;
 }
 
 /*Header elements*/
@@ -48,72 +96,19 @@ body {
     z-index: 2;
 }
 
-@media (min-width: 1085px) {
-
-.navbar {
-    width: 75em;
-    margin: auto;
-    background: inherit;
-    border: none;
-    z-index: 10;
-}
-
 #main-nav-holder {
 	width: 100%;
 	background: url('nav-background.png');
 }
 
 #nav-holder {
-	width: 75em;
+	width: 68em;
 	margin: auto;
 }
 
-.nav-shadow {
-    box-shadow: 0px 5px 0px #212121;
-}
-
-.navbar-nav {
-  margin-left: -1.2em;
-}
-
-.navbar li a {
-    color: white !important;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.1em;
-}
-
-.navbar li a:hover {
-    background: url('main-background.png') !important;
-    text-shadow: 0px .25px .25px #dedede;
-}
-
-.navbar .dropdown-menu {
-    background: url('nav-background.png');
-    height: auto;
-}
-
-.navbar .dropdown-menu li a {
-    border: none;
-    padding: 10px;
-    margin-top: -5px;
-    margin-bottom: -5px;
-}
-
-.nav > li.dropdown.open > a:focus .nav > li.dropdown.active.open > a:focus {
-    background: url('nav-background.png');
-    border: none;
-}
-
-.navbar .nav .active {
-    background: url('main-background.png');
-} 
-
-} 
-
-
-
 #head-container {
     background: url('main-background.png');
+    margin-bottom: 0;
 }
 
 header {
@@ -122,7 +117,7 @@ header {
 }
 
 .head-wrap {
-    width: 75em;
+    width: 68em;
     margin: auto;
 }
 
@@ -132,21 +127,22 @@ header {
 }
 
 #header-holder img {
-    width: 25em;
-    max-height: 12.5em;
+    width: 23em;
+    max-height: 12.8em;
     box-shadow: 0px 0px 5px #212121;
 }
 
 #mottoNum {
-	width: 47.5em;
+	width: 45em;
     float: right;
     font-family: 'Playfair Display', serif;
+    margin-top: 4em;
 }
 
 #mottoNum a img {
     color: white;
     position: relative;
-    margin-left: 29em;
+    margin-left: 27em;
     bottom: 1em;
 }
 
@@ -157,11 +153,12 @@ header {
 #mottoNum a span {
     color: white;
     position: relative;
-    bottom: .5em;
+    bottom: 1.5em;
 }
 
 #mottoNum img {
-    width: 5em;
+    width: 4em;
+    margin-top: 1em;
 }
 
 #motto, #phoneNumber {
@@ -170,26 +167,27 @@ header {
 }
 
 #motto {
-    margin-right: 2.75em;
     background: url('nav-background.png');
     padding: 25px;
-    margin-top: -1em;
+    margin-top: 0em;
+    margin-left: 1.5em;
     border-radius: 50%;
-    font-size: 2em;
+    font-size: 1.75em;
     border: 2px solid white;
     box-shadow: 0px 0px 15px #212121;
 }
 
 #number {
     float: right;
-    margin-bottom: -2.5em;
+    position: relative;
+    bottom: 3em;
     text-shadow: 0px 0px 5px #212121;
 }
 
 #number #extra-num-info {
     position: relative;
     left: 3.9em;
-    bottom: .75em;
+   
     font-size: 1.5em;
 }
 
@@ -197,6 +195,7 @@ header {
     position: relative;
     font-size: 2em;
 }
+
 
 
 
@@ -265,7 +264,7 @@ div .owl-pagination {
 
 #owl-example img {
     height: 45em;
-    max-height: 48em;
+    max-height: 40em;
     width: 100%;
     position: relative;
 }
@@ -281,21 +280,21 @@ div .owl-pagination {
 /*------Center Info Boxes On Home Page ---------*/
 
 .opaqueBox {
-    height: 11em;
+    height: 9em;
     position: absolute;
     background-color: rgba(186, 185, 185, 0.42);
     width: 100%;
-    margin-top: -11.75em;
+    margin-top: -9.8em;
     border-top: 1px solid white;
 }
 
 #infoBlocks {
     margin: 0 auto;
-    margin-top: -14.5em;
+    margin-top: -13em;
     text-align: center;
     position: relative;
     color: white;
-    width: 75em;
+    width: 68em;
     z-index: 5;
     right: .15em;
 }
@@ -311,49 +310,45 @@ div .owl-pagination {
     box-shadow: 0px 0px 40px #212121;
 }
 
-#infoBlocks #firstPair {
-    border-top-left-radius: 10px;
-}
-
 #infoBlocks #firstPair, #infoBlocks #secondPair, #infoBlocks #firstPair div, #infoBlocks #secondPair div {
     display: inline-block;
 }
 
 #infoBlocks #firstPair div, #infoBlocks #secondPair div {
     z-index: 5;
-    width: 18.75em;
+    width: 17.05em;
     border-right: 1.5px solid #212121;
     position: relative;
-    margin-right: -5.5px;
+    margin-right: -4.45px;
     background-image: url('blueprint.png');
-    height: 19.9em;
-    right: 0.01em;
+    height: 16.5em;
 }
 
 #infoBlocks h4 {
-    margin-bottom: 1em;
-    margin-top: 2em;
+    margin-bottom: .85em;
+    margin-top: 1.9em;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 #infoBlocks .infoText {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 2em;
-    font-size: .85em;
+    margin-bottom: 1em;
+    font-size: .8em;
+    line-height: 16px;
 }
 
 #infoBlocks .infoJump, #infoBlocks #insuranceLink {
     text-shadow: 0px 0px .25px #212121;
     margin: auto;
-    margin-top: 1.5em !important;
+    margin-top: 2em !important;
     padding: 10px;
     color: white;
     font-weight: bold;
     border-radius: 2px;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 3px;
     box-shadow: 0px 0px 5px #212121;
 }
@@ -379,11 +374,16 @@ div .owl-pagination {
 #infoBlocks a:hover {
     text-decoration: none;
 }
+    
+    #infoBlocks a span > img {
+        position: relative;
+        top: .75em;
+    }
 
 /*---------End of Info Blocks CSS For Home Page ---------*/
 
 .home-body {
-    width: 75em;
+    width: 68em;
     color: white;
     background: url('main-background.png');
     box-shadow: 0px 0px 15px #212121;
@@ -392,31 +392,34 @@ div .owl-pagination {
 
 
 #center-header {
-    width: 75em;
+    width: 68em;
     margin: auto;
-    padding-left: 2.5em;
+    padding-left: 1em;
 }
 
 #center-header h3 {
+    margin-top: 1em;
+    margin-bottom: .5em;
     font-weight: bold;
-    font-size: 2.5em;
+    font-size: 2.25em;
     font-family: 'Playfair Display', serif;
     text-shadow: 0px 0px 20px #212121;
 }
 
 .center-container {
-    width: 75em;
+    width: 68em;
     margin: auto;
 }
 
 #paragraph-holder {
     text-align: left;
     font-size: 1em;
-    width: 44em;
+    width: 42em;
     float: left;
     position: relative;
-    padding-left: 2.5em;
-    margin-bottom: 1em;
+    padding-left: 1em;
+    margin-bottom: 2em;
+    line-height: 20px;
 }
 
 #left-column {
@@ -432,29 +435,30 @@ div .owl-pagination {
     margin-top: 1em;
     padding-right: .5em;
     position: relative;
-    left: 1.5em;
+    left: 1em;
 }
 
 #home-testimonials {
     width: 21em;
     float: right;
     position: relative;
-    margin-top: 1.7em;
-    margin-right: 6em;
+    margin-top: 1.2em;
+    margin-right: 3em;
 }
 
 #home-testimonials #body-thumbnail {
-    width: 25em;
-    max-height: 13em;
-    margin-bottom: 2.75em;
+    width: 23em;
+    max-height: 11em;
+    margin-bottom: 2em;
     border: 5px groove #dedede;
 }
 
 #home-testimonials p {
     width: 23.65em;
-    font-size: 1em;
+    font-size: .95em;
     font-style: italic;
-    margin-left: .5em;
+    line-height: 18px;
+    font-weight: bold;
 }
 
 #home-testimonials span {
@@ -463,8 +467,7 @@ div .owl-pagination {
     padding: 13px;
     background-color: #1f3473;
     color: white;
-    font-size: 1.2em;
-    margin-left: 4.25em;
+    font-size: 1em;
     font-weight: bold;
     box-shadow: 0px 0px 5px #212121;
 }
@@ -472,6 +475,11 @@ div .owl-pagination {
 #home-testimonials a:hover {
     text-decoration: none;
 }
+    
+    #home-testimonials a span > img {
+        position: relative;
+        top: .5em;
+    }
 
 /*-------Universal Body Text Positioning -------------*/
 
@@ -615,11 +623,11 @@ footer {
     color: white;
     background: url('main-background.png');
     border-top: 3px ridge #1f3473;
-    height: 23em;
+    height: 19em;
 }
 
 #footer-wrapper {
-    width: 75em;
+    width: 68em;
     margin: auto;
     color: white;
 }
@@ -639,7 +647,7 @@ footer {
 
 footer #footer-nav {
     margin-bottom: 1.5em;
-    margin-top: 1.75em;
+    margin-top: 2em;
     
 }
 
@@ -652,7 +660,7 @@ footer span {
     border-right: 0px;
     margin-left: 2.5em;
     position: relative;
-    top: 7px;
+    top: 18px;
 }
 
 #social-media img{
@@ -695,7 +703,7 @@ footer #footer-logo {
 }
 
 footer #footer-logo img {
-    width: 30em;
+    width: 25em;
     border-radius: 5px;
     position: relative;
     box-shadow: 0px 0px 15px #212121;
@@ -867,52 +875,79 @@ footer #footer-logo img {
 
 @media (min-width: 1085px) and (max-width: 1275px) {
     #access-jump {
-        top: 32%;
+        top: 30%;
     }
+}
+
+@media (min-width: 200px) and (max-width: 1115px) {
+    footer {
+        width: 100%;
+        height: auto;
+        overflow: visible;
+    }
+    
+    #footer-wrapper {
+        width: 100%;
+        
+    }
+    
+    footer #footer-logo img {
+        width: 22em;
+        margin-top: 1.5em;
+    }
+    #left-footer-info {
+	   padding-left: 1em;
+        width: 60%;
+        margin-right: 1em;
+    }
+    
 }
 
 @media (min-width: 200px) and (max-width: 1085px) {
     
-    button {
-        background: #dedede !important;
-        margin-left: 2.5em !important;
-        height: 3em;
-        width: 3.5em;
-        bottom: -.25em !important;
-    }
-    
-    button span {
-        margin: auto;
-        text-align: center;
-    }
-    
-    .navbar {
-        width: 100%;
-    }
-    
-    #navbar-holder {
-        width: 100%;
-    }
-    
     .head-wrap {
         width: 100%;
+    }
+    
+    #mottoNum {
+        width: 36em;
+        margin-top: 0em;
+    }
+    
+    #number {
+        bottom: -.5em;
+        right: .5em;
+    }
+    
+    #mottoNum a img {
+        margin-left: 18em;
+    }
+    
+    #mottoNum img {
+        margin-top: 2em;
     }
 }
 
 @media (min-width: 990px) and (max-width: 1085px) {
     #access-jump {
-        top: 24%;
+        top: 30%;
     } 
 }
 
 @media (min-width: 200px) and (max-width: 1055px) {
     
     .opaqueBox {
-        margin-top: -8.25em;
+        margin-top: -4.75em;
+        height: 4em;
+    }
+    
+    #main-nav-holder, #nav-holder {
+        width: 100%;
     }
     
     #infoBlocks {
         width: 100%;
+         margin-top: -5em;
     }
     #infoBlocks #firstPair, #infoBlocks #secondPair {
        width: 100%;
@@ -935,22 +970,38 @@ footer #footer-logo img {
         margin: auto;
     }
     
-    #paragraph-holder {
-        width: auto;
-    }
-    
-    .center-container {
-        width: 100%;
-        margin: auto;
-    }
+   .center-container {
+    width: 100%;
+    margin: auto;
+}
     
     #center-header {
-        margin: auto;
         text-align: center;
-        padding-left: 0;
-        margin-left: none;
+        padding-left: 0em;
         width: 100%;
     }
+
+#paragraph-holder {
+    text-align: center;
+    width: 35em;
+    float: none;
+    margin: auto;
+    margin-bottom: 2em;
+    line-height: 20px;
+    margin-top: 5em;
+}
+
+#left-column {
+    float: none;
+    width: 100%;
+}
+
+#right-column {
+    float: none;
+    width: 100%;
+    padding-right: 0em;
+    left: 0em;
+}
     
     #home-testimonials {
         float: none;
@@ -974,18 +1025,30 @@ footer #footer-logo img {
 }
 }
 
-@media (min-width: 200px) and (max-width: 1040px) {
-    #motto {
-        font-size: 1.5em;
-        margin-top: 2em;
-        position: relative;
-        left: 3em;
+@media (min-width: 200px) and (max-width: 1025px) {
+     footer #footer-logo {
+        display: none;
+    }
+    
+    #left-footer-info {
+        float: none;
+	   padding-left: 0em;
+        margin: auto;
+        text-align: center;
+        margin-left: 0em;
+        margin-right: 0em;
+        width: 100%;
+    }
+    
+    #left-footer-info p {
+        padding-left: 5em;
+        padding-right: 5em;
     }
 }
 
 @media (max-width: 990px) {
     #access-jump {
-        top: 24%;
+        top: 30%;
     }
 }
 
@@ -993,19 +1056,6 @@ footer #footer-logo img {
     
     #mottoNum {
         width: 36em;
-    }
-    
-    #motto {
-        left: 0em;
-        margin-top: -1em;
-    }
-    
-    #main-motto p {
-        margin-bottom: 1.25em;
-    }
-    
-    #mottoNum a img {
-        margin-left: 6em;
     }
     
     #number {
@@ -1022,10 +1072,10 @@ footer #footer-logo img {
     }
 }
 
-@media (min-width: 200px) and (max-width: 832px) {
+@media (min-width: 200px) and (max-width: 945px) {
     
      #access-jump {
-        top: 22%;
+        top: 28%;
     } 
     
     #header-holder img {
@@ -1033,30 +1083,65 @@ footer #footer-logo img {
     }
     
     #motto {
-        margin-top: 1.5em;
+        margin-top: 2em;
         font-size: 1.15em;
     }
     
     #mottoNum {
         width: 32em;
     }
+    
+    #mottoNum a img {
+        margin-left: 13em;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 818px) {
+    
+	  .flexnav .diff-width {
+		  width: 16%;
+	  }
+	  .flexnav #home-width {
+		  width: 13%;
+	  }
+}
+
+@media (min-width: 200px) and (max-width: 818px) {
+    
+    #main-motto a > span {
+        display: none;
+    }
+    #mottoNum {
+        width: 26em;
+    }
+    
+    #mottoNum a img {
+        margin-left: 21em;
+    }
+    
+     #motto {
+        margin-top: 1em;
+        font-size: 1.15em;
+    }
+    
+    #mottoNum img {
+        margin-top: .25em;
+    }
 }
 
 @media (min-width: 200px) and (max-width: 720px) {
-    
-    #motto {
-        margin-top: 0;
-    }
+   
     #mottoNum {
         width: 25em;
     }
     
-    #main-motto {
-        height: 11.5em;
+    #mottoNum img {
+        position: relative;
+        top: .25em;
     }
 }
 
-@media (min-width: 200px) and (max-width: 630px) {
+@media (min-width: 200px) and (max-width: 705px) {
     
     #owl-example img {
         height: 19em;
@@ -1064,34 +1149,26 @@ footer #footer-logo img {
     }
     
     .opaqueBox {
-        margin-top: -7.5em;
-        height: 6.5em;
+        margin-top: -4.5em;
+        height: 4em;
     }
     
     #infoBlocks {
-        margin-top: -8em;
-    }
-    
-    #main-motto span {
-        display: none;
+        margin-top: -5em;
     }
     
     #main-motto a img{
-        position: fixed;
-        top: 21.75%;
-        right: 18%;
-        z-index: 20;
+        margin-left: 10em;
     }
     
     #motto {
        margin-top: 2em; 
        font-size: 1em;
         position: relative;
-        right: 2em;
+        right: 5em;
     } 
     
     #main-motto {
-       float: right;
         height: 8em;
     }
     
@@ -1105,11 +1182,43 @@ footer #footer-logo img {
     }
 }
 
-@media (min-width: 200px) and (max-width: 482px) {
+@media (min-width: 200px) and (max-width: 610px) {
+    #motto {
+        right: 2em;
+    }
+    
+    #home-testimonials p {
+        font-size: 1em;
+        line-height: 22px;
+    }
+    
+    #paragraph-holder {
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+     #left-footer-info p {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    footer span {
+       line-height: 25px;
+}
+}
+
+@media (min-width: 200px) and (max-width: 555px) {
     
     #access-jump {
-        top: 38%;
+        top: 1%;
+        width: 3em;
+        right: 3.5%;
     } 
+    
+    #header-holder {
+        width: 100%;
+    }
     
     #header-holder img {
         float: none;
@@ -1128,7 +1237,8 @@ footer #footer-logo img {
     }
     
     #number {
-        top: 1.5em;
+        top: 2em;
+        left: .5em;
     }
     
     #main-motto {
@@ -1138,22 +1248,78 @@ footer #footer-logo img {
     }
     
     #main-motto p {
-        bottom: 1.25em;
+        bottom: 1em;
     }
     
     #main-motto a img {
-        top: 37.5%;
-		right: 28%;
+       display: none;
     }
 	
 	#owl-example img {
-        height: 16em;
-         max-height: 20em;
+        height: 15em;
+         max-height: 15em;
+    }
+    
+    .opaqueBox {
+        display: none;
+    }
+    
+    #infoBlocks {
+        margin: auto;
+    }
+    
+    #infoBlocks #firstPair div, #infoBlocks #secondPair div {
+        width: 100%;
+        margin: auto;
+        height: 21em;
+    }
+    
+    #infoBlocks .infoIcon {
+    width: 7em;
+        margin-top: 2em;
+    }
+    #infoBlocks .infoText {
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-bottom: 1em;
+    font-size: .8em;
+    line-height: 16px;
+    }
+    
+    #home-testimonials {
+    width: 100%
+}
+    
+    #center-header {
+        margin-top: -1em;
+    }
+
+#home-testimonials #body-thumbnail {
+  width: 100%;
+    margin: auto;
+}
+
+#home-testimonials p {
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-top: 1em;
+}
+}
+
+@media (min-width: 200px) and (max-width: 450px) {
+    #paragraph-holder {
+        text-align: left;
     }
 }
 
-@media (min-width: 200px) and (max-width: 400px) {
-    #main-motto a {
-        right: 27%;
+@media (min-width: 200px) and (max-width: 340px) {
+    
+    #center-header h3 {
+        font-size: 1.75em;
+    }
+    #number {
+        font-size: .85em;
+        top: 2.5em;
     }
 }
