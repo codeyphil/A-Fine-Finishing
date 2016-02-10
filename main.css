@@ -102,7 +102,7 @@ body {
 }
 
 #nav-holder {
-	width: 68em;
+	width: 66em;
 	margin: auto;
 }
 
@@ -117,7 +117,7 @@ header {
 }
 
 .head-wrap {
-    width: 68em;
+    width: 66em;
     margin: auto;
 }
 
@@ -133,7 +133,7 @@ header {
 }
 
 #mottoNum {
-	width: 45em;
+	width: 42em;
     float: right;
     font-family: 'Playfair Display', serif;
     margin-top: 4em;
@@ -142,7 +142,7 @@ header {
 #mottoNum a img {
     color: white;
     position: relative;
-    margin-left: 27em;
+    margin-left: 24em;
     bottom: 1em;
 }
 
@@ -172,7 +172,7 @@ header {
     margin-top: 0em;
     margin-left: 1.5em;
     border-radius: 50%;
-    font-size: 1.75em;
+    font-size: 1.5em;
     border: 2px solid white;
     box-shadow: 0px 0px 15px #212121;
 }
@@ -263,8 +263,8 @@ div .owl-pagination {
 
 
 #owl-example img {
-    height: 45em;
-    max-height: 40em;
+    height: 37em;
+    max-height: 37em;
     width: 100%;
     position: relative;
 }
@@ -290,13 +290,13 @@ div .owl-pagination {
 
 #infoBlocks {
     margin: 0 auto;
-    margin-top: -13em;
+    margin-top: -12em;
     text-align: center;
     position: relative;
     color: white;
-    width: 68em;
+    width: 66em;
     z-index: 5;
-    right: .15em;
+	right: .9em;
 }
 
 #infoBlocks .infoIcon {
@@ -316,10 +316,9 @@ div .owl-pagination {
 
 #infoBlocks #firstPair div, #infoBlocks #secondPair div {
     z-index: 5;
-    width: 17.05em;
-    border-right: 1.5px solid #212121;
+    width: 16.58em;
     position: relative;
-    margin-right: -4.45px;
+    margin: -.18em;
     background-image: url('blueprint.png');
     height: 16.5em;
 }
@@ -383,7 +382,7 @@ div .owl-pagination {
 /*---------End of Info Blocks CSS For Home Page ---------*/
 
 .home-body {
-    width: 68em;
+    width: 66em;
     color: white;
     background: url('main-background.png');
     box-shadow: 0px 0px 15px #212121;
@@ -392,9 +391,9 @@ div .owl-pagination {
 
 
 #center-header {
-    width: 68em;
+    width: 66em;
     margin: auto;
-    padding-left: 1em;
+    padding-left: .25em;
 }
 
 #center-header h3 {
@@ -407,7 +406,7 @@ div .owl-pagination {
 }
 
 .center-container {
-    width: 68em;
+    width: 66em;
     margin: auto;
 }
 
@@ -417,7 +416,7 @@ div .owl-pagination {
     width: 42em;
     float: left;
     position: relative;
-    padding-left: 1em;
+    padding-left: .25em;
     margin-bottom: 2em;
     line-height: 20px;
 }
@@ -435,7 +434,7 @@ div .owl-pagination {
     margin-top: 1em;
     padding-right: .5em;
     position: relative;
-    left: 1em;
+    left: .75em;
 }
 
 #home-testimonials {
@@ -443,11 +442,11 @@ div .owl-pagination {
     float: right;
     position: relative;
     margin-top: 1.2em;
-    margin-right: 3em;
+    margin-right: 2.25em;
 }
 
 #home-testimonials #body-thumbnail {
-    width: 23em;
+    width: 22em;
     max-height: 11em;
     margin-bottom: 2em;
     border: 5px groove #dedede;
@@ -623,17 +622,18 @@ footer {
     color: white;
     background: url('main-background.png');
     border-top: 3px ridge #1f3473;
-    height: 19em;
+    height: 21em;
 }
 
 #footer-wrapper {
-    width: 68em;
+    width: 66em;
     margin: auto;
     color: white;
 }
 
 #left-footer-info {
 	width: 42em;
+	margin-top: 1em;
 }
 
 #footer-number {
@@ -679,7 +679,6 @@ footer span a {
 
 footer span a:hover {
     color: #1f3473;
-    font-weight: bold;
 }
 
 footer #footer-nav span:last-child {
