@@ -874,7 +874,7 @@ footer #footer-logo img {
 
 @media (min-width: 1085px) and (max-width: 1275px) {
     #access-jump {
-        top: 30%;
+        top: 35%;
     }
 }
 
@@ -904,6 +904,10 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 1085px) {
     
+	#access-jump {
+		opacity: .85;
+		top: 35%;
+	}
     .head-wrap {
         width: 100%;
     }
@@ -927,12 +931,6 @@ footer #footer-logo img {
     }
 }
 
-@media (min-width: 990px) and (max-width: 1085px) {
-    #access-jump {
-        top: 30%;
-    } 
-}
-
 @media (min-width: 200px) and (max-width: 1055px) {
     
     .opaqueBox {
@@ -947,13 +945,15 @@ footer #footer-logo img {
     #infoBlocks {
         width: 100%;
          margin-top: -5em;
+		right: 0em;
     }
     #infoBlocks #firstPair, #infoBlocks #secondPair {
        width: 100%;
     }
     
     #infoBlocks #firstPair div #infoBlocks #secondPair div {
-       width: 50%;
+       width: 100em;
+	   position: relative;
     }
     
     #header-holder img {
@@ -976,29 +976,31 @@ footer #footer-logo img {
     
     #center-header {
         text-align: center;
-        padding-left: 0em;
         width: 100%;
+		position: relative;
+		right: 0em;
     }
-
+	
 #paragraph-holder {
     text-align: center;
-    width: 35em;
+    width: 100%;
     float: none;
     margin: auto;
     margin-bottom: 2em;
     line-height: 20px;
-    margin-top: 5em;
+    margin-top: 3em;
+	overflow: visible;
 }
 
 #left-column {
-    float: none;
-    width: 100%;
+    width: 49%;
+	margin-bottom: 3em;
+	padding-left: .75em;
 }
 
 #right-column {
-    float: none;
-    width: 100%;
-    padding-right: 0em;
+    width: 49%;
+    padding-right: .75em;
     left: 0em;
 }
     
@@ -1007,7 +1009,6 @@ footer #footer-logo img {
         margin: auto;
         width: 100%;
         text-align: center;
-        margin-left: 0;
     }
     
     #home-testimonials img {
@@ -1016,11 +1017,12 @@ footer #footer-logo img {
     
     #home-testimonials p {
     width: inherit;
-    font-size: 1.25em;
+    font-size: 1.1em;
     font-style: italic;
     width: 26em;
     margin: auto;
-        text-align: center;
+    text-align: center;
+	line-height: 22px;
 }
 }
 
@@ -1042,12 +1044,6 @@ footer #footer-logo img {
     #left-footer-info p {
         padding-left: 5em;
         padding-right: 5em;
-    }
-}
-
-@media (max-width: 990px) {
-    #access-jump {
-        top: 30%;
     }
 }
 
@@ -1074,7 +1070,7 @@ footer #footer-logo img {
 @media (min-width: 200px) and (max-width: 945px) {
     
      #access-jump {
-        top: 28%;
+        top: 33%;
     } 
     
     #header-holder img {
@@ -1138,6 +1134,21 @@ footer #footer-logo img {
         position: relative;
         top: .25em;
     }
+
+#left-column, #right-column {
+    width: 100%;
+	float: none;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+#paragraph-holder {
+	margin-top: 4em;
+}
+
+#left-column {
+	margin-bottom: 1em;
+}
 }
 
 @media (min-width: 200px) and (max-width: 705px) {
@@ -1193,18 +1204,44 @@ footer #footer-logo img {
     
     #paragraph-holder {
         width: 100%;
-        padding-left: 1em;
-        padding-right: 1em;
+        padding-left: 0em;
+        padding-right: 0em;
     }
     
      #left-footer-info p {
         padding-left: 1em;
         padding-right: 1em;
     }
+	
+	#left-column, #right-column {
+	padding-left: 1em;
+	padding-right: 1em;
+}
     
     footer span {
        line-height: 25px;
+	   border: 0;
 }
+}
+
+@media (min-width: 200px) and (max-width: 573px) {
+	#infoBlocks #firstPair div, #infoBlocks #secondPair div {
+        width: 25em;
+        margin: auto;
+        height: 21em;
+    }
+    
+    #infoBlocks .infoIcon {
+    width: 7em;
+       margin-top: 2em;
+    }
+    #infoBlocks .infoText {
+    padding-left: 5em;
+    padding-right: 5em;
+    margin-bottom: 1em;
+    font-size: .8em;
+    line-height: 16px;
+    }
 }
 
 @media (min-width: 200px) and (max-width: 555px) {
@@ -1267,31 +1304,37 @@ footer #footer-logo img {
         margin: auto;
     }
     
-    #infoBlocks #firstPair div, #infoBlocks #secondPair div {
-        width: 100%;
-        margin: auto;
-        height: 21em;
-    }
-    
-    #infoBlocks .infoIcon {
-    width: 7em;
-        margin-top: 2em;
-    }
-    #infoBlocks .infoText {
-    padding-left: 5em;
-    padding-right: 5em;
-    margin-bottom: 1em;
-    font-size: .8em;
-    line-height: 16px;
-    }
-    
     #home-testimonials {
-    width: 100%
+    width: 100%;
+}
+
+.home-body {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.center-container {
+	width: 100% !important;
+	margin: 0 auto;
+	padding-left: 0em;
+	padding-right: 0em;
 }
     
     #center-header {
         margin-top: -1em;
+		right: 0em;
     }
+	
+#center-header h3 {
+	font-size: 1.6em;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+	
+#home-testimonials {
+	right: 0em;
+}
 
 #home-testimonials #body-thumbnail {
   width: 100%;
@@ -1307,9 +1350,21 @@ footer #footer-logo img {
 }
 
 @media (min-width: 200px) and (max-width: 450px) {
+	
+	#infoBlocks #firstPair div, #infoBlocks #secondPair div {
+        width: 100%;
+		padding-left: .15em;
+		padding-right: .15em;
+		height: 22em;
+    }
     #paragraph-holder {
         text-align: left;
     }
+	
+	#left-column, #right-column {
+    text-align: left;
+	padding: 1em;
+}
 }
 
 @media (min-width: 200px) and (max-width: 340px) {
