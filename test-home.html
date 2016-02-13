@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>A Fine Finishing Home Page</title>
 
-<link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:300,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="jquery-ui.min.css">
 <link href="flexnav.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="owl.carousel.css">
 <link rel="stylesheet" href="owl.theme.css">
@@ -52,23 +51,24 @@
 <div class="menu-button">Menu</div>
 		<nav>
           <ul data-breakpoint="800" class="flexnav">
-            <li id="home-width"><a href="">Home</a>
+            <li id="home-width"><a href="index.html">Home</a>
             </li>
             <li><a href="aboutus.html">About Us</a>
               <ul>
-                <li><a href="/">Our Company</a></li>
-                <li><a href="/">Our Staff</a></li>
+                <li><a href="our-company.html">Our Company</a></li>
+                <li><a href="our-staff.html">Our Staff</a></li>
 			  </ul>
-            <li><a href="http://jasonweaver.name/">Services</a>
+			</li>
+            <li><a href="services.html">Services</a>
               <ul>
-                <li><a href="http://jasonweaver.name/">Insurance Restoration</a></li>
-                <li><a href="http://jasonweaver.name/">Historical Restoration</a></li>
-                <li><a href="http://jasonweaver.name/">Full-Service Construction</a></li>
+                <li><a href="insurance.html">Insurance Restoration</a></li>
+                <li><a href="historical.html">Historical Restoration</a></li>
+                <li><a href="full-service.html">Full-Service Construction</a></li>
               </ul>
             </li>
-            <li class="diff-width"><a href="">Testimonials</a></li>
-            <li class="diff-width"><a href="http://jasonweaver.name/">Photo Gallery</a></li>
-			<li class="diff-width"><a href="http://jasonweaver.name/">Contact Us</a></li>
+            <li class="diff-width"><a href="testimonials.html">Testimonials</a></li>
+            <li class="diff-width"><a href="gallery.html">Photo Gallery</a></li>
+			<li class="diff-width"><a href="contact.html">Contact Us</a></li>
           </ul>
         </nav>
 	</div>
@@ -103,7 +103,7 @@
   </div>
 </div>
     <div class="opaqueBox"></div>
-<div class="container-fluid home-body">
+<div class="container home-body">
  
   <div id="infoBlocks">
     <div id="firstPair">
@@ -127,7 +127,7 @@
             <p class="infoText">Lorem ipsum dolor sit amet, quidam dignissim deseruisse duo ei. Eros legere erroribus est ad, in eum suas eros justo.</p>
             <a href="contact.html"><span class="infoJump">Contact Us<img src="link-pointer.png" class="link-arrow"></span></a>
         </div>
-        <div>
+        <div id="non-border">
             <img src="emergency-icon.png" class="infoIcon">
             <h4>Insurance Restoration</h4>
             <p class="infoText">Lorem ipsum dolor sit amet, quidam dignissim deseruisse duo ei. Eros legere erroribus est ad, in eum suas eros justo.</p>
@@ -177,21 +177,23 @@
 		  </div>
 			<p id="copyright">The contents of this webpage are Copyright &#169; 2016 Fine Finishing. All Rights Reserved.</p>
 			<div id="specialties-footer">
-			  <p>Specialties: No dicat dolorem scriptorem pro, solet aliquid voluptatibus an nec, his id mazim albucius mediocrem. Sed quidam discere ei, solum animal eam id. Nam brute augue laudem eu, te solum epicurei mea. Vim in illum sensibus. Qui ea iusto alterum reprehendunt, graeci alienum in his<br>
-			  Areas: Southgate MI, Wyandotte MI, Lincoln Park MI, Taylor MI, Riverview MI, Trenton MI, Woodhaven MI</p>
+			  <p><span class="foot-bold">Specialties:</span> No dicat dolorem scriptorem pro, solet aliquid voluptatibus an nec, his id mazim albucius mediocrem. Sed quidam discere ei, solum animal eam id. Nam brute augue laudem eu, te solum epicurei mea. Vim in illum sensibus. Qui ea iusto alterum reprehendunt, graeci alienum in his<br>
+			  <span class="foot-bold">Areas:</span> Southgate MI, Wyandotte MI, Lincoln Park MI, Taylor MI, Riverview MI, Trenton MI, Woodhaven MI</p>
 			</div>
 		  </div> 
 		</div>
 </footer>
        
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
 <script type="text/javascript" src="fine-finishing.js"></script>
 <script type="text/javascript" src="owl.carousel.js"></script>
 <script type="text/javascript" src="jquery.flexnav.min.js"></script>
 <script src="home-slideshow.js"></script>
 
-<script>
+    <script>
   $(".flexnav").flexNav({ 'animationSpeed' : 'fast' });  
 </script>
+    
 </body>
 </html>

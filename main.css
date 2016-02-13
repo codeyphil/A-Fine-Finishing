@@ -308,6 +308,7 @@ div .owl-pagination {
     margin: -.18em;
     background-image: url('blueprint.png');
     height: 16.5em;
+    border-bottom: 5px groove #6B6B6B;
 }
 
 #infoBlocks h4 {
@@ -501,21 +502,43 @@ div .owl-pagination {
 
 /*----Universal CSS For Contact Form ----------*/
 
-#name-boxes:second-child {
-    float: right;
+input, label, textarea, .g-recaptcha {
+    margin: auto;
+    text-shadow: 0px 0px .85px white;
+}
+
+label {
+    padding-left: 2.85em;
+    padding-bottom: .15em;
+}
+
+.g-recaptcha {
+    padding-left: 2em;
+}
+
+.btn-primary {
+    margin-left: 2.8em;
+    width: 12em;
+    height: 2.75em;
+    font-size: 1.05em;
+    background: url('main-background.png');
+    border: 0;
+    box-shadow: 0px 0px 10px #212121;
+    text-shadow: 0px 0px .85px white;
+}
+
+.btn-primary:hover {
+    box-shadow: 0px 0px 25px #212121;
+}
+
+.form-control {
+    width: 80%;
 }
 
 #contact-form {
     background: url('nav-background.png');
-    color: white;
-    position: relative;
+    color: #dedede;
     border-left: 2px ridge #1f3473;
-}
-
-#contact-form table {
-    width: 15em !important;
-    margin: auto;
-    text-align: center;
 }
 
 #contact-form h2 {
@@ -523,11 +546,13 @@ div .owl-pagination {
     text-align: center;
     position: relative;
     top: .5em;
-    margin-bottom: 1em;
+    font-size: 1.75em;
+    margin-bottom: 1.5em;
     margin-top: .35em;
     font-weight: bold;
     font-family: 'Playfair Display', serif;
     text-shadow: 0px 0px 15px #212121;
+    text-shadow: 0px 0px 1px white;
 }
 
 #contact-form img {
@@ -555,42 +580,6 @@ div .owl-pagination {
     -webkit-transition-timing-function: ease;
 }
 
-#contact-form th {
-    font-size: 15px; 
-    padding-bottom: 3px;
-}
-
-#contact-form .input-spacer {
-    padding-top: .75em;
-}
-
-#contact-form #name-row {
-    position: relative;
-    margin: auto;
-    width: 10em;
-}
-
-#contact-form p {
-    font-size: 11px;
-    width: 2.5em;
-}
-
-#contact-form #required {
-    width: 20em;
-    margin: auto;
-    margin-bottom: 1.5em;
-}
-
-#contact-form #first-name {
-    position: relative;
-    float: left;
-}
-
-#contact-form #last-name {
-    position: relative;
-    float: left;
-    margin-left: 5px;
-}
 
 input {
     color: black;

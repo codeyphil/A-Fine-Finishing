@@ -5,8 +5,7 @@
 <head>
 
 <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     
 <title>A Fine Finishing Home Page</title>
 
@@ -16,14 +15,12 @@
 <link href="flexnav.css" rel="stylesheet" type="text/css" />
 <link type = "text/css" rel = "stylesheet" href = "main.css">
     
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    
 </head>
 
 
 <body>
-    
-<div class="container-fluid" id="head-container">
+   
+    <div class="container-fluid" id="head-container">
  <div id="access-jump">
      <a href="http://www.accessconstruction.org" target="_blank"><img src="access-logo.jpg" id="initial-image"></a>
  </div>
@@ -42,7 +39,7 @@
         </div>
         <div id="main-motto">
            <p id="motto">"Reconstructing Since 1993!"</p><br>
-           <a href="https://www.facebook.com/finefinishing/?fref=ts" target="_blank" ><img src="header-fb-logo.png" data-fb="data-image"><span>Check Us Out On Facebook!</span></a>
+              <a href="https://www.facebook.com/finefinishing/?fref=ts" target="_blank" ><img src="header-fb-logo.png" data-fb="data-image"><span>Check Us Out On Facebook!</span></a>
         </div>
       </div>
      </div>
@@ -85,46 +82,56 @@
     <span id="content-title">About Us</span>
       <div id="right-body-content">
        <div id="contact-form">
-            <img src="contact-icon.png">
-            <h2>Ask A Question!</h2>
-  <form class="form-horizontal" role="form" method="post" action="index.php">
-      <div class="form-group"> <!-- Name field -->
-		<label class="control-label" for="name">Name *</label>
-		<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>"><?php echo "<p class='text-danger'>$errName</p>";?>
-	</div>
-	
-	<div class="form-group"> <!-- Email field -->
-		<label class="control-label requiredField" for="email">Email *<span class="asteriskField"></span></label>
-		<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>"><?php echo "<p class='text-danger'>$errEmail</p>";?>
-	</div>
-	
-	<div class="form-group"> <!-- Subject field -->
-		<label class="control-label " for="subject">Phone #</label>
-		<input class="form-control" id="subject" name="subject" type="text" value="<?php echo htmlspecialchars($_POST['name']); ?>"/>
-	</div>
-	
-	<div class="form-group"> <!-- Message field -->
-		<label class="control-label " for="message">Message</label>
-		<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea><?php echo "<p class='text-danger'>$errMessage</p>";?>
-	</div>
-	<?php
-          require_once('recaptchalib.php');
-          $publickey = "6LdOJxgTAAAAAPeH6kXGzJXfHMrHevdTs4OZ-g6f"; // you got this from the signup page
-          echo recaptcha_get_html($publickey);
-    ?>
-      <div class="g-recaptcha" data-sitekey="6LdOJxgTAAAAAPeH6kXGzJXfHMrHevdTs4OZ-g6f"></div>
-      <br/>
-	<div class="form-group">
-		<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-	</div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <! Will be used to display an alert to the user>
-        </div>
+        <img src="contact-icon.png">
+        <h2>Ask A Question!</h2>
+        <!--<form action="send_mail.php" method="post">
+        <table>
+        <tr>
+         <th>Name *</th>
+        </tr>
+        <tr id="name-row">
+        <td id="first-name">
+            <input type="text" name="first_name" value="" maxlength="26" size="21.75" />
+            <p>First</p>
+        </td>
+        <td id="last-name">
+            <input type="text" name="last_name" value="" maxlength="26" size="20.95" /> 
+            <p>Last</p>
+        </td>
+        </tr>
+        <tr>
+         <th>Email *</th>
+        </tr>
+        <tr>
+        <td>
+            <input type="text" name="first_name" value="" maxlength="25" size="45" />
+        </td>
+        </tr>
+        <tr>
+         <th class="input-spacer">Phone #</th>
+        </tr>
+        <tr>
+         <td>
+             <input type="text" name="first_name" value="" maxlength="25" size="45" />   
+         </td>    
+        </tr>
+        <tr>
+         <th class="input-spacer">How can we help you? *</th>
+        </tr>
+        <tr>
+         <td>
+            <textarea rows="8" cols="44" name="comments" style="color: black;"></textarea>   
+         </td>
+        </tr>
+        <tr>
+         <td>
+           <input type="submit" value="Send Message" style="background-color: #494a49; border: 0; padding: 12px; color: white; font-size: 1.75em; margin-top: .75em; margin-bottom: 1.5em; box-shadow: 0px 3px 3px #212121; text-shadow: 0px .25px .25px #dedede" />    
+         </td>    
+        </tr>
+        </table>
+        </form>-->
+      </div>
     </div>
-</form>
- </div>
-</div>
       <div id="body-text">
         <p>Fine Finishing has been in business since 1993. Over the years, the company has grown and changed. From simple beginnings, Mike Rickman and Jeff Mitchell began doing small construction projects, and over the years have developed Fine Finishing into a company with a reputation for having impeccable workmanship and customer service that is second to none.</p>
         <p>Our portfolio now includes extensive insurance repair - from small water losses, to major floods, from minor smoke damage to major house fires that require a total demolition and rebuild. Fine Finishing also provides <a href="full-service.html">Full-Service Construction</a> services, as well as <a href="historical.html">Historical Restoration</a> services. On top of all of this, Fine Finishing also provides remodeling and <a href="http://www.accessconsctruction.org">accessiblity alterations</a> for victims of car accidents. </p>
@@ -165,11 +172,13 @@
        
 <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="jquery-ui.min.js"></script>
-<script type="text/javascript" src="jquery.flexnav.min.js"></script>
 <script type="text/javascript" src="fine-finishing.js"></script>
+<script type="text/javascript" src="jquery.flexnav.min.js"></script>
 
-   <script>
-  jQuery(".flexnav").flexNav({ 'animationSpeed' : 'fast' });  
-</script> 
+    <script>
+  $(".flexnav").flexNav({ 'animationSpeed' : 'fast' });  
+</script>
+    
+
 </body>
 </html>
