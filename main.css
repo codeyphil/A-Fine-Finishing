@@ -306,7 +306,7 @@ div .owl-pagination {
     margin: -.18em;
     background-image: url('blueprint.png');
     height: 16.5em;
-    border-bottom: 5px groove #6B6B6B;
+    border-bottom: 5px double #7A7A7A;
 }
 
 #infoBlocks h4 {
@@ -522,6 +522,10 @@ div .owl-pagination {
 
 #privacy-right-body {
     margin-top: -204.35em;
+}
+
+#contact-right-body {
+	margin-top: -38.95em;
 }
 
 input, label, textarea, .g-recaptcha {
@@ -824,6 +828,45 @@ footer #footer-logo img {
     padding-bottom: 5em;
 }
 
+/*----------Contact CSS ----------*/
+
+#contact-header {
+	font-weight: bold;
+	margin-left: .65em;
+	margin-top: -.5em;
+}
+
+#contact-map {
+	margin-top: 1.75em;
+	margin-left: 1.5em;
+}
+
+#contact-map iframe {
+	border: 0;
+	width: 665px;
+	box-shadow: 0px 0px 15px #212121;
+}
+
+#contact-row {
+	padding-top: 1.25em;
+	margin-left: .65em;
+}
+
+#contact-row .col-md-4 {
+	display: block;
+	text-align: left;
+}
+
+#contact-row h4 {
+	margin-bottom: .75em;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+#contact-row p {
+	margin-left: -1em;
+}
+
 /*--------------Privacy CSS ------------*/
 
 .section-title {
@@ -976,6 +1019,7 @@ footer #footer-logo img {
     line-height: 20px;
     margin-top: 3em;
 	overflow: visible;
+	text-align: left;
 }
 
 #left-column {
@@ -1267,6 +1311,14 @@ footer #footer-logo img {
         margin: auto;
         height: 21em;
     }
+	
+	#infoBlocks #firstPair div:first-child {
+		margin-top: -.75em;
+	}
+	
+	#infoBlocks #firstPair div:nth-child(2), #infoBlocks #secondPair div {
+		margin-top: -2em;
+	}
     
     #infoBlocks .infoIcon {
     width: 7em;
