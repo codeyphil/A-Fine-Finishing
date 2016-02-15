@@ -76,36 +76,41 @@
 	</div>
 </div>
     
-    <div id="banner-image">
-   <img src="banner-image.jpg" id="left-image">  
-    <img src="banner-image2.jpg" id="right-image"> 
+    <div class="banner-image">
+   <img src="banner-image.jpg" class="left-image">  
+    <img src="banner-image2.jpg" class="right-image"> 
   </div> 
 <div class="container-fluid home-body">
-  <div class="center-container">
+  <div class="center-container non-home-center">
     <span id="content-title">About Us</span>
-      <div id="right-body-content">
+      <div id="body-text">
+        <p>Fine Finishing has been in business since 1993. Over the years, the company has grown and changed. From simple beginnings, Mike Rickman and Jeff Mitchell began doing small construction projects, and over the years have developed Fine Finishing into a company with a reputation for having impeccable workmanship and customer service that is second to none.</p><br>
+        <p>Our portfolio now includes extensive insurance repair - from small water losses, to major floods, from minor smoke damage to major house fires that require a total demolition and rebuild. Fine Finishing also provides <a href="full-service.html">Full-Service Construction</a> services, as well as <a href="historical.html">Historical Restoration</a> services. On top of all of this, Fine Finishing also provides remodeling and <a href="http://www.accessconsctruction.org">accessiblity alterations</a> for victims of car accidents. </p><br>
+        <p>Both Mike and Jeff are licensed builders and are very knowledgeable in both construction and building codes. Fine Finishing also staffs a building inspector who is licensed in the State of Michigan.</p>
+      </div>
+      <div class="right-body-content">
        <div id="contact-form">
             <img src="contact-icon.png">
             <h2>Ask A Question!</h2>
-  <form class="form-horizontal" role="form" method="post" action="index.php">
+  <form class="form-horizontal" role="form" method="post" action="mail.php">
       <div class="form-group"> <!-- Name field -->
 		<label class="control-label" for="name">Name *</label>
-		<input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>"><?php echo "<p class='text-danger'>$errName</p>";?>
+		<input type="text" class="form-control" id="name" name="name" value="">
 	</div>
 	
 	<div class="form-group"> <!-- Email field -->
 		<label class="control-label requiredField" for="email">Email *<span class="asteriskField"></span></label>
-		<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>"><?php echo "<p class='text-danger'>$errEmail</p>";?>
+		<input type="email" class="form-control" id="email" name="email" value="">
 	</div>
 	
 	<div class="form-group"> <!-- Subject field -->
 		<label class="control-label " for="subject">Phone #</label>
-		<input class="form-control" id="subject" name="subject" type="text" value="<?php echo htmlspecialchars($_POST['name']); ?>"/>
+		<input class="form-control" id="subject" name="subject" type="text" value=""/>
 	</div>
 	
 	<div class="form-group"> <!-- Message field -->
-		<label class="control-label " for="message">Message</label>
-		<textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea><?php echo "<p class='text-danger'>$errMessage</p>";?>
+		<label class="control-label " for="message">Message *</label>
+		<textarea class="form-control" rows="4" name="message"></textarea>
 	</div>
 	<?php
           require_once('recaptchalib.php');
@@ -115,7 +120,7 @@
       <div class="g-recaptcha" data-sitekey="6LdOJxgTAAAAAPeH6kXGzJXfHMrHevdTs4OZ-g6f"></div>
       <br/>
 	<div class="form-group">
-		<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+		<input id="submit" name="submit" type="submit" value="Submit" class="btn btn-primary">
 	</div>
     <div class="form-group">
         <div class="col-sm-10 col-sm-offset-2">
@@ -125,11 +130,6 @@
 </form>
  </div>
 </div>
-      <div id="body-text">
-        <p>Fine Finishing has been in business since 1993. Over the years, the company has grown and changed. From simple beginnings, Mike Rickman and Jeff Mitchell began doing small construction projects, and over the years have developed Fine Finishing into a company with a reputation for having impeccable workmanship and customer service that is second to none.</p>
-        <p>Our portfolio now includes extensive insurance repair - from small water losses, to major floods, from minor smoke damage to major house fires that require a total demolition and rebuild. Fine Finishing also provides <a href="full-service.html">Full-Service Construction</a> services, as well as <a href="historical.html">Historical Restoration</a> services. On top of all of this, Fine Finishing also provides remodeling and <a href="http://www.accessconsctruction.org">accessiblity alterations</a> for victims of car accidents. </p>
-        <p>Both Mike and Jeff are licensed builders and are very knowledgeable in both construction and building codes. Fine Finishing also staffs a building inspector who is licensed in the State of Michigan.</p>
-      </div>
   </div>
 </div>
   

@@ -5,12 +5,18 @@
 <head>
     
 <title>A Fine Finishing Home Page</title>
+    
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <link href="flexnav.css" rel="stylesheet" type="text/css" />
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
 <link type = "text/css" rel = "stylesheet" href = "main.css">
+    
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     
 </head>
 
@@ -70,66 +76,13 @@
 	</div>
 </div>
     
-  <div id="banner-image">
-    <img src="banner-image.jpg" id="left-image">  
-    <img src="banner-image2.jpg" id="right-image"> 
+  <div class="banner-image">
+    <img src="banner-image.jpg" class="left-image">  
+    <img src="banner-image2.jpg" class="right-image"> 
   </div> 
 <div class="container-fluid home-body">
   <div class="main-container">
     <span id="content-title">Privacy</span>
-	  <div id="right-body-content">
-       <div id="contact-form">
-        <img src="contact-icon.png">
-        <h2>Ask A Question!</h2>
-        <p id="required">* Indicates required information</p>
-        <form action="send_mail.php" method="post">
-        <table>
-        <tr>
-         <th>Name *</th>
-        </tr>
-        <tr id="name-row">
-        <td id="first-name">
-            <input type="text" name="first_name" value="" maxlength="25" size="20.95" />
-            <p>First</p>
-        </td>
-        <td id="last-name">
-            <input type="text" name="last_name" value="" maxlength="25" size="21.95" /> 
-            <p>Last</p>
-        </td>
-        </tr>
-        <tr>
-         <th>Email *</th>
-        </tr>
-        <tr>
-        <td>
-            <input type="text" name="first_name" value="" maxlength="25" size="45" />
-        </td>
-        </tr>
-        <tr>
-         <th class="input-spacer">Phone #</th>
-        </tr>
-        <tr>
-         <td>
-             <input type="text" name="first_name" value="" maxlength="25" size="45" />   
-         </td>    
-        </tr>
-        <tr>
-         <th class="input-spacer">How can we help you? *</th>
-        </tr>
-        <tr>
-         <td>
-            <textarea rows="8" cols="44" name="comments" style="color: black;"></textarea>   
-         </td>
-        </tr>
-        <tr>
-         <td>
-           <input type="submit" value="Send Message" class="send-button" id="privacy-send"/>    
-         </td>    
-        </tr>
-        </table>
-        </form>
-      </div>
-    </div>
       <div id="body-text">
         <p>Fine Finishing recognizes the importance of protecting the privacy of all information provided by users of our web sites, subscribers to our services, registrants for our events, and all other customers of our products and services. We created this policy with a fundamental respect for our customers' right to privacy and to guide our relationships with our customers. This Privacy Statement discloses the privacy practices for all products and services owned by Fine Finishing.</p>
         <p class="section-title"><b>Information Collection and Use</b></p>
@@ -161,6 +114,48 @@
 		<p class="section-title"><b>Notification and Changes</b></p>
 		<p>If we change our Privacy Statement, we will post those changes on this page so our users are aware of what information we collect, how we use it and under which circumstances, if any, we disclose it. Users should check this policy frequently to keep abreast of any changes.</p>
       </div>
+      <div class="right-body-content" id="privacy-right-body">
+       <div id="contact-form">
+            <img src="contact-icon.png">
+            <h2>Ask A Question!</h2>
+  <form class="form-horizontal" role="form" method="post" action="index.php">
+      <div class="form-group"> <!-- Name field -->
+		<label class="control-label" for="name">Name *</label>
+		<input type="text" class="form-control" id="name" name="name" value="">
+	</div>
+	
+	<div class="form-group"> <!-- Email field -->
+		<label class="control-label requiredField" for="email">Email *<span class="asteriskField"></span></label>
+		<input type="email" class="form-control" id="email" name="email" value="">
+	</div>
+	
+	<div class="form-group"> <!-- Subject field -->
+		<label class="control-label " for="subject">Phone #</label>
+		<input class="form-control" id="subject" name="subject" type="text" value=""/>
+	</div>
+	
+	<div class="form-group"> <!-- Message field -->
+		<label class="control-label " for="message">Message *</label>
+		<textarea class="form-control" rows="4" name="message"></textarea>
+	</div>
+	<?php
+          require_once('recaptchalib.php');
+          $publickey = "6LdOJxgTAAAAAPeH6kXGzJXfHMrHevdTs4OZ-g6f"; // you got this from the signup page
+          echo recaptcha_get_html($publickey);
+    ?>
+      <div class="g-recaptcha" data-sitekey="6LdOJxgTAAAAAPeH6kXGzJXfHMrHevdTs4OZ-g6f"></div>
+      <br>
+	<div class="form-group" id="privacy-submit">
+		<input id="submit" name="submit" type="submit" value="Submit" class="btn btn-primary">
+	</div>
+    <div class="form-group">
+        <div class="col-sm-10 col-sm-offset-2">
+            <! Will be used to display an alert to the user>
+        </div>
+    </div>
+</form>
+ </div>
+</div>
   </div>
  </div>
   
