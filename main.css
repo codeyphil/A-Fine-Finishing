@@ -454,19 +454,19 @@ div .owl-pagination {
 
 /*-------Universal Body Text Positioning -------------*/
 
-#body-text {
+.body-text {
     width: 43em;
     font-size: 1em;
     position: relative;
 }
 
-#body-text h3 {
+.body-text h3 {
     margin-bottom: .65em;
     padding-left: .5em;
     font-size: 1.75em;
 }
 
-#body-text p {
+.body-text p {
     padding-left: 1em;
     line-height: 19px;
 }
@@ -1054,12 +1054,31 @@ footer #footer-logo img {
     text-align: center;
 	line-height: 22px;
 }
-#body-text {
+.body-text {
         width: 35em;
-    }
+}
+	
+#privacy-body {
+	margin: auto;
+}
+
 #gallery, .gallery-body {
         width: 100% !important;
-    }
+   }
+	
+#privacy-right-body {
+		float: none;
+		margin: auto;
+		margin-top: 2em;
+}
+	
+#privacy-submit {
+    margin-bottom: 2em;
+}
+
+#contact-map iframe {
+	width: 550px;
+}
 }
 
 @media (min-width: 200px) and (max-width: 1025px) {
@@ -1136,11 +1155,11 @@ footer #footer-logo img {
         margin-top: 0em;
     }
     
-    #body-text {
+    .body-text {
         width: 100%;
     }
     
-    #body-text p {
+    .body-text p {
         width: 35em;
         margin: auto;
     }
@@ -1149,6 +1168,11 @@ footer #footer-logo img {
         margin: auto;
         margin-top: 2.5em;
     }
+	
+	#privacy-body .section-title {
+		padding-top: .75em;
+		padding-bottom: .75em;
+	}
     
     .banner-image .left-image {
     width: 70em;
@@ -1298,7 +1322,7 @@ footer #footer-logo img {
 	   border: 0;
 }
     
-    #body-text p{
+    .body-text p{
         width: 100%;
         padding-left: 1em;
         padding-right: 1em;
