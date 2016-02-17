@@ -133,14 +133,14 @@ header {
 #mottoNum {
 	width: 42em;
     float: right;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     margin-top: 4em;
 }
 
 #mottoNum a img {
     color: white;
     position: relative;
-    margin-left: 24em;
+    margin-left: 25em;
     bottom: 1em;
 }
 
@@ -152,6 +152,7 @@ header {
     color: white;
     position: relative;
     bottom: 1.5em;
+	font-size: .75em;
 }
 
 #mottoNum img {
@@ -182,15 +183,10 @@ header {
     text-shadow: 0px 0px 5px #212121;
 }
 
-#number #extra-num-info {
-    position: relative;
-    left: 3.9em;
-    font-size: 1.5em;
-}
-
 #phoneNumber {
     position: relative;
-    font-size: 2em;
+    font-size: 1.8em;
+	font-family: 'Roboto', sans-serif;
 }
 
 /*Image Carousel*/
@@ -248,8 +244,8 @@ div .owl-pagination {
 }
 
 #owl-example img {
-    height: 37em;
-    max-height: 37em;
+    height: 38em;
+    max-height: 38em;
     width: 100%;
     position: relative;
 }
@@ -275,13 +271,31 @@ div .owl-pagination {
 
 #infoBlocks {
     margin: 0 auto;
-    margin-top: -12em;
+    margin-top: -12.5em;
     text-align: center;
     position: relative;
     color: white;
     width: 66em;
     z-index: 5;
 	right: .9em;
+}
+
+#infoBlocks .col-md-3 {
+	background-image: url('blueprint.png');
+	height: 16.5em;
+	border-right: 1px solid #212121;
+}
+
+#infoBlocks .col-md-3:nth-child(4) {
+	border-right: none;
+}
+
+#infoBlocks .col-md-3:first-child {
+	border-top-left-radius: 5px;
+}
+
+#infoBlocks .col-md-3:nth-child(4) {
+	border-top-right-radius: 5px;
 }
 
 #infoBlocks .infoIcon {
@@ -295,25 +309,11 @@ div .owl-pagination {
     box-shadow: 0px 0px 40px #212121;
 }
 
-#infoBlocks #firstPair, #infoBlocks #secondPair, #infoBlocks #firstPair div, #infoBlocks #secondPair div {
-    display: inline-block;
-}
-
-#infoBlocks #firstPair div, #infoBlocks #secondPair div {
-    z-index: 5;
-    width: 16.58em;
-    position: relative;
-    margin: -.18em;
-    background-image: url('blueprint.png');
-    height: 16.5em;
-    border-bottom: 5px double #7A7A7A;
-}
-
 #infoBlocks h4 {
     margin-bottom: .85em;
     margin-top: 1.9em;
     font-weight: bold;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
 }
 
@@ -330,6 +330,8 @@ div .owl-pagination {
     margin: auto;
     margin-top: 2em !important;
     padding: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
     color: white;
     font-weight: bold;
     border-radius: 2px;
@@ -378,7 +380,7 @@ div .owl-pagination {
     margin-bottom: .5em;
     font-weight: bold;
     font-size: 2.25em;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     text-shadow: 0px 0px 20px #212121;
 }
 
@@ -421,7 +423,7 @@ div .owl-pagination {
     width: 22em;
     max-height: 11em;
     margin-bottom: 2em;
-    border: 5px groove #dedede;
+    border: 7.5px groove #dedede;
 }
 
 #home-testimonials p {
@@ -581,7 +583,7 @@ label {
     margin-bottom: 1.5em;
     margin-top: .35em;
     font-weight: bold;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     text-shadow: 0px 0px 15px #212121;
     text-shadow: 0px 0px 1px white;
 }
@@ -734,7 +736,7 @@ footer #footer-logo img {
 
 #content-title {
    background: url('main-background.png');
-   font-family: 'Playfair Display', serif;
+   font-family: 'Raleway', sans-serif;
    padding-top: 5px;
    padding-bottom: 5px;
    padding-right: 20px;
@@ -870,7 +872,7 @@ footer #footer-logo img {
 /*--------------Privacy CSS ------------*/
 
 .section-title {
-   font-family: 'Playfair Display', serif;
+   font-family: 'Raleway', sans-serif;
     font-weight: bold;
     text-decoration: underline;
     font-size: 1.1em;
@@ -902,9 +904,12 @@ footer #footer-logo img {
     }
 }
 
-@media (min-width: 1085px) and (max-width: 1275px) {
+@media (min-width: 200px) and (max-width: 1275px) {
     #access-jump {
-        top: 35%;
+		float: left;
+        top: 93.5%;
+		left: .15%;
+		opacity: .5;
     }
 }
 
@@ -934,10 +939,6 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 1085px) {
     
-	#access-jump {
-		opacity: .85;
-		top: 35%;
-	}
     .head-wrap {
         width: 100%;
     }
@@ -1125,10 +1126,6 @@ footer #footer-logo img {
 }
 
 @media (min-width: 200px) and (max-width: 945px) {
-    
-     #access-jump {
-        top: 33%;
-    } 
     
     #header-holder img {
         width: 18em;
@@ -1359,12 +1356,6 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 555px) {
     
-    #access-jump {
-        top: 1%;
-        width: 3em;
-        right: 3.5%;
-    } 
-    
     #header-holder {
         width: 100%;
     }
@@ -1386,7 +1377,7 @@ footer #footer-logo img {
     }
     
     #number {
-        top: 2em;
+        top: 2.5em;
         left: .5em;
     }
     

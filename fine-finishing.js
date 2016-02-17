@@ -13,10 +13,8 @@ $(document).ready(function() {
             $('.flexnav').removeClass('navbar-fixed-top');
         }
     });
-    
+	
 });
-
-
 
 
 
