@@ -94,6 +94,19 @@ body {
     z-index: 2;
 }
 
+@media (min-width: 799px) {
+
+.active {
+	border-bottom: 3px solid #dedede;
+}
+}
+
+@media (max-width: 799px) {
+	.active {
+		border-bottom: 0px;
+	}
+}
+
 #main-nav-holder {
 	width: 100%;
 	background: url('nav-background.png');
@@ -140,7 +153,7 @@ header {
 #mottoNum a img {
     color: white;
     position: relative;
-    margin-left: 25em;
+    margin-left: 27em;
     bottom: 1em;
 }
 
@@ -171,6 +184,7 @@ header {
     margin-top: 0em;
     margin-left: 1.5em;
     border-radius: 50%;
+	font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
     border: 2px solid white;
     box-shadow: 0px 0px 15px #212121;
@@ -181,6 +195,13 @@ header {
     position: relative;
     bottom: 3em;
     text-shadow: 0px 0px 5px #212121;
+}
+
+#extra-num {
+	text-align: right;
+	font-weight: bold;
+	font-size: 1.1em;
+	font-family: 'Roboto', sans-serif;
 }
 
 #phoneNumber {
@@ -283,7 +304,7 @@ div .owl-pagination {
 #infoBlocks .col-md-3 {
 	background-image: url('blueprint.png');
 	height: 16.5em;
-	border-right: 1px solid #212121;
+	border-right: 1px solid #363636;
 }
 
 #infoBlocks .col-md-3:nth-child(4) {
@@ -654,8 +675,8 @@ footer {
 }
 
 footer #footer-nav {
-    margin-bottom: 1.5em;
-    margin-top: 2em;
+    margin-bottom: 1.75em;
+    margin-top: 2.25em;
     
 }
 
@@ -780,6 +801,7 @@ footer #footer-logo img {
     font-size: 1.2em;
     padding-top: .75em;
     padding-bottom: .5em;
+	font-family: 'Raleway', sans-serif;
 }
 
 .col-md-6 img {
@@ -799,6 +821,28 @@ footer #footer-logo img {
 
 .employee-info span {
    line-height: 25px;
+}
+
+#staff-intro-div {
+	padding-left: 4em;
+	padding-right: 4em;
+	margin-bottom: 2em;
+}
+
+#staff-intro-div h3:first-child {
+	margin-top: -1em;
+}
+
+.staff-headings {
+	font-weight: bold;
+	font-size: 1.3em;
+	padding-bottom: .5em;
+	padding-top: .5em;
+	font-family: 'Raleway', sans-serif;
+}
+
+.staff-intro {
+	line-height: 18px;
 }
 
 /*---------Gallery CSS ------------*/
@@ -861,6 +905,7 @@ footer #footer-logo img {
 
 #contact-row h4 {
 	margin-bottom: .75em;
+	font-family: 'Raleway', sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 }
@@ -874,7 +919,6 @@ footer #footer-logo img {
 .section-title {
    font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    text-decoration: underline;
     font-size: 1.1em;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -978,13 +1022,10 @@ footer #footer-logo img {
          margin-top: -5em;
 		right: 0em;
     }
-    #infoBlocks #firstPair, #infoBlocks #secondPair {
-       width: 100%;
-    }
-    
-    #infoBlocks #firstPair div, #infoBlocks #secondPair div {
-        border-bottom: 0px !important;
-    }
+	
+	#infoBlocks .row {
+		width: 100% !important;
+	}
     
     #header-holder img {
         width: 22em;
@@ -1101,6 +1142,13 @@ footer #footer-logo img {
         padding-left: 5em;
         padding-right: 5em;
     }
+	
+	
+	
+	#infoBlocks .infoText {
+    padding-left: 0px;
+    padding-right: 0px;
+	}
 }
 
 @media (min-width: 200px) and (max-width: 992px) {
@@ -1121,8 +1169,24 @@ footer #footer-logo img {
     #number #extra-num-info {
         left: 2em;
     }
-    
+}
 
+@media (min-width: 768px) and (max-width: 980px) {
+	
+	#infoBlocks .col-md-3 {
+		width: 28.5em;
+	}
+	
+	#infoBlocks .infoText {
+		padding-right: 3em;
+		padding-left: 3em;
+	}
+}
+
+@media (min-width: 200px) and (max-width: 965px) {
+	#infoBlocks .col-md-3 {
+		width: 22em;
+	}
 }
 
 @media (min-width: 200px) and (max-width: 945px) {
@@ -1181,6 +1245,8 @@ footer #footer-logo img {
 }
 }
 
+
+
 @media (min-width: 800px) and (max-width: 818px) {
     
 	  .flexnav .diff-width {
@@ -1212,6 +1278,18 @@ footer #footer-logo img {
     #mottoNum img {
         margin-top: .25em;
     }
+	
+	#staff-intro-div {
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 2em;
+}
+}
+
+@media (min-width: 200px) and (max-width: 768px) {
+	#infoBlocks .col-md-3 {
+		width: 23em;
+	}
 }
 
 @media (min-width: 200px) and (max-width: 720px) {
@@ -1324,34 +1402,33 @@ footer #footer-logo img {
         padding-left: 1em;
         padding-right: 1em;
     }
+	
+	#infoBlocks .col-md-3 {
+		width: 100%;
+	}
+	
+	#infoBlocks .infoText {
+		padding-right: 2em;
+		padding-left: 2em;
+	}
 }
 
 @media (min-width: 200px) and (max-width: 573px) {
-	#infoBlocks #firstPair div, #infoBlocks #secondPair div {
-        width: 25em;
-        margin: auto;
-        height: 21em;
-    }
-	
-	#infoBlocks #firstPair div:first-child {
-		margin-top: -.75em;
-	}
-	
-	#infoBlocks #firstPair div:nth-child(2), #infoBlocks #secondPair div {
-		margin-top: -2em;
-	}
     
     #infoBlocks .infoIcon {
     width: 7em;
        margin-top: 2em;
     }
     #infoBlocks .infoText {
-    padding-left: 5em;
-    padding-right: 5em;
     margin-bottom: 1em;
     font-size: .8em;
     line-height: 16px;
     }
+	
+	#infoBlocks .col-md-3 {
+	
+	height: 18.5em;
+}
 }
 
 @media (min-width: 200px) and (max-width: 555px) {
@@ -1377,7 +1454,7 @@ footer #footer-logo img {
     }
     
     #number {
-        top: 2.5em;
+        top: 2em;
         left: .5em;
     }
     
@@ -1459,12 +1536,6 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 450px) {
 	
-	#infoBlocks #firstPair div, #infoBlocks #secondPair div {
-        width: 100%;
-		padding-left: .15em;
-		padding-right: .15em;
-		height: 22em;
-    }
     #paragraph-holder {
         text-align: left;
     }
@@ -1472,6 +1543,12 @@ footer #footer-logo img {
 	#left-column, #right-column {
     text-align: left;
 	padding: 1em;
+}
+}
+
+@media (min-width: 200px) and (max-width: 420px) {
+	#infoBlocks .col-md-3 {
+	height: 21em;
 }
 }
 
