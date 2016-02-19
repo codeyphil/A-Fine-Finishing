@@ -303,8 +303,8 @@ div .owl-pagination {
 
 #infoBlocks .col-md-3 {
 	background-image: url('blueprint.png');
-	height: 16.5em;
-	border-right: 1px solid #363636;
+	height: 16em;
+	border-right: 1px ridge #363636;
 }
 
 #infoBlocks .col-md-3:nth-child(4) {
@@ -331,7 +331,7 @@ div .owl-pagination {
 }
 
 #infoBlocks h4 {
-    margin-bottom: .85em;
+    margin-bottom: .5em;
     margin-top: 1.9em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
@@ -341,7 +341,7 @@ div .owl-pagination {
 #infoBlocks .infoText {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 1em;
+    margin-bottom: .75em;
     font-size: .8em;
     line-height: 16px;
 }
