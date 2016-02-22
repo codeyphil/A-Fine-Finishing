@@ -63,14 +63,15 @@ body {
 
 #access-jump {
     position: fixed;
-    right: .25%;
-    top: 1%;
+    right: -1.15%;
+    top: -1.15%;
     z-index: 25;
 }
 
 #access-jump #initial-image {
-    width: 4em;
-    border-radius: 10%;
+    width: 5.5em;
+    height: 5.5em;
+    border-radius: 50%;
     box-shadow: 0px 1px 1px #212121;
 }
 
@@ -305,6 +306,7 @@ div .owl-pagination {
 	background-image: url('blueprint.png');
 	height: 16em;
 	border-right: 1px ridge #363636;
+    border-bottom: 5px double #616060;
 }
 
 #infoBlocks .col-md-3:nth-child(4) {
@@ -850,14 +852,14 @@ footer #footer-logo img {
 #gallery-header {
     text-align: center;
     position: relative;
-    bottom: 2em;
-    font-family: 'Abril Fatface', cursive;
+    bottom: 1.25em;
+    font-family: 'Raleway', sans-serif;
     font-size: 2em;
     text-shadow: 0px 0px 5px #212121;
 }
 
 .gallery-body h2 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Raleway', sans-serif;
     text-align: center;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
@@ -951,8 +953,8 @@ footer #footer-logo img {
 @media (min-width: 200px) and (max-width: 1275px) {
     #access-jump {
 		float: left;
-        top: 93.5%;
-		left: .15%;
+        top: 94%;
+		left: -1%;
 		opacity: .5;
     }
 }
@@ -1191,6 +1193,17 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 945px) {
     
+    #contact-right-body {
+        float: none !important;
+        margin: auto !important;
+    }
+    
+    #contact-body {
+        width: 35em !important;
+        margin: auto !important;
+        padding-bottom: 1.5em;
+    }
+    
     #header-holder img {
         width: 18em;
     }
@@ -1357,6 +1370,14 @@ footer #footer-logo img {
     #main-motto p {
         text-align: center;
         padding: 10px;
+    }
+    
+    #contact-body {
+        width: 100% !important;
+    }
+    
+    #contact-body .row .col-md-4 {
+        margin-right: -2em;
     }
 }
 
