@@ -751,6 +751,7 @@ footer #footer-logo img {
 .foot-bold {
 	font-weight: bold;
 	font-size: 1em;
+	border-right: none;
 }
 
 
