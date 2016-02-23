@@ -63,8 +63,8 @@ body {
 
 #access-jump {
     position: fixed;
-    right: -1.15%;
-    top: -1.15%;
+    right: -1.35%;
+    top: -1.35%;
     z-index: 25;
 }
 
@@ -80,7 +80,7 @@ body {
 	right: .5%;
 	bottom: 2.5%;
 	position: fixed;
-	z-index: 10;
+	z-index: 30;
 }
 
 .jump-arrow img {
@@ -810,7 +810,8 @@ footer #footer-logo img {
 .col-md-6 img {
     margin-top: 1em;
     border-radius: 100%;
-	box-shadow: 0px 5px 5px #212121;
+	box-shadow: 0px 3px 3px #212121;
+	border: 3px solid #213266;
 }
 
 .col-md-6:hover img {
@@ -954,7 +955,7 @@ footer #footer-logo img {
 @media (min-width: 200px) and (max-width: 1275px) {
     #access-jump {
 		float: left;
-        top: 94%;
+        top: 93%;
 		left: -1%;
 		opacity: .5;
     }
@@ -1259,7 +1260,11 @@ footer #footer-logo img {
 }
 }
 
-
+@media (min-width: 200px) and (max-width: 890px) {
+	#gallery-header {
+		font-size: 1.4em;
+	}
+}
 
 @media (min-width: 800px) and (max-width: 818px) {
     
@@ -1376,13 +1381,45 @@ footer #footer-logo img {
     #contact-body {
         width: 100% !important;
     }
-    
-    #contact-body .row .col-md-4 {
-        margin-right: -2em;
+}
+
+@media (min-width: 200px) and (max-width: 699px) {
+	#contact-body .row {
+        margin: auto;
+		width: 100%;
+		margin-top: 1.5em;
     }
+	
+	#contact-body .row .col-md-4 {
+		margin: auto;
+		text-align: center;
+		width: 100%;
+	}
+	
+	#contact-header {
+		text-align: center;
+		margin: 0 auto;
+	}
+	
+	#contact-row p {
+		margin-left: 0;
+	}
+	
+	#contact-body .row .col-md-4:nth-child(2), #contact-body .row .col-md-4:last-child {
+		margin-top: .75em;
+	}
 }
 
 @media (min-width: 200px) and (max-width: 630px) {
+	
+	#contact-map iframe, #contact-map {
+		width: 100%;
+		margin: auto;
+		height: 20em;
+		margin-top: 1.5em;
+		margin-bottom: 1em;
+	}
+	
 	footer span {
 		margin-left: .5em;
 	}
@@ -1477,7 +1514,7 @@ footer #footer-logo img {
     
     #number {
         top: 2em;
-        left: .5em;
+        left: .15em;
     }
     
     #main-motto {
@@ -1570,7 +1607,7 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 420px) {
 	#infoBlocks .col-md-3 {
-	height: 21em;
+	height: 20em;
 }
 }
 
