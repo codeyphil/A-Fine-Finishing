@@ -80,7 +80,7 @@ body {
 	right: .5%;
 	bottom: .5%;
 	position: fixed;
-	z-index: 30;
+	z-index: 105;
 }
 
 .jump-arrow img {
@@ -187,7 +187,7 @@ header {
     border-radius: 50%;
 	font-family: 'Roboto', sans-serif;
     font-size: 1.5em;
-    border: 2px solid white;
+    border: 3px solid white;
     box-shadow: 0px 0px 15px #212121;
 }
 
@@ -579,7 +579,7 @@ textarea {
 
 button {
     width: 10em;
-    height: 2.75em;
+    height: 2.5em;
     font-size: 1.3em !important;
     background: url('main-background.png') !important;
     box-shadow: 0px 2.5px 5px #212121;
@@ -1370,9 +1370,10 @@ footer {
     color: white;
     background: url('main-background.png');
     border-top: 3px ridge #1f3473;
-    height: 16em;
+    height: 16.5em;
     position: relative;
     z-index: 100;
+	overflow-y: hidden;
 }
 
 #footer-wrapper {
@@ -1427,13 +1428,13 @@ footer #footer-nav .non-home {
 }
 
 footer span a {
-    color: white;
+    color: #B0B0B0;
     text-decoration: underline;
     padding-right: 1em;
 }
 
 footer span a:hover {
-    color: #1f3473;
+    color: white;
 }
 
 footer #footer-nav span:last-child {
@@ -1452,7 +1453,7 @@ footer #copyright {
 footer #footer-logo {
     float: right;
     position: relative;
-    top: .5em;
+    top: 1em;
 	z-index: 3;
 }
 
@@ -1464,18 +1465,27 @@ footer #footer-logo img {
 }
 
 .footer-active {
-    color: #1f3473;
+    color: white;
     font-weight: bold;
-}
-
-.footer-active:hover {
-    color: #1f3473;
 }
 
 .foot-bold {
 	font-weight: bold;
 	font-size: 1em;
 	border-right: none;
+}
+
+#site-map {
+	margin-top: -1em;
+	margin-bottom: 0em;
+}
+
+#site-map a {
+	color: #B0B0B0;
+}
+
+#site-map a:hover {
+	color: white;
 }
 
 
@@ -1653,6 +1663,29 @@ footer #footer-logo img {
     font-size: 1.1em;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+
+/*---------- Site Map CSS ----------*/
+
+.body-text #site-map-right, .body-text #site-map-left {
+	display: inline-block;
+	line-height: 35px;
+	font-size: 1.5em;
+	margin-left: 2.5em;
+	margin-top: 2.9em;
+}
+
+.body-text #site-map-right li, .body-text #site-map-left li {
+	list-style-type: circle;
+}
+
+.body-text #site-map-right li a, .body-text #site-map-left li a {
+	color: #B0B0B0;
+}
+
+.body-text #site-map-right li a:hover, .body-text #site-map-left li a:hover {
+	color: white;
 }
 
 
@@ -1845,6 +1878,10 @@ footer #footer-logo img {
 		margin: auto;
 		margin-top: 2em;
 }
+
+#privacy-form {
+    height: 37.5em;
+}
 	
 #privacy-submit {
     margin-bottom: 2em;
@@ -1962,6 +1999,10 @@ footer #footer-logo img {
         float: none;
         margin-top: 0em;
     }
+	
+	.right-body-content, .contact-form {
+		border-left: 0;
+	}
     
     .body-text {
         width: 100%;
@@ -2019,15 +2060,12 @@ footer #footer-logo img {
     
     #mottoNum a img {
         margin-left: 21em;
+		margin-top: .5em;
     }
     
-     #motto {
-        margin-top: 1em;
+    #motto {
+        margin-top: 1.65em;
         font-size: 1.15em;
-    }
-    
-    #mottoNum img {
-        margin-top: .25em;
     }
 	
 	#staff-intro-div {
@@ -2152,9 +2190,24 @@ footer #footer-logo img {
 		margin-bottom: 1em;
 	}
 	
+#contact-map {
+	padding-left: .75em;
+		padding-right: .75em;
+}
+	
 	footer span {
-		margin-left: .5em;
+		margin-left: 0em;
 	}
+	
+	footer #footer-nav .non-home {
+    padding-left: 1em;
+}
+
+footer span a {
+    color: #B0B0B0;
+    text-decoration: underline;
+    padding-right: 1em;
+}
 }
 
 @media (min-width: 200px) and (max-width: 610px) {
