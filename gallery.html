@@ -926,6 +926,12 @@ $( function(){
         "mode":"standard"
     } );
 } );
+    if (window.matchMedia("(max-width: 1065px)").matches) {
+         $( '#gallery' ).jGallery( {
+        height: '300px'
+    } );
+    }    
+    
 </script>
 </div>
     <div class="container-fluid gallery-body">
