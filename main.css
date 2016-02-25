@@ -2258,6 +2258,11 @@ footer span a {
 }
 
 @media (min-width: 200px) and (max-width: 573px) {
+	
+	#content-title {
+		font-size: 2em;
+		padding-left: 5px;
+	}
     
     #infoBlocks .infoIcon {
     width: 7em;
@@ -2378,22 +2383,67 @@ footer span a {
     }
 }
 
+@media (min-width: 200px) and (max-width: 468px) {
+	.full-service-title {
+		font-size: 1.8em !important;
+	}
+}
+
 @media (min-width: 200px) and (max-width: 450px) {
 	
     #paragraph-holder {
         text-align: left;
+		font-size: .85em;
     }
 	
 	#left-column, #right-column {
     text-align: left;
 	padding: 1em;
 }
+
+#left-footer-info p {
+	font-size: .75em;
+}
+
+#home-testimonials p {
+	font-size: .8em;
+}
+
+.body-text {
+	font-size: .8em;
+}
+
+#staff-intro-div p {
+	font-size: .8em;
+}
+
+.staff-headings {
+	font-size: 1.1em;
+}
 }
 
 @media (min-width: 200px) and (max-width: 420px) {
+	
+	#infoBlocks {
+		margin-top: -1.38em;
+	}
+
 	#infoBlocks .col-md-3 {
 	height: 20em;
 }
+
+#infoBlocks .col-md-3:first-child {
+	border-top-left-radius: 0;
+}
+.full-service-title {
+		font-size: 1.7em !important;
+	}
+}
+
+@media (min-width: 200px) and (max-width: 407px) {
+	.full-service-title {
+		font-size: 1.4em !important;
+	}
 }
 
 @media (min-width: 200px) and (max-width: 340px) {
