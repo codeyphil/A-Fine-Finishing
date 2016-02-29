@@ -72,7 +72,8 @@ body {
     width: 5.5em;
     height: 5.5em;
     border-radius: 50%;
-    box-shadow: 0px 1px 1px #212121;
+    box-shadow: 0px 3px 3px #212121;
+    
 }
 
 .jump-arrow {
@@ -141,7 +142,8 @@ header {
 #header-holder img {
     width: 23em;
     max-height: 12.8em;
-    box-shadow: 0px 0px 5px #212121;
+    
+    border-radius: 5px;
 }
 
 #mottoNum {
@@ -167,6 +169,7 @@ header {
     position: relative;
     bottom: 1.5em;
 	font-size: .75em;
+    font-weight: bold;
 }
 
 #mottoNum img {
@@ -176,7 +179,6 @@ header {
 
 #motto, #phoneNumber {
     display: inline-block;
-    font-weight: bold;
 }
 
 #motto {
@@ -185,10 +187,13 @@ header {
     margin-top: 0em;
     margin-left: 1.5em;
     border-radius: 50%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poiret One', cursive;
     font-size: 1.5em;
     border: 3px solid white;
-    box-shadow: 0px 0px 15px #212121;
+    box-shadow: 0 10px 15px #212121;
+    text-shadow: 0px 0px 1px #dedede;
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 #number {
@@ -209,6 +214,7 @@ header {
     position: relative;
     font-size: 1.8em;
 	font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 
 /*Image Carousel*/
@@ -510,6 +516,8 @@ div .owl-pagination {
     margin: auto;
 }
 
+
+
 /*------- Banner Image CSS For All Pages But The Home Page ----------*/
 
 .banner-image {
@@ -559,8 +567,8 @@ div .owl-pagination {
 
 label {
     float: left;
-    color: white !important;
-    font-family: 'Roboto', sans-serif !important;
+    color: #dedede !important;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 input {
@@ -569,12 +577,23 @@ input {
     border-radius: 5px;
     color: black;
     height: 1.85em;
+    background: #dedede;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 textarea {
     margin-left: -.5em;
     border-radius: 5px;
     color: black;
+    background: #dedede;
+    font-size: .9em;
+}
+
+
+#id123-captcha {
+    width: 4em !important;
+    float: right !important;
+    position: relative !important;
 }
 
 button {
@@ -585,6 +604,7 @@ button {
     box-shadow: 0px 2.5px 5px #212121;
     font-weight: bold !important;
     font-family: 'Roboto', sans-serif !important;
+    color: #dedede;
 }
 button:hover {
     color: white !important;
@@ -626,15 +646,34 @@ button:hover {
     border-radius: 5%;
 }
 
+#form-verify {
+    margin-left: 0em;
+    float: left;
+}
+
+#captcha-image {
+    margin-left: 0em;
+    width: 1em;
+    float: left;
+    position: relative;
+    top: 13px;
+    left: 5px;
+}
+
 .contact-form p {
     text-align: center;
     font-size: .75em;
     margin-bottom: 1em;
+    font-weight: bold;
 }
 
 .contact-form .contact-asterisk {
     padding-right: 10px;
     color: red;
+}
+
+.requiredfield:not(.likert-label):after {
+    font-size: 14px !important;
 }
 
 .focus .row  {
@@ -1459,9 +1498,9 @@ footer #footer-logo {
 
 footer #footer-logo img {
     width: 22em;
-    border-radius: 5px;
     position: relative;
-    box-shadow: 0px 0px 15px #212121;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .footer-active {
@@ -1487,7 +1526,6 @@ footer #footer-logo img {
 #site-map a:hover {
 	color: white;
 }
-
 
 /*-----Contact Form Container CSS ---------*/
 
@@ -1686,6 +1724,18 @@ footer #footer-logo img {
 
 .body-text #site-map-right li a:hover, .body-text #site-map-left li a:hover {
 	color: white;
+}
+
+.coming-soon-header {         
+    margin-top: -.5em; 
+    font-size: 1.4em; 
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+}
+
+#coming-soon-bottom {
+    margin-top: 1em;
+    font-size: .95em;
 }
 
 
@@ -1967,7 +2017,12 @@ footer #footer-logo img {
     #contact-right-body {
         float: none !important;
         margin: auto !important;
+        box-shadow: 0px 0px 15px #212121;
     }
+    
+    .right-body-content, .contact-form {
+		border-left: 0;
+	}
     
     #contact-body {
         width: 35em !important;
@@ -1991,6 +2046,16 @@ footer #footer-logo img {
     #mottoNum a img {
         margin-left: 13em;
     }
+    
+    .coming-soon-header {
+    width: 100% !important;
+    margin: auto;
+    margin-left: -1em; 
+}
+
+#coming-soon-bottom {
+    width: 100% !important;
+}
 }
 
 @media (min-width: 200px) and (max-width: 920px) {
@@ -1999,10 +2064,6 @@ footer #footer-logo img {
         float: none;
         margin-top: 0em;
     }
-	
-	.right-body-content, .contact-form {
-		border-left: 0;
-	}
     
     .body-text {
         width: 100%;
@@ -2314,7 +2375,8 @@ footer span a {
     }
     
     #main-motto p {
-        bottom: 1em;
+        bottom: 1.25em;
+        padding: 15px;
     }
     
     #main-motto a img {
@@ -2351,11 +2413,6 @@ footer span a {
 	padding-right: 0em;
 }
     
-    #center-header {
-        margin-top: -1em;
-		right: 0em;
-    }
-	
 #center-header h3 {
 	font-size: 1.6em;
 	padding-top: .5em;
@@ -2378,9 +2435,6 @@ footer span a {
     margin-top: 1em;
 }
     
-    .banner-image .left-image {
-        height: 16em;
-    }
 }
 
 @media (min-width: 200px) and (max-width: 468px) {
@@ -2468,5 +2522,16 @@ footer span a {
     .g-recaptcha {
         margin-left: 0em;
         padding-left: 0em;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 320px) {
+    #number {
+        font-size: .65em;
+        top: 3.25em;
+    }
+    
+    input, textarea {
+    width: 16em !important;
     }
 }
