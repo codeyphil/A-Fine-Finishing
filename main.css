@@ -187,12 +187,11 @@ header {
     margin-top: 0em;
     margin-left: 1.5em;
     border-radius: 50%;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Playball', cursive;
     font-size: 1.5em;
     border: 3px solid white;
     box-shadow: 0 10px 15px #212121;
     text-shadow: 0px 0px 1px #dedede;
-    font-weight: bold;
     letter-spacing: 1px;
 }
 
@@ -1492,7 +1491,6 @@ footer #copyright {
 footer #footer-logo {
     float: right;
     position: relative;
-    top: 1em;
 	z-index: 3;
 }
 
@@ -1542,7 +1540,7 @@ footer #footer-logo img {
    font-weight: bold;
    color: white;
    text-shadow: 0px .5px .5px #dedede;
-    bottom: 1.05em;
+    bottom: 1.1em;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -2433,6 +2431,10 @@ footer span a {
     padding-left: 1em;
     padding-right: 1em;
     margin-top: 1em;
+}
+    
+.banner-image {
+    height: 15em;
 }
     
 }
