@@ -119,6 +119,14 @@ body {
 	margin: auto;
 }
 
+.flexnav #full-service a{
+	text-align: left !important;
+}
+
+.flexnav #full-service ul li a {
+	text-align: center !important;
+}
+
 #head-container {
     background: url('main-background.png');
     margin-bottom: 0;
@@ -494,6 +502,10 @@ div .owl-pagination {
     position: relative;
 }
 
+.italics {
+	font-style: italic;
+}
+
 .body-text h3 {
     margin-bottom: .65em;
     padding-left: .5em;
@@ -548,12 +560,12 @@ div .owl-pagination {
 .right-body-content {
     float: right;
     width: 21em;
-    margin-top: -20em;
+    margin-top: -25.5em;
     margin-bottom: -1em;
 }
 
 #services-right-body {
-    margin-top: -22.5em;
+    margin-top: -18em;
 }
 
 #privacy-right-body {
@@ -562,6 +574,34 @@ div .owl-pagination {
 
 #contact-right-body {
 	margin-top: -41em;
+}
+
+#company-right-body {
+	margin-top: -20em;
+}
+
+#insurance-right-body {
+	margin-top: -14.5em;
+}
+
+#full-service-right-body {
+	margin-top: -20em;
+}
+
+#site-map-right-body {
+	margin-top: -24.6em;
+}
+
+#testimonials-right-body {
+	margin-top: -36.75em;
+}
+
+#historical-right-body, #custom-right-body {
+	margin-top: -7.4em;
+}
+
+#commercial-right-body {
+	margin-top: -8.5em;
 }
 
 label {
@@ -1708,8 +1748,12 @@ footer #footer-logo img {
 	display: inline-block;
 	line-height: 35px;
 	font-size: 1.5em;
-	margin-left: 2.5em;
-	margin-top: 2.9em;
+	margin-left: 2em;
+	margin-top: 3em;
+}
+
+.body-text #site-map-right {
+	margin-bottom: 1.5em;
 }
 
 .body-text #site-map-right li, .body-text #site-map-left li {
