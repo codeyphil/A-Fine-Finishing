@@ -2102,10 +2102,10 @@ footer #footer-logo img {
 
 @media (min-width: 200px) and (max-width: 920px) {
     
-    .right-body-content, #services-right-body {
-        float: none;
-        margin-top: 0em;
-    }
+    .right-body-content, #services-right-body, #privacy-right-body, #contact-right-body, #company-right-body, #insurance-right-body, #full-service-right-body, #site-map-right-body, #testimonials-right-body, #historical-right-body, #custom-right-body, #commercial-right-body {
+    float: none;
+	margin-top: 1.5em;
+}
     
     .body-text {
         width: 100%;
