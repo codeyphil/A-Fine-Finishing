@@ -333,14 +333,13 @@ div .owl-pagination {
 
 #infoBlocks .col-md-3:nth-child(4) {
 	border-right: none;
+    border-top-right-radius: 5px;
+    background: red;
+    text-shadow: 0;
 }
 
 #infoBlocks .col-md-3:first-child {
 	border-top-left-radius: 5px;
-}
-
-#infoBlocks .col-md-3:nth-child(4) {
-	border-top-right-radius: 5px;
 }
 
 #infoBlocks .infoIcon {
@@ -1457,7 +1456,7 @@ footer {
     color: white;
     background: url('main-background.png');
     border-top: 3px ridge #1f3473;
-    height: 16.5em;
+    height: 21em;
     position: relative;
     z-index: 100;
 	overflow-y: hidden;
@@ -1544,7 +1543,8 @@ footer #footer-logo {
 }
 
 footer #footer-logo img {
-    width: 22em;
+    width: 24em;
+    height: 17.5em;
     position: relative;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
