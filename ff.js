@@ -13,10 +13,11 @@ $(document).ready(function() {
             $('.flexnav').removeClass('navbar-fixed-top');
         }
     });
-	
+	$('.bxslider').bxSlider({
+        auto: true,
+        controls: false,
+        pager: false,
+        speed: 1500
+    });
     
 });
-
-
-
-
