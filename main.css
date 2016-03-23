@@ -523,7 +523,7 @@ div .owl-pagination {
 }
 
 .body-text p {
-    padding-left: 1em;
+    padding-left: 2.5em;
     line-height: 19px;
 }
 .home-body {
@@ -542,13 +542,24 @@ div .owl-pagination {
     color: #B0B0B0;
 }
 
+#services-container {
+	font-size: 1.5em;
+}
+
+#services-container a {
+	color: white;
+}
+
 /*---------Universal Slider CSS ---------------*/
 
 .slider-holder {
     padding-left: 7.5em;
-    margin-top: 1em;
+    margin-top: 2.5em;
 }
 
+.slider-holder img {
+	border: 5px ridge #dedede;
+}
 
 
 /*------- Banner Image CSS For All Pages But The Home Page ----------*/
@@ -582,12 +593,11 @@ div .owl-pagination {
 .right-body-content {
     float: right;
     width: 21em;
-    margin-top: -25.5em;
-    margin-bottom: -1em;
+    margin-top: -24.5em;
 }
 
 #services-right-body {
-    margin-top: -18em;
+    margin-top: -25.75em;
 }
 
 #privacy-right-body {
@@ -595,7 +605,7 @@ div .owl-pagination {
 }
 
 #contact-right-body {
-	margin-top: -41em;
+	margin-top: -41.1em;
 }
 
 #company-right-body {
@@ -603,11 +613,11 @@ div .owl-pagination {
 }
 
 #insurance-right-body {
-	margin-top: -14.5em;
+	margin-top: -41.5em;
 }
 
 #full-service-right-body {
-	margin-top: -20em;
+	margin-top: -37.8em;
 }
 
 #site-map-right-body {
@@ -619,7 +629,7 @@ div .owl-pagination {
 }
 
 #historical-right-body, #custom-right-body {
-	margin-top: -32em;
+	margin-top: -34.1em;
 }
 
 #commercial-right-body {
@@ -676,7 +686,7 @@ button:hover {
     color: #dedede;
     border-left: 2px ridge #1f3473;
     overflow: auto;
-    height: 41em;
+    height: 42em;
     position: relative;
     z-index: 5;
 }
@@ -2074,6 +2084,10 @@ footer #footer-logo img {
 	#infoBlocks .col-md-3 {
 		width: 22em;
 	}
+	
+	.slider-holder {
+    padding-left: 4em;
+}
 }
 
 @media (min-width: 200px) and (max-width: 945px) {
@@ -2155,6 +2169,13 @@ footer #footer-logo img {
 
 .banner-image .right-image {
    display: none;
+}
+
+.slider-holder {
+    padding-left: 0em;
+	margin: 0 auto;
+	margin-top: 1.5em;
+	text-align: center;
 }
 }
 
@@ -2502,7 +2523,18 @@ footer span a {
 .banner-image {
     height: 15em;
 }
-    
+
+.slider-holder {
+    width: 100%;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+
+.slider-holder img {
+	height: 18em;
+	
+	width: 100%;
+}    
 }
 
 @media (min-width: 200px) and (max-width: 468px) {
