@@ -46,11 +46,12 @@ table {
 body {
     margin: 0 auto;
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Hind', sans-serif;
     overflow-x: hidden;
     background: url('container-background.png');
-    text-shadow: 0px 0px 1px #212121;
+    text-shadow: 0px 0px .25px #212121;
     line-height: 1;
+    letter-spacing: .6px;
 }
 
 /*----- Universal CSS For Nav & Access Button ---------*/
@@ -58,7 +59,7 @@ body {
 .container-fluid {
     width: 100%;
     padding: 0 !important;
-    letter-spacing: .5px;
+    letter-spacing: .25px;
 }
 
 #access-jump {
@@ -166,14 +167,14 @@ header {
 #mottoNum {
 	width: 42em;
     float: right;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 4em;
 }
 
 #mottoNum a img {
     color: white;
     position: relative;
-    margin-left: 27em;
+    margin-left: 28em;
     bottom: 1em;
 }
 
@@ -184,14 +185,14 @@ header {
 #mottoNum a span {
     color: white;
     position: relative;
-    bottom: 1.5em;
-	font-size: .75em;
+    bottom: 2.25em;
+	font-size: .65em;
     font-weight: bold;
 }
 
 #mottoNum img {
-    width: 4em;
-    margin-top: 1em;
+    width: 3em;
+    margin-top: 2em;
 }
 
 #motto, #phoneNumber {
@@ -223,13 +224,13 @@ header {
 	text-align: right;
 	font-weight: bold;
 	font-size: 1.1em;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 #phoneNumber {
     position: relative;
     font-size: 1.8em;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -326,9 +327,8 @@ div .owl-pagination {
 
 #infoBlocks .col-md-3 {
 	background-image: url('blueprint.png');
-	height: 16em;
-	border-right: 1px ridge #363636;
-    border-bottom: 5px double #616060;
+	height: 15.25em;
+	border-right: 1px ridge #212121;
 }
 
 #infoBlocks .col-md-3:nth-child(4) {
@@ -343,8 +343,8 @@ div .owl-pagination {
 }
 
 #infoBlocks .col-md-3:nth-child(3) .infoText, #infoBlocks .col-md-3:nth-child(4) .infoText {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    padding-left: 3em;
+    padding-right: 3em;
 }
 
 #infoBlocks .infoIcon {
@@ -352,30 +352,27 @@ div .owl-pagination {
     position: relative;
     padding: 10px;
     margin: auto;
-    margin-top: .5em;
-    margin-bottom: -1.5em;
-    border-radius: 50%;
-    box-shadow: 0px 0px 40px #212121;
+    margin-bottom: -2.35em;
 }
 
 #infoBlocks h4 {
-    margin-bottom: .5em;
-    margin-top: 1.9em;
+    margin-bottom: 1em;
+    margin-top: 2em;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-size: 1.2em;
 }
 
 #infoBlocks .infoText {
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: .75em;
-    font-size: .8em;
-    line-height: 16px;
+    margin-bottom: 1.25em;
+    font-size: .75em;
+    line-height: 18px;
 }
 
 #infoBlocks .infoJump, #infoBlocks #insuranceLink {
-    text-shadow: 0px 0px .25px #212121;
+    text-shadow: 0px 0px .15px #212121;
     margin: auto;
     margin-top: 2em !important;
     padding: 10px;
@@ -384,12 +381,12 @@ div .owl-pagination {
     color: white;
     font-weight: bold;
     border-radius: 2px;
-    font-size: 15px;
+    font-size: 15.5px;
     border-radius: 3px;
     box-shadow: 0px 0px 5px #212121;
 }
 
-#infoBlocks .infoJump:hover {
+#infoBlocks .infoJump:hover, #infoBlocks #insuranceLink:hover {
     box-shadow: 0px 0px 15px #212121;
     -webkit-transition-timing-function: ease;
 }
@@ -429,7 +426,7 @@ div .owl-pagination {
     margin-bottom: .5em;
     font-weight: bold;
     font-size: 2.25em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     text-shadow: 0px 0px 20px #212121;
 }
 
@@ -440,7 +437,7 @@ div .owl-pagination {
     float: left;
     position: relative;
     padding-left: .25em;
-    margin-bottom: 3.5em;
+    margin-bottom: 3em;
     line-height: 20px;
 }
 
@@ -477,7 +474,6 @@ div .owl-pagination {
     font-size: .95em;
     font-style: italic;
     line-height: 18px;
-    font-weight: bold;
 }
 
 #home-testimonials span {
@@ -523,8 +519,18 @@ div .owl-pagination {
 }
 
 .body-text p {
-    padding-left: 2.5em;
+    padding-left: 7.5em;
     line-height: 19px;
+    padding-right: 3em;
+}
+
+#contact-body p {
+    padding-left: 1em;
+}
+
+#privacy-body p {
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .home-body {
     width: 66em;
@@ -543,7 +549,32 @@ div .owl-pagination {
 }
 
 #services-container {
-	font-size: 1.5em;
+    position: relative;
+    left: 3.5em;
+}
+
+#services-container p{
+	font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+}
+
+#services-container .col-md-6, #services-container .col-md-12 {
+    border: 2px solid black;
+    border-radius: 100%;
+    width: 13em;
+    height: 13em;
+}
+
+#services-container .row:last-child {
+    position: relative;
+    left: 10em;
+}
+
+#services-container #insurance-button {
+    background-image: url('services/insurance.jpg');
+    background-size: cover;
 }
 
 #services-container a {
@@ -593,19 +624,19 @@ div .owl-pagination {
 .right-body-content {
     float: right;
     width: 21em;
-    margin-top: -24.5em;
+    margin-top: -26.5em;
 }
 
 #services-right-body {
-    margin-top: -25.75em;
+    margin-top: -47.1em;
 }
 
 #privacy-right-body {
-    margin-top: -205.2em;
+    margin-top: -199em;
 }
 
 #contact-right-body {
-	margin-top: -41.1em;
+	margin-top: -40.75em;
 }
 
 #company-right-body {
@@ -613,33 +644,37 @@ div .owl-pagination {
 }
 
 #insurance-right-body {
-	margin-top: -41.5em;
+	margin-top: -43.5em;
 }
 
 #full-service-right-body {
-	margin-top: -37.8em;
+	margin-top: -40.85em;
 }
 
 #site-map-right-body {
-	margin-top: -24.6em;
+	margin-top: -24.2em;
 }
 
 #testimonials-right-body {
-	margin-top: -36.75em;
+	margin-top: -40em;
 }
 
-#historical-right-body, #custom-right-body {
-	margin-top: -34.1em;
+#historical-right-body {
+	margin-top: -34em;
+}
+
+#custom-right-body {
+    margin-top: -33.75em;
 }
 
 #commercial-right-body {
-	margin-top: -8.5em;
+	margin-top: -35.1em;
 }
 
 label {
     float: left;
     color: #dedede !important;
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 input {
@@ -649,7 +684,7 @@ input {
     color: black;
     height: 1.85em;
     background: #dedede;
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'Montserrat', sans-serif;
 }
 
 textarea {
@@ -686,13 +721,13 @@ button:hover {
     color: #dedede;
     border-left: 2px ridge #1f3473;
     overflow: auto;
-    height: 42em;
+    height: 48em;
     position: relative;
     z-index: 5;
 }
 
 #privacy-form {
-    height: 206em;
+    height: 200em;
 }
 
 .contact-form h2 {
@@ -704,7 +739,7 @@ button:hover {
     margin-bottom: 1.25em;
     margin-top: .35em;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-shadow: 0px 0px 1px white;
 }
 
@@ -1479,7 +1514,7 @@ footer {
     color: white;
     background: url('main-background.png');
     border-top: 3px ridge #1f3473;
-    height: 21em;
+    height: 19em;
     position: relative;
     z-index: 100;
 	overflow-y: hidden;
@@ -1498,7 +1533,7 @@ footer {
 }
 
 #left-footer-info p {
-	font-size: .85em;
+	font-size: .75em;
 }
 
 #footer-number {
@@ -1517,7 +1552,7 @@ footer #footer-nav {
 }
 
 footer span {
-    font-size: .9em;
+    font-size: .75em;
     border-right: 1px solid white;
 }
 
@@ -1579,7 +1614,6 @@ footer #footer-logo img {
 }
 
 .foot-bold {
-	font-weight: bold;
 	font-size: 1em;
 	border-right: none;
 }
@@ -1602,12 +1636,12 @@ footer #footer-logo img {
 
 #content-title {
    background: url('main-background.png');
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Montserrat', sans-serif;
    padding-top: 5px;
    padding-bottom: 5px;
    padding-right: 20px;
    padding-left: 20px;
-   font-size: 2.5em;
+   font-size: 2.15em;
    position: relative;
    font-weight: bold;
    color: white;
@@ -1646,7 +1680,7 @@ footer #footer-logo img {
     font-size: 1.2em;
     padding-top: .75em;
     padding-bottom: .5em;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .col-md-6 img {
@@ -1684,7 +1718,7 @@ footer #footer-logo img {
 	font-size: 1.3em;
 	padding-bottom: .5em;
 	padding-top: .5em;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .staff-intro {
@@ -1697,13 +1731,13 @@ footer #footer-logo img {
     text-align: center;
     position: relative;
     bottom: 1.25em;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     text-shadow: 0px 0px 5px #212121;
 }
 
 .gallery-body h2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
@@ -1754,7 +1788,7 @@ footer #footer-logo img {
 
 #contact-row h4 {
 	margin-bottom: .75em;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
 }
@@ -1766,7 +1800,7 @@ footer #footer-logo img {
 /*--------------Privacy CSS ------------*/
 
 .section-title {
-   font-family: 'Raleway', sans-serif;
+   font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.1em;
     margin-top: 1em;
@@ -2564,7 +2598,7 @@ footer span a {
 }
 
 .body-text {
-	font-size: .8em;
+	font-size: .95em;
 }
 
 #staff-intro-div p {
