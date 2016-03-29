@@ -17,7 +17,9 @@ $(document).ready(function() {
         auto: true,
         controls: false,
         pager: false,
-        speed: 1500
+        speed: 1500,
+		touchEnabled: false,
+		preventDefaultSwipeX: true
     });
     
 });

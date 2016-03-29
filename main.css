@@ -718,6 +718,22 @@ button:hover {
     z-index: 5;
 }
 
+#about-form {
+	height: 40em;
+}
+
+#insurance-form {
+	height: 46em;
+}
+
+#full-service-form, #testimonials-form, #contact-page-form {
+	height: 43em;
+}
+
+#historical-form, #custom-form, #commercial-form, #site-map-form {
+	height: 40em;
+}
+
 #privacy-form {
     height: 200em;
 }
@@ -1533,7 +1549,7 @@ footer {
     font-weight: bold;
     border-right: 0px;
     position: relative;
-    top: .5em;
+    top: .75em;
     text-shadow: 0px 0px 15px #212121;
 }
 
@@ -1552,7 +1568,7 @@ footer span {
     border-right: 0px;
     margin-left: 2.5em;
     position: relative;
-    top: 18px;
+    top: 1.8em;
 }
 
 #social-media img{
@@ -1617,6 +1633,7 @@ footer #footer-logo img {
 
 #site-map a {
 	color: #B0B0B0;
+	font-size: 1.1em;
 }
 
 #site-map a:hover {
@@ -1897,6 +1914,19 @@ footer #footer-logo img {
         margin-right: 1em;
     }
     
+}
+
+@media (min-width: 200px) and (max-width: 1094px) {
+.banner-image {
+    height: 20em;
+    width: 100%;
+	background-image: url('banner-image.jpg');
+	background-size: cover;
+}
+
+.banner-image .left-image, .banner-image .right-image {
+	display: none;
+}
 }
 
 @media (min-width: 200px) and (max-width: 1085px) {
@@ -2196,15 +2226,6 @@ footer #footer-logo img {
 		padding-top: .75em;
 		padding-bottom: .75em;
 	}
-    
-    .banner-image .left-image {
-    width: 70em;
-    float: none;
-}
-
-.banner-image .right-image {
-   display: none;
-}
 
 .slider-holder {
     padding-left: 0em;
@@ -2570,7 +2591,7 @@ footer span a {
 }
     
 .banner-image {
-    height: 15em;
+    height: 13em;
 }
 
 .slider-holder {
