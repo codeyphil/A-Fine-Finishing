@@ -1522,7 +1522,7 @@ footer {
     color: white;
     background: url('main-background.png');
     border-top: 3px ridge #1f3473;
-    height: 19em;
+    height: 18.5em;
     position: relative;
     z-index: 100;
 	overflow-y: hidden;
@@ -2108,8 +2108,8 @@ footer #footer-logo img {
 	
 	
 	#infoBlocks .infoText {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
 	}
 }
 
@@ -2140,8 +2140,8 @@ footer #footer-logo img {
 	}
 	
 	#infoBlocks .infoText {
-		padding-right: 3em;
-		padding-left: 3em;
+		padding-right: 5em;
+		padding-left: 5em;
 	}
 }
 
@@ -2605,6 +2605,15 @@ footer span a {
 	
 	width: 100%;
 }    
+
+.gallery-body #bottom-video {
+   position: relative;
+   top: -22.5em !important;
+}
+
+.gallery-body {
+	height: 50em !important;
+}
 }
 
 @media (min-width: 200px) and (max-width: 468px) {
@@ -2681,6 +2690,11 @@ footer span a {
 	.full-service-title {
 		font-size: 1.4em !important;
 	}
+	
+	#number {
+        font-size: .85em;
+        top: 2.5em;
+    }
 }
 
 @media (min-width: 200px) and (max-width: 340px) {
@@ -2693,11 +2707,12 @@ footer span a {
     #center-header h3 {
         font-size: 1.75em;
     }
-    #number {
-        font-size: .85em;
-        top: 2.5em;
-    }
     
+    #number {
+        font-size: .6em;
+        top: 3.25em;
+    }
+	
     .right-body-content, .contact-form {
         width: 100%;
     }
@@ -2709,10 +2724,6 @@ footer span a {
 }
 
 @media (min-width: 200px) and (max-width: 320px) {
-    #number {
-        font-size: .65em;
-        top: 3.25em;
-    }
     
     input, textarea {
     width: 16em !important;
